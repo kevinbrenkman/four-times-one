@@ -1,0 +1,32 @@
+{
+    "sections": {
+        "static_heading": {
+            "type": "static_heading"
+        },
+        "hero": {
+            "type": "hero"
+        },
+        "category": {
+            "type": "category"
+        },
+        "links": {
+            "type": "links"
+        },
+        "content": {
+            "type": "content"
+        },
+        "images": {
+            "type": "images"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "static_heading",
+        "hero",
+        "category",
+        "links",
+        "content",
+        "images"
+    ]
+}
