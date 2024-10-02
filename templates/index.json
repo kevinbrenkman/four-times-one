@@ -17,6 +17,14 @@
         "background": "#e40000"
       }
     },
+    "small_heading_mQEePt": {
+      "type": "small_heading",
+      "settings": {
+        "text_heading": "CHEST-FLATTENING BASICS",
+        "color": "#802f2f",
+        "background": "#3d2b2b"
+      }
+    },
     "hero": {
       "type": "hero",
       "settings": {
@@ -67,12 +75,12 @@
       "settings": {
       }
     },
-    "small_heading_mQEePt": {
-      "type": "small_heading",
+    "small_static_heading_Wr9GiD": {
+      "type": "small_static_heading",
       "settings": {
         "text_heading": "CHEST-FLATTENING BASICS",
-        "color": "#802f2f",
-        "background": "#3d2b2b"
+        "color": "#000000",
+        "background": "#ffffff"
       }
     }
   },
@@ -80,11 +88,12 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "static_heading",
+    "small_heading_mQEePt",
+    "small_static_heading_Wr9GiD",
     "hero",
     "category",
     "links",
     "content",
-    "images",
-    "small_heading_mQEePt"
+    "images"
   ]
 }
