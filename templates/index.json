@@ -9,30 +9,31 @@
 */
 {
   "sections": {
-    "static_heading": {
-      "type": "static_heading",
-      "settings": {
-        "text_heading": "CHEST-FLATTENING BASICS",
-        "color": "#000000",
-        "background": "#e40000"
-      }
-    },
     "small_heading_mQEePt": {
       "type": "small_heading",
       "settings": {
-        "text_heading": "CHEST-FLATTENING BASICS",
-        "color": "#802f2f",
-        "background": "#3d2b2b"
+        "text_heading": "Toning chests, not personalities",
+        "color": "#000000",
+        "background": "#00ff00"
       }
     },
     "hero": {
       "type": "hero",
       "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
         "checkbox_show_button": true,
         "url_button_link": "shopify://pages/contact",
-        "text_button_text": "Shop this look",
-        "color": "#ac2626",
-        "background": "#943838"
+        "text_button_text": "Get this tee",
+        "color": "#00ff00",
+        "background": "#000000"
+      }
+    },
+    "static_heading": {
+      "type": "static_heading",
+      "settings": {
+        "text_heading": "CHEST-FLATTENING BASICS",
+        "color": "#000000",
+        "background": "#0041dd"
       }
     },
     "category": {
@@ -74,23 +75,14 @@
       "type": "images",
       "settings": {
       }
-    },
-    "small_static_heading_Wr9GiD": {
-      "type": "small_static_heading",
-      "settings": {
-        "text_heading": "CHEST-FLATTENING BASICS",
-        "color": "#000000",
-        "background": "#ffffff"
-      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "static_heading",
     "small_heading_mQEePt",
-    "small_static_heading_Wr9GiD",
     "hero",
+    "static_heading",
     "category",
     "links",
     "content",
