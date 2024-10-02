@@ -39,17 +39,55 @@
     "image_and_text_3q3Jzj": {
       "type": "image_and_text",
       "settings": {
-        "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-2.jpg",
         "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+        "image_print_png": "shopify://shop_images/fourtimesone.svg",
         "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within",
         "color": "#000000",
         "background": "#ffffff",
-        "padding": "0rem"
+        "padding": "2rem"
+      }
+    },
+    "static_heading_7mWm47": {
+      "type": "static_heading",
+      "settings": {
+        "text_heading": "All-body embracing menswear",
+        "color": "#000000",
+        "background": "#ffffff"
       }
     },
     "images": {
       "type": "images",
+      "blocks": {
+        "block_jN3eQR": {
+          "type": "block",
+          "settings": {
+            "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg"
+          }
+        },
+        "block_AW9chm": {
+          "type": "block",
+          "settings": {
+            "image_image": "shopify://shop_images/edit-02-1800x-q80_copy.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "block_jN3eQR",
+        "block_AW9chm"
+      ],
       "settings": {
+      }
+    },
+    "hero_FHMq4f": {
+      "type": "hero",
+      "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-3.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "shopify://pages/contact",
+        "text_button_text": "Shop drop 01",
+        "color": "#ff0000",
+        "background": "#000000"
       }
     }
   },
@@ -60,6 +98,8 @@
     "hero",
     "static_heading",
     "image_and_text_3q3Jzj",
-    "images"
+    "static_heading_7mWm47",
+    "images",
+    "hero_FHMq4f"
   ]
 }
