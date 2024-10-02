@@ -1,0 +1,6 @@
+<div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="section_content small"><h1 class="h1-heading small">
+{{ section.settings.text_heading }}
+</h1>
+</div><div class="custom-input w-embed"></div>
+<div class="custom-input w-embed"></div>
+ {% schema %} {"tag":"div","name":"small_heading","class":"section_static_heading_small","settings":[{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"}],"presets":[{"name":"small_heading","category":"Liquify"}]} {% endschema %}
