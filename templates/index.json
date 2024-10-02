@@ -14,8 +14,7 @@
       "settings": {
         "text_heading": "CHEST-FLATTENING BASICS",
         "color": "#000000",
-        "background": "#e40000",
-        "font": "3rem"
+        "background": "#e40000"
       }
     },
     "hero": {
@@ -67,6 +66,14 @@
       "type": "images",
       "settings": {
       }
+    },
+    "small_heading_mQEePt": {
+      "type": "small_heading",
+      "settings": {
+        "text_heading": "CHEST-FLATTENING BASICS",
+        "color": "#802f2f",
+        "background": "#3d2b2b"
+      }
     }
   },
   "layout": "theme",
@@ -77,6 +84,7 @@
     "category",
     "links",
     "content",
-    "images"
+    "images",
+    "small_heading_mQEePt"
   ]
 }
