@@ -47,6 +47,15 @@
   --link-color--color: white;
 }
 
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
 .w-checkbox {
   margin-bottom: 5px;
   padding-left: 20px;
@@ -106,15 +115,6 @@
 .w-form-formradioinput--inputType-custom.w--redirected-checked {
   border-width: 4px;
   border-color: #3898ec;
-}
-
-.w-layout-grid {
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: grid;
 }
 
 body {
@@ -3652,9 +3652,46 @@ figcaption {
   line-height: 5rem;
 }
 
-.h1-heading-small, .h1-heading-small.small {
+.h1-heading-small {
+  font-size: 3rem;
+  line-height: 2.4rem;
+}
+
+.h1-heading-small.small {
   font-size: 3rem;
   line-height: 2rem;
+}
+
+._2c-grid {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto;
+  min-height: 70dvh;
+}
+
+.flex {
+  text-align: center;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  display: flex;
+}
+
+.print-image {
+  width: 50%;
+}
+
+.body-text {
+  text-transform: none;
+  font-family: Neuehaasunicapro, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+._2c-grid-wrapper {
+  background-color: red;
 }
 
 @media screen and (max-width: 991px) {
@@ -5035,6 +5072,10 @@ figcaption {
   align-self: center;
 }
 
+#w-node-_9f6a1162-b881-15f9-d1f2-956574b34a0b-7385b632 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
 #w-node-_946c4dcd-3bf7-2b09-3073-715a0eb0badd-cf39daf1 {
   grid-area: span 1 / span 1 / span 1 / span 1;
   align-self: start;
@@ -5434,6 +5475,13 @@ figcaption {
   font-family: 'Eurostileltstd 2';
   src: url({{ 'EurostileLTStd-BoldEx2.otf' | asset_url }}) format('opentype');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neuehaasunicapro';
+  src: url({{ 'NeueHaasUnicaPro-Medium.otf' | asset_url }}) format('opentype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
