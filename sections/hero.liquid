@@ -3,7 +3,10 @@
      alt="{{ section.settings.image_image.alt }}"
      loading="lazy">
 </div><div class="padding-global"><div class="container-large"><div class="header_card bottom"><div class="max-width-large"></div><div class="button-group">{% if section.settings.checkbox_show_button == true %}
-<div class="button_wrapper"><a class="button_link" href="{{ section.settings.url_button_link }}"> <div class="button_link"><a style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="button">{{ section.settings.text_button_text }}</a></div> </a>
+<div class="button_wrapper"><a class="button_link" href="{{ section.settings.url_button_link }}"> </a>
+<a style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="button">
+{{ section.settings.text_button_text }}
+</a>
 </div>{% endif %}
 </div></div></div></div><div class="code-embed w-embed"></div>
 <div class="code-embed w-embed"></div>
