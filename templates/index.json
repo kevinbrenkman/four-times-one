@@ -12,7 +12,9 @@
     "static_heading": {
       "type": "static_heading",
       "settings": {
-        "text_heading": "CHEST-FLATTENING BASICS"
+        "text_heading": "CHEST-FLATTENING BASICS",
+        "color": "#000000",
+        "background": "#e40000"
       }
     },
     "hero": {
