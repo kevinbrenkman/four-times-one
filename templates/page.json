@@ -13,23 +13,11 @@
       "type": "default",
       "settings": {
       }
-    },
-    "hero_XeWyTN": {
-      "type": "hero",
-      "settings": {
-        "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
-        "checkbox_show_button": false,
-        "url_button_link": "",
-        "text_button_text": "Shop this look",
-        "color": "#ffffff",
-        "background": "#000000"
-      }
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "default",
-    "hero_XeWyTN"
+    "default"
   ]
 }
