@@ -1,12 +1,35 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
-    "sections": {
-        "default": {
-            "type": "default"
-        }
+  "sections": {
+    "default": {
+      "type": "default",
+      "settings": {
+      }
     },
-    "layout": "page",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "default"
-    ]
+    "hero_XeWyTN": {
+      "type": "hero",
+      "settings": {
+        "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
+        "checkbox_show_button": false,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "color": "#ffffff",
+        "background": "#000000"
+      }
+    }
+  },
+  "layout": "page",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "default",
+    "hero_XeWyTN"
+  ]
 }
