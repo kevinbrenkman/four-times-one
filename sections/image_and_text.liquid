@@ -1,27 +1,19 @@
-<div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="_2c-grid-wrapper"><div style="flex-direction: {{ section.settings.flex-direction }}" class="_2c">{% for block in section.blocks %}
-    {% if block.type == "column" %}
-                    <div li-block="Column" id="w-node-_1aeb1dda-d349-8dbb-8806-b3cefeb55c21-7385b632" class="column">
-                                    <div id="w-node-eb800fe2-4c8e-1bbc-c9df-f101d39d517c-7385b632" style="padding: {{ block.settings.padding }}" class="_2c-image-wrapper-padding"><img class="image"
-     src="{{ block.settings.image_image | img_url: 'master' }}"
-     alt="{{ block.settings.image_image.alt }}"
+<div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="_2c-grid-wrapper"><div style="flex-direction: {{ section.settings.flex-direction }}" class="_2c"><div id="w-node-eb800fe2-4c8e-1bbc-c9df-f101d39d517c-7385b632" style="padding: {{ section.settings.padding }}" class="_2c-image-wrapper-padding"><img class="image"
+     src="{{ section.settings.image_image | img_url: 'master' }}"
+     alt="{{ section.settings.image_image.alt }}"
      loading="lazy">
-</div>
-                                    <div id="w-node-_9f6a1162-b881-15f9-d1f2-956574b34a0b-7385b632" class="_2c-content"><h1 class="h1-heading-small">
-{{ block.settings.text_heading }}
+</div><div id="w-node-_9f6a1162-b881-15f9-d1f2-956574b34a0b-7385b632" class="_2c-content"><h1 class="h1-heading-small">
+{{ section.settings.text_heading }}
 </h1>
 <img class="print-image"
-     src="{{ block.settings.image_print_png | img_url: 'master' }}"
-     alt="{{ block.settings.image_print_png.alt }}"
+     src="{{ section.settings.image_print_png | img_url: 'master' }}"
+     alt="{{ section.settings.image_print_png.alt }}"
      loading="lazy">
 <div class="body-text">
-{{ block.settings.text_body }}
+{{ section.settings.text_body }}
 </div>
-</div>
-                            </div>
-            {% endif %}
-{% endfor %}
-</div></div><div class="custom-input w-embed"></div>
+</div></div></div><div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
- {% schema %} {"tag":"div","name":"image_and_text","class":"section_image_text","blocks":[{"name":"Column","type":"column","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"text_heading","type":"text","label":"Heading","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"id":"image_print_png","type":"image_picker","label":"Print (png)"},{"id":"text_body","type":"text","label":"Body","default":"Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within"}]}],"settings":[{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"2rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"2rem"},{"type":"select","id":"flex-direction","label":"Switch columns","options":[{"value":"row-reverse","label":"On"},{"value":"row","label":"Off"}],"default":"row"}],"presets":[{"name":"image_and_text","category":"Liquify"}]} {% endschema %}
+ {% schema %} {"tag":"div","name":"image_and_text","class":"section_image_text","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"text_heading","type":"text","label":"Heading","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"id":"image_print_png","type":"image_picker","label":"Print (png)"},{"id":"text_body","type":"text","label":"Body","default":"Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"2rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"2rem"},{"type":"select","id":"flex-direction","label":"Switch columns","options":[{"value":"row-reverse","label":"On"},{"value":"row","label":"Off"}],"default":"row"}],"presets":[{"name":"image_and_text","category":"Liquify"}]} {% endschema %}
