@@ -1,4 +1,7 @@
-<h1 class="h1-heading">
+<h1 style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}; font-size: {{ section.settings.font }}" class="h1-heading">
 {{ section.settings.text_heading }}
 </h1>
- {% schema %} {"tag":"div","name":"static_heading","class":"section_static_heading","settings":[{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"}],"presets":[{"name":"static_heading","category":"Liquify"}]} {% endschema %}
+<div class="custom-input w-embed"></div>
+<div class="custom-input w-embed"></div>
+<div class="custom-input w-embed"></div>
+ {% schema %} {"tag":"div","name":"static_heading","class":"section_static_heading","settings":[{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"}],"presets":[{"name":"static_heading","category":"Liquify"}]} {% endschema %}
