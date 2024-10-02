@@ -47,15 +47,6 @@
   --link-color--color: white;
 }
 
-.w-layout-grid {
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: grid;
-}
-
 .w-checkbox {
   margin-bottom: 5px;
   padding-left: 20px;
@@ -115,6 +106,15 @@
 .w-form-formradioinput--inputType-custom.w--redirected-checked {
   border-width: 4px;
   border-color: #3898ec;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
 }
 
 body {
@@ -3662,18 +3662,20 @@ figcaption {
   line-height: 2rem;
 }
 
-._2c-grid {
+._2c {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-rows: auto;
   min-height: 70dvh;
+  display: flex;
 }
 
-.flex {
+._2c-content {
   text-align: center;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
+  width: 50%;
   padding: 2rem;
   display: flex;
 }
@@ -3692,6 +3694,10 @@ figcaption {
 
 ._2c-grid-wrapper {
   background-color: red;
+}
+
+._2c-image-wrapper-padding {
+  width: 50%;
 }
 
 @media screen and (max-width: 991px) {
