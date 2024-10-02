@@ -48,28 +48,11 @@
     },
     "image_and_text_3q3Jzj": {
       "type": "image_and_text",
-      "blocks": {
-        "column_9e34cT": {
-          "type": "column",
-          "settings": {
-            "image_image": "shopify://shop_images/FTO_Website_16_2_comments-2.jpg",
-            "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
-            "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within"
-          }
-        },
-        "column_KB6N7W": {
-          "type": "column",
-          "settings": {
-            "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
-            "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within"
-          }
-        }
-      },
-      "block_order": [
-        "column_9e34cT",
-        "column_KB6N7W"
-      ],
       "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-2.jpg",
+        "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+        "image_print_png": "shopify://shop_images/fourtimesone.svg",
+        "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within",
         "color": "#000000",
         "background": "#ff0000",
         "padding": "2rem",
