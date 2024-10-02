@@ -89,6 +89,16 @@
         "color": "#ff0000",
         "background": "#000000"
       }
+    },
+    "category_xGnyiK": {
+      "type": "category",
+      "settings": {
+        "text_headline": "Short heading here",
+        "url_button_link": "",
+        "text_button_text": "All products",
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6
+      }
     }
   },
   "layout": "theme",
@@ -97,6 +107,7 @@
     "small_heading_mQEePt",
     "hero",
     "static_heading",
+    "category_xGnyiK",
     "image_and_text_3q3Jzj",
     "static_heading_7mWm47",
     "images",
