@@ -36,16 +36,44 @@
         "background": "#0041dd"
       }
     },
+    "category_xGnyiK": {
+      "type": "category",
+      "settings": {
+        "text_headline": "Short heading here",
+        "url_button_link": "",
+        "text_button_text": "All products",
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6
+      }
+    },
     "image_and_text_3q3Jzj": {
       "type": "image_and_text",
+      "blocks": {
+        "column_9e34cT": {
+          "type": "column",
+          "settings": {
+            "image_image": "shopify://shop_images/FTO_Website_16_2_comments-2.jpg",
+            "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+            "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within"
+          }
+        },
+        "column_KB6N7W": {
+          "type": "column",
+          "settings": {
+            "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+            "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within"
+          }
+        }
+      },
+      "block_order": [
+        "column_9e34cT",
+        "column_KB6N7W"
+      ],
       "settings": {
-        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-2.jpg",
-        "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
-        "image_print_png": "shopify://shop_images/fourtimesone.svg",
-        "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within",
         "color": "#000000",
         "background": "#ff0000",
-        "padding": "2rem"
+        "padding": "2rem",
+        "flex-direction": "row"
       }
     },
     "static_heading_7mWm47": {
@@ -88,16 +116,6 @@
         "text_button_text": "Shop drop 01",
         "color": "#ff0000",
         "background": "#000000"
-      }
-    },
-    "category_xGnyiK": {
-      "type": "category",
-      "settings": {
-        "text_headline": "Short heading here",
-        "url_button_link": "",
-        "text_button_text": "All products",
-        "collection_collection": "frontpage",
-        "collection_collection_limit": 6
       }
     }
   },
