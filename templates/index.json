@@ -75,6 +75,17 @@
       "type": "images",
       "settings": {
       }
+    },
+    "image_and_text_3q3Jzj": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
+        "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+        "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "0rem"
+      }
     }
   },
   "layout": "theme",
@@ -86,6 +97,7 @@
     "category",
     "links",
     "content",
-    "images"
+    "images",
+    "image_and_text_3q3Jzj"
   ]
 }
