@@ -36,46 +36,6 @@
         "background": "#0041dd"
       }
     },
-    "category": {
-      "type": "category",
-      "settings": {
-        "text_headline": "Short heading here",
-        "url_button_link": "",
-        "text_button_text": "All products",
-        "collection_collection": "",
-        "collection_collection_limit": 6
-      }
-    },
-    "links": {
-      "type": "links",
-      "settings": {
-        "text_headline": "Short heading here"
-      }
-    },
-    "content": {
-      "type": "content",
-      "settings": {
-        "text_headline": "Short heading here",
-        "text_button_text": "All Articles",
-        "url_button_link": "",
-        "url_artikel_1_link": "",
-        "text_artikel_1_titel": "Blog title heading will go here",
-        "text_artikel_1_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-        "article_artikel_2": "",
-        "url_artikel_2_link": "",
-        "text_artikel_2_titel": "Blog title heading will go here",
-        "text_artikel_2_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-        "article_artikel_3": "",
-        "url_artikel_3_link": "",
-        "text_artikel_3_titel": "Blog title heading will go here",
-        "text_artikel_3_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-      }
-    },
-    "images": {
-      "type": "images",
-      "settings": {
-      }
-    },
     "image_and_text_3q3Jzj": {
       "type": "image_and_text",
       "settings": {
@@ -86,6 +46,11 @@
         "background": "#ffffff",
         "padding": "0rem"
       }
+    },
+    "images": {
+      "type": "images",
+      "settings": {
+      }
     }
   },
   "layout": "theme",
@@ -94,10 +59,7 @@
     "small_heading_mQEePt",
     "hero",
     "static_heading",
-    "category",
-    "links",
-    "content",
-    "images",
-    "image_and_text_3q3Jzj"
+    "image_and_text_3q3Jzj",
+    "images"
   ]
 }
