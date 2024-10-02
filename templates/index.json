@@ -14,7 +14,8 @@
       "settings": {
         "text_heading": "CHEST-FLATTENING BASICS",
         "color": "#000000",
-        "background": "#e40000"
+        "background": "#e40000",
+        "font": "3rem"
       }
     },
     "hero": {
