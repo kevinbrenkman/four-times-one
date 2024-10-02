@@ -2,7 +2,9 @@
      src="{{ section.settings.image_image | img_url: 'master' }}"
      alt="{{ section.settings.image_image.alt }}"
      loading="lazy">
-</div><div class="padding-global"><div class="container-large"><div class="header_card bottom"><div class="max-width-large"></div><div class="spacer-medium"></div><div class="button-group"><a class="button" href="{{ section.settings.url_button_link }}"> {{ section.settings.text_button_text }} </a>
+</div><div class="padding-global"><div class="container-large"><div class="header_card bottom"><div class="max-width-large"></div><div class="button-group">{% if section.settings.checkbox_show_button == true %}
+<div class="button_wrapper"><a class="button_link" href="{{ section.settings.url_button_link }}"> <div class="button_link"><a style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="button">{{ section.settings.text_button_text }}</a></div> </a>
+</div>{% endif %}
 </div></div></div></div><div class="code-embed w-embed"></div>
 <div class="code-embed w-embed"></div>
- {% schema %} {"tag":"header","name":"hero","class":"section_header-home","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"},{"id":"url_button_link","type":"url","label":"Button Link"},{"id":"checkbox_show_button","type":"checkbox","label":"Show button","default":true},{"type":"color","id":"color","label":"Button text color","default":"#ffffff"},{"type":"color_background","id":"background","label":"Button Background Color","default":"#000000"}],"presets":[{"name":"hero","category":"Liquify"}]} {% endschema %}
+ {% schema %} {"tag":"header","name":"hero","class":"section_header-home","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"checkbox_show_button","type":"checkbox","label":"Show button","default":true},{"id":"url_button_link","type":"url","label":"Button Link"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"},{"type":"color","id":"color","label":"Button text color","default":"#ffffff"},{"type":"color_background","id":"background","label":"Button Background Color","default":"#000000"}],"presets":[{"name":"hero","category":"Liquify"}]} {% endschema %}
