@@ -790,6 +790,7 @@ figcaption {
   z-index: 10;
   background-color: var(--base-color-neutral--black);
   color: var(--base-color-neutral--white);
+  height: 4rem;
   position: sticky;
   top: 0;
 }
@@ -1596,7 +1597,8 @@ figcaption {
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
 }
 
@@ -1609,7 +1611,7 @@ figcaption {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 2rem;
+  height: 4rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -3667,7 +3669,7 @@ figcaption {
   grid-row-gap: 0px;
   flex-flow: row;
   grid-template-rows: auto;
-  min-height: 80dvh;
+  height: calc(100dvh - 4rem);
   display: flex;
 }
 
