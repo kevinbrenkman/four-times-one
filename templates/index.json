@@ -55,9 +55,11 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-2.jpg",
+        "checkbox_show_heading": true,
         "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
-        "image_print_png": "shopify://shop_images/fourtimesone.svg",
-        "text_body": "Wear the dichotomy of subcultures that have under dog status in society, but upper dog status within",
+        "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
+        "checkbox_show_logo": true,
+        "textarea_body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "color": "#000000",
         "background": "#ff0000",
         "padding": "2rem",
@@ -86,7 +88,7 @@
             "text_heading": "DROP 01 UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
-            "padding": "0rem"
+            "padding": "2rem"
           }
         },
         "block_AW9chm": {
