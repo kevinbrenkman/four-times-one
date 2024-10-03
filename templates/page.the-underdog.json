@@ -9,8 +9,105 @@
 */
 {
   "sections": {
-    "default": {
-      "type": "default",
+    "hero_4FinmG": {
+      "type": "hero",
+      "settings": {
+        "image_image": "shopify://shop_images/e-15-1800x-q80_copy.jpg",
+        "checkbox_show_button": false,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "color": "#ffffff",
+        "background": "#000000"
+      }
+    },
+    "image_and_text_QcW97j": {
+      "type": "image_and_text",
+      "settings": {
+        "text_heading": "FROM UNDERDOG TO UPERDOG",
+        "checkbox_show_logo": true,
+        "textarea_body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "2rem",
+        "flex-direction": "row"
+      }
+    },
+    "hero_RwmgBA": {
+      "type": "hero",
+      "settings": {
+        "image_image": "shopify://shop_images/epoch2-website-poupon-01-1200x1200-crop.avif.jpg",
+        "checkbox_show_button": false,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "color": "#ffffff",
+        "background": "#000000"
+      }
+    },
+    "static_heading_Y8ENC4": {
+      "type": "static_heading",
+      "settings": {
+        "checkbox_show_static_heading": true,
+        "text_heading": "TALKING ABOUT AN AESTHETHICK",
+        "checkbox_show_marquee": false,
+        "color": "#000000",
+        "background": "#ffffff",
+        "speed": 60
+      }
+    },
+    "static_heading_GtBM4D": {
+      "type": "static_heading",
+      "settings": {
+        "checkbox_show_static_heading": true,
+        "text_heading": "WEAR UPPER DOG ENERGY",
+        "checkbox_show_marquee": false,
+        "color": "#000000",
+        "background": "#ff0000",
+        "speed": 60
+      }
+    },
+    "image_and_text_i3Pep9": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
+        "text_heading": "CHEST-FLATTENING TEES FOR PRESONALITIES",
+        "checkbox_show_logo": false,
+        "textarea_body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "color": "#ff0000",
+        "background": "#000000",
+        "padding": "2rem",
+        "flex-direction": "row"
+      }
+    },
+    "images_GdwkWr": {
+      "type": "images",
+      "blocks": {
+        "block_DmGaNR": {
+          "type": "block",
+          "settings": {
+            "image_image": "shopify://shop_images/edit-06-1800x-q80.jpg",
+            "checkbox_show_heading": true,
+            "text_heading": "I WAS ALWAYS THE FIRST ONE",
+            "color": "#000000",
+            "background": "#ffffff",
+            "padding": "2rem"
+          }
+        },
+        "block_nBdebF": {
+          "type": "block",
+          "settings": {
+            "image_image": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
+            "checkbox_show_heading": true,
+            "text_heading": "ONE DAY I’LL TAKE OFF MY SHIRT",
+            "color": "#000000",
+            "background": "#ffffff",
+            "padding": "2rem"
+          }
+        }
+      },
+      "block_order": [
+        "block_DmGaNR",
+        "block_nBdebF"
+      ],
       "settings": {
       }
     }
@@ -18,6 +115,12 @@
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "default"
+    "hero_4FinmG",
+    "image_and_text_QcW97j",
+    "hero_RwmgBA",
+    "static_heading_Y8ENC4",
+    "static_heading_GtBM4D",
+    "image_and_text_i3Pep9",
+    "images_GdwkWr"
   ]
 }
