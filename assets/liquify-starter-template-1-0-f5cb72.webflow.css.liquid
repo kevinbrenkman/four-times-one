@@ -3610,10 +3610,10 @@ figcaption {
 .section_images {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   display: grid;
 }
 
@@ -3704,7 +3704,7 @@ figcaption {
 }
 
 .marquee-horizontal {
-  z-index: 200;
+  z-index: 1;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
@@ -3792,6 +3792,7 @@ figcaption {
 }
 
 .static-h1-heading-wrapper {
+  text-align: center;
   padding-top: 1.75rem;
   padding-bottom: .5rem;
 }
