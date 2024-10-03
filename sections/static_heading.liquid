@@ -4,7 +4,7 @@
 </h1>
 </div>{% endif %}
 {% if section.settings.checkbox_show_marquee == true %}
-<div class="marquee-wrapper"><div class="marquee"><div class="marquee-horizontal"><div style="animation: marquee-horizontal {{ section.settings.speed }} linear infinite;" class="track-horizontal"><p class="marquee-heading">
+<div class="marquee-wrapper"><div class="marquee"><div class="marquee-horizontal"><div class="track-horizontal"><p class="marquee-heading">
 {{ section.settings.text_heading }}
 </p>
 <p class="marquee-heading">
@@ -20,6 +20,7 @@
   position: absolute;
   white-space: nowrap;
   will-change: transform;
+	animation: marquee-horizontal 60s linear infinite;  
   /* manipulate the speed of the marquee by changing "40s" line above*/
 }
 .track-horizontal:hover {
