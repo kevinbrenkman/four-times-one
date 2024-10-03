@@ -1,12 +1,15 @@
 {% for block in section.blocks %}
     {% if block.type == "block" %}
                     <div li-block="Block">
-                                    <img class="image"
+                                    <div style="color: {{ block.settings.color }}; background-color: {{ block.settings.background }}; padding: {{ block.settings.padding }}"><img class="image"
      src="{{ block.settings.image_image | img_url: 'master' }}"
      alt="{{ block.settings.image_image.alt }}"
      loading="lazy">
-
+<div class="custom-input w-embed"></div>
+<div class="custom-input w-embed"></div>
+<div class="custom-input w-embed"></div>
+</div>
                             </div>
             {% endif %}
 {% endfor %}
- {% schema %} {"tag":"div","name":"images","class":"section_images","blocks":[{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"}]}],"presets":[{"name":"images","category":"Liquify"}]} {% endschema %}
+ {% schema %} {"tag":"div","name":"images","class":"section_images","blocks":[{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"2rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"2rem"}]}],"presets":[{"name":"images","category":"Liquify"}]} {% endschema %}
