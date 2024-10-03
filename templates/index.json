@@ -12,7 +12,9 @@
     "small_heading_mQEePt": {
       "type": "small_heading",
       "settings": {
+        "checkbox_show_static_heading": false,
         "text_heading": "Toning chests, not personalities",
+        "checkbox_show_marquee": true,
         "color": "#000000",
         "background": "#00ff00"
       }
