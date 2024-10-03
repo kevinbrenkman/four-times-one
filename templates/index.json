@@ -16,7 +16,8 @@
         "text_heading": "SPECIAL announcements",
         "checkbox_show_marquee": true,
         "color": "#000000",
-        "background": "#ffffff"
+        "background": "#ffffff",
+        "url_link": "shopify://pages/the-underdog"
       }
     },
     "static_heading": {
@@ -69,7 +70,7 @@
         "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
         "checkbox_show_logo": true,
         "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
-        "textarea_body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Test",
+        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
         "color": "#000000",
         "background": "#ff0000",
         "padding": "2rem",
