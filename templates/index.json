@@ -81,13 +81,23 @@
         "block_jN3eQR": {
           "type": "block",
           "settings": {
-            "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg"
+            "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
+            "checkbox_show_heading": true,
+            "text_heading": "DROP 01 UNDER TO UPPERDOGS",
+            "color": "#000000",
+            "background": "#ffffff",
+            "padding": "0rem"
           }
         },
         "block_AW9chm": {
           "type": "block",
           "settings": {
-            "image_image": "shopify://shop_images/edit-02-1800x-q80_copy.jpg"
+            "image_image": "shopify://shop_images/edit-02-1800x-q80_copy.jpg",
+            "checkbox_show_heading": true,
+            "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+            "color": "#000000",
+            "background": "#ffffff",
+            "padding": "2rem"
           }
         }
       },
