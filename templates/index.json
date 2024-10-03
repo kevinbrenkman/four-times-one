@@ -33,7 +33,8 @@
       "settings": {
         "text_heading": "CHEST-FLATTENING BASICS",
         "color": "#000000",
-        "background": "#0041dd"
+        "background": "#0041dd",
+        "speed": 57
       }
     },
     "category_xGnyiK": {
@@ -64,7 +65,8 @@
       "settings": {
         "text_heading": "All-body embracing menswear",
         "color": "#000000",
-        "background": "#ffffff"
+        "background": "#ffffff",
+        "speed": 60
       }
     },
     "images": {
