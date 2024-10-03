@@ -9,14 +9,25 @@
 */
 {
   "sections": {
-    "small_heading_mQEePt": {
+    "small_heading_GbrgzJ": {
       "type": "small_heading",
       "settings": {
         "checkbox_show_static_heading": false,
-        "text_heading": "Toning chests, not personalities",
+        "text_heading": "SPECIAL announcements",
         "checkbox_show_marquee": true,
         "color": "#000000",
-        "background": "#00ff00"
+        "background": "#ffffff"
+      }
+    },
+    "static_heading": {
+      "type": "static_heading",
+      "settings": {
+        "checkbox_show_static_heading": true,
+        "text_heading": "Toning chests, not personalities",
+        "checkbox_show_marquee": false,
+        "color": "#000000",
+        "background": "#00ff00",
+        "speed": 38
       }
     },
     "hero": {
@@ -30,7 +41,7 @@
         "background": "#000000"
       }
     },
-    "static_heading": {
+    "static_heading_6tbcBx": {
       "type": "static_heading",
       "settings": {
         "checkbox_show_static_heading": true,
@@ -83,10 +94,10 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
-            "checkbox_show_heading": true,
+            "checkbox_show_heading": false,
             "text_heading": "DROP 01 UNDER TO UPPERDOGS",
             "color": "#000000",
-            "background": "#ff0000",
+            "background": "#ffffff",
             "padding": "0rem"
           }
         },
@@ -94,7 +105,7 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/edit-02-1800x-q80_copy.jpg",
-            "checkbox_show_heading": true,
+            "checkbox_show_heading": false,
             "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
@@ -109,28 +120,29 @@
       "settings": {
       }
     },
-    "hero_FHMq4f": {
-      "type": "hero",
+    "static_heading_6mtqTX": {
+      "type": "static_heading",
       "settings": {
-        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-3.jpg",
-        "checkbox_show_button": true,
-        "url_button_link": "shopify://pages/contact",
-        "text_button_text": "Shop drop 01",
-        "color": "#ff0000",
-        "background": "#000000"
+        "checkbox_show_static_heading": false,
+        "text_heading": "WORN AND LOVED IT",
+        "checkbox_show_marquee": true,
+        "color": "#000000",
+        "background": "#ffffff",
+        "speed": 60
       }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "small_heading_mQEePt",
-    "hero",
+    "small_heading_GbrgzJ",
     "static_heading",
+    "hero",
+    "static_heading_6tbcBx",
     "category_xGnyiK",
     "image_and_text_3q3Jzj",
     "static_heading_7mWm47",
     "images",
-    "hero_FHMq4f"
+    "static_heading_6mtqTX"
   ]
 }

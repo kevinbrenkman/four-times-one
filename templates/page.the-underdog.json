@@ -35,9 +35,9 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.59.24.png",
-        "text_heading": "FROM UNDERDOG TO UPERDOG",
+        "text_heading": "Dear Underdog,",
         "checkbox_show_logo": false,
-        "textarea_body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "textarea_body_text": "Whether you're ready to show some skin or prefer to cover up, you are seen. We create garments that honor every part of your body. Every bump, scratch, proportion, thickness, and toned muscle is celebrated here.",
         "color": "#000000",
         "background": "#00bbff",
         "padding": "0rem",
@@ -155,6 +155,43 @@
       ],
       "settings": {
       }
+    },
+    "static_heading_RpPaHK": {
+      "type": "static_heading",
+      "settings": {
+        "checkbox_show_static_heading": true,
+        "text_heading": "AESTHETHICK",
+        "checkbox_show_marquee": false,
+        "color": "#000000",
+        "background": "#00bbff",
+        "speed": 60
+      }
+    },
+    "image_and_text_AtPdDK": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
+        "text_heading": "“ONE DAY I’LL TAKE OFF MY”",
+        "checkbox_show_logo": false,
+        "textarea_body_text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "color": "#00bbff",
+        "background": "#000000",
+        "padding": "2rem",
+        "flex-direction": "row"
+      }
+    },
+    "image_and_text_CTj96e": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
+        "text_heading": "Manifesto",
+        "checkbox_show_logo": false,
+        "textarea_body_text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "2rem",
+        "flex-direction": "row-reverse"
+      }
     }
   },
   "layout": "page",
@@ -168,6 +205,9 @@
     "images_Hiz4VF",
     "static_heading_7DP3PY",
     "image_and_text_i3Pep9",
-    "images_GdwkWr"
+    "images_GdwkWr",
+    "static_heading_RpPaHK",
+    "image_and_text_AtPdDK",
+    "image_and_text_CTj96e"
   ]
 }
