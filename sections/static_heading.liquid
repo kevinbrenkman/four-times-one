@@ -1,7 +1,10 @@
-<div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="section_content"><h1 class="h1-heading">
+<div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="section_content">{% if section.settings.checkbox_show_static_heading == true %}
+<div class="static-h1-heading-wrapper"><h1 class="h1-heading">
 {{ section.settings.text_heading }}
 </h1>
-<div class="marquee-wrapper"><div class="marquee"><div class="marquee-horizontal"><div class="track-horizontal"><p class="marquee-heading">
+</div>{% endif %}
+{% if section.settings.checkbox_show_marquee == true %}
+<div class="marquee-wrapper"><div class="marquee"><div class="marquee-horizontal"><div style="animation: marquee-horizontal {{ section.settings.speed }} linear infinite;" class="track-horizontal"><p class="marquee-heading">
 {{ section.settings.text_heading }}
 </p>
 <p class="marquee-heading">
@@ -17,7 +20,6 @@
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee-horizontal {{ section.settings.speed }} linear infinite;
   /* manipulate the speed of the marquee by changing "40s" line above*/
 }
 .track-horizontal:hover {
@@ -27,7 +29,8 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-</style></div></div></div></div></div></div><div class="custom-input w-embed"></div>
+</style></div></div></div></div></div>{% endif %}
+</div><div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
- {% schema %} {"tag":"div","name":"static_heading","class":"section_static_heading","settings":[{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"range","id":"speed","min":10,"max":100,"step":1,"unit":"s","label":"Marquee speed","default":60}],"presets":[{"name":"static_heading","category":"Liquify"}]} {% endschema %}
+ {% schema %} {"tag":"div","name":"static_heading","class":"section_static_heading","settings":[{"id":"checkbox_show_static_heading","type":"checkbox","label":"Show static heading","default":true},{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"},{"id":"checkbox_show_marquee","type":"checkbox","label":"Show marquee","default":true},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"range","id":"speed","min":10,"max":100,"step":1,"unit":"s","label":"Marquee speed","default":60}],"presets":[{"name":"static_heading","category":"Liquify"}]} {% endschema %}
