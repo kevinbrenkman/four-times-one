@@ -69,7 +69,7 @@
       "settings": {
         "checkbox_show_static_heading": true,
         "text_heading": "All-body embracing menswear",
-        "checkbox_show_marquee": true,
+        "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#ffffff",
         "speed": 60
