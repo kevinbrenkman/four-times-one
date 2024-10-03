@@ -12,7 +12,7 @@
     "small_heading_mQEePt": {
       "type": "small_heading",
       "settings": {
-        "checkbox_show_static_heading": false,
+        "checkbox_show_static_heading": true,
         "text_heading": "Toning chests, not personalities",
         "checkbox_show_marquee": true,
         "color": "#000000",
@@ -58,7 +58,7 @@
         "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
         "checkbox_show_logo": true,
         "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
-        "textarea_body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "textarea_body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Test \n\nTes",
         "color": "#000000",
         "background": "#ff0000",
         "padding": "2rem",
