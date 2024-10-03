@@ -3701,6 +3701,91 @@ figcaption {
   width: 50%;
 }
 
+.marquee-horizontal {
+  z-index: 200;
+  color: #fff;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-overlay {
+  background-image: radial-gradient(circle, #0000, #fff0 89%, #000);
+  position: absolute;
+  inset: 0%;
+}
+
+.marquee-overlay.no-pointer-events {
+  background-image: radial-gradient(circle, #0000, #fff0 93%, #000);
+}
+
+.track-horizontal {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1.3rem;
+  display: flex;
+}
+
+.hide-empty-state {
+  padding: 0;
+  display: none;
+}
+
+.marquee, .marquee-wrapper {
+  width: 100%;
+}
+
+.marquee-collection-item {
+  display: flex;
+}
+
+.marquee-collection-list {
+  grid-column-gap: 3em;
+  display: flex;
+}
+
+.marquee-rich-text sub {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.2em;
+  display: inline-block;
+  transform: translate(0, -.15em);
+}
+
+.marquee-rich-text p {
+  margin-bottom: 0;
+}
+
+.marquee-rich-text a {
+  text-decoration: none;
+}
+
+.marquee-rich-text a:hover {
+  text-decoration: underline;
+}
+
+.marquee-horizontal-css {
+  display: none;
+}
+
+.marquee-heading {
+  white-space: nowrap;
+  word-break: keep-all;
+  font-size: 6rem;
+  line-height: 5rem;
+}
+
+.marquee-heading.small {
+  font-size: 3rem;
+  line-height: 2rem;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -4278,6 +4363,11 @@ figcaption {
   .blog_featured-image-wrapper {
     padding-top: 75%;
   }
+
+  .marquee-wrapper {
+    width: 100%;
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4739,6 +4829,10 @@ figcaption {
   .blog_featured-image-wrapper {
     padding-top: 66%;
   }
+
+  .marquee-horizontal {
+    flex: 1;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5068,6 +5162,10 @@ figcaption {
   .sort_select.filter_checkbox {
     order: -1;
     margin-left: 0;
+  }
+
+  .marquee-wrapper {
+    display: none;
   }
 }
 
