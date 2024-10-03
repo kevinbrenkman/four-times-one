@@ -9,6 +9,17 @@
 */
 {
   "sections": {
+    "static_heading_GtBM4D": {
+      "type": "static_heading",
+      "settings": {
+        "checkbox_show_static_heading": false,
+        "text_heading": "THE UNDERDOG",
+        "checkbox_show_marquee": true,
+        "color": "#000000",
+        "background": "#ffffff",
+        "speed": 60
+      }
+    },
     "hero_4FinmG": {
       "type": "hero",
       "settings": {
@@ -88,7 +99,7 @@
       "settings": {
       }
     },
-    "static_heading_GtBM4D": {
+    "static_heading_7DP3PY": {
       "type": "static_heading",
       "settings": {
         "checkbox_show_static_heading": true,
@@ -149,12 +160,13 @@
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
+    "static_heading_GtBM4D",
     "hero_4FinmG",
     "image_and_text_QcW97j",
     "hero_RwmgBA",
     "static_heading_Y8ENC4",
     "images_Hiz4VF",
-    "static_heading_GtBM4D",
+    "static_heading_7DP3PY",
     "image_and_text_i3Pep9",
     "images_GdwkWr"
   ]
