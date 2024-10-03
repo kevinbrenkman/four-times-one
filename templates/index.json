@@ -33,9 +33,9 @@
     "static_heading": {
       "type": "static_heading",
       "settings": {
-        "checkbox_show_static_heading": false,
+        "checkbox_show_static_heading": true,
         "text_heading": "CHEST-FLATTENING BASICS",
-        "checkbox_show_marquee": true,
+        "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#0041dd",
         "speed": 38
