@@ -87,7 +87,7 @@
             "text_heading": "DROP 01 UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
-            "padding": "2rem"
+            "padding": "0rem"
           }
         },
         "block_AW9chm": {
@@ -98,25 +98,13 @@
             "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
-            "padding": "2rem"
-          }
-        },
-        "block_bUJ787": {
-          "type": "block",
-          "settings": {
-            "image_image": "shopify://shop_images/FTO_Website_16_2_comments-2.jpg",
-            "checkbox_show_heading": true,
-            "text_heading": "DROP 01<br>UNDER TO UPPERDOGS",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "2rem"
+            "padding": "0rem"
           }
         }
       },
       "block_order": [
         "block_jN3eQR",
-        "block_AW9chm",
-        "block_bUJ787"
+        "block_AW9chm"
       ],
       "settings": {
       }
