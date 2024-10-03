@@ -15,21 +15,4 @@ UNDER TO UPPERDOGS</h1>{% endif %}
                             </div>
             {% endif %}
 {% endfor %}
-{% for block in section.blocks %}
-    {% if block.type == "block" %}
-                    <div li-block="Block">
-                                    <div class="image-block"><img class="image"
-     src="{{ block.settings.image_image | img_url: 'master' }}"
-     alt="{{ block.settings.image_image.alt }}"
-     loading="lazy">
-{% if block.settings.checkbox_show_heading == true %}
-<h1 class="h1-heading-small image-block">DROP 01<br>
-UNDER TO UPPERDOGS</h1>{% endif %}
-<div class="custom-input w-embed"></div>
-<div class="custom-input w-embed"></div>
-<div class="custom-input w-embed"></div>
-</div>
-                            </div>
-            {% endif %}
-{% endfor %}
- {% schema %} {"tag":"div","name":"images","class":"section_images","blocks":[{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"checkbox_show_heading","type":"checkbox","label":"Show heading","default":true},{"id":"text_heading","type":"text","label":"Heading","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"1rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"1rem"}]},{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"checkbox_show_heading","type":"checkbox","label":"Show heading","default":true},{"id":"text_heading","type":"text","label":"Heading","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"1rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"1rem"}]}],"presets":[{"name":"images","category":"Liquify"}]} {% endschema %}
+ {% schema %} {"tag":"div","name":"images","class":"section_images","blocks":[{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"checkbox_show_heading","type":"checkbox","label":"Show heading","default":true},{"id":"text_heading","type":"text","label":"Heading","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"1rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"1rem"}]}],"presets":[{"name":"images","category":"Liquify"}]} {% endschema %}
