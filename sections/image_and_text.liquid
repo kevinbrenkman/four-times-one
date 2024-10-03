@@ -2,16 +2,18 @@
      src="{{ section.settings.image_image | img_url: 'master' }}"
      alt="{{ section.settings.image_image.alt }}"
      loading="lazy">
-</div><div id="w-node-_9f6a1162-b881-15f9-d1f2-956574b34a0b-7385b632" class="_2c-content">{% if section.settings.checkbox_show_heading == true %}
-<h1 class="h1-heading-small">DROP 01<br>
-UNDER TO UPPERDOGS</h1>{% endif %}
-<img class="print-image"
+</div><div id="w-node-_9f6a1162-b881-15f9-d1f2-956574b34a0b-7385b632" class="_2c-content"><h1 class="h1-heading-small">
+{{ section.settings.text_heading }}
+</h1>
+{% if section.settings.checkbox_show_logo == true %}
+<div class="print-image"><img class="print-image-inside"
      src="{{ section.settings.image_transparent_logo | img_url: 'master' }}"
      alt="{{ section.settings.image_transparent_logo.alt }}"
      loading="lazy">
+</div>{% endif %}
 <div class="body-text w-richtext"><p> {{ section.settings.textarea_body_text }} </p>
 </div></div></div></div><div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
- {% schema %} {"tag":"div","name":"image_and_text","class":"section_image_text","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"checkbox_show_heading","type":"checkbox","label":"Show Heading","default":true},{"id":"text_heading","type":"text","label":"Heading","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"id":"image_transparent_logo","type":"image_picker","label":"Transparent logo"},{"id":"checkbox_show_logo","type":"checkbox","label":"Show logo","default":true},{"id":"textarea_body_text","type":"textarea","label":"Body text","default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"2rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"2rem"},{"type":"select","id":"flex-direction","label":"Switch columns","options":[{"value":"row-reverse","label":"On"},{"value":"row","label":"Off"}],"default":"row"}],"presets":[{"name":"image_and_text","category":"Liquify"}]} {% endschema %}
+ {% schema %} {"tag":"div","name":"image_and_text","class":"section_image_text","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"text_heading","type":"text","label":"Heading","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"id":"checkbox_show_logo","type":"checkbox","label":"Show logo","default":true},{"id":"image_transparent_logo","type":"image_picker","label":"Transparent logo"},{"id":"textarea_body_text","type":"textarea","label":"Body text","default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"2rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"2rem"},{"type":"select","id":"flex-direction","label":"Switch columns","options":[{"value":"row-reverse","label":"On"},{"value":"row","label":"Off"}],"default":"row"}],"presets":[{"name":"image_and_text","category":"Liquify"}]} {% endschema %}
