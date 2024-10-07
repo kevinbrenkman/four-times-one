@@ -5,7 +5,7 @@
 </h1>
 </div>{% endif %}
 {% if section.settings.checkbox_show_marquee == true %}
-<div class="marquee-wrapper"><div class="marquee"><div class="marquee-horizontal"><div class="track-horizontal"><p class="marquee-heading">
+<div class="marquee-wrapper"><div class="marquee"><div class="marquee-horizontal"><div style="animation: marquee-horizontal {{ section.settings.animation_speed }} linear infinite;" class="track-horizontal"><p class="marquee-heading">
 {{ section.settings.text_heading }}
 </p>
 <p class="marquee-heading">
@@ -21,7 +21,6 @@
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-	animation: marquee-horizontal 60s linear infinite;  
   /* manipulate the speed of the marquee by changing "40s" line above*/
 }
 .track-horizontal:hover {
@@ -36,4 +35,4 @@
 </div><div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
- {% schema %} {"tag":"div","name":"large_heading","class":"section_large_heading","settings":[{"id":"checkbox_show_static_heading","type":"checkbox","label":"Show static heading","default":true},{"id":"url_link","type":"url","label":"Link"},{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"},{"id":"checkbox_show_marquee","type":"checkbox","label":"Show marquee","default":true},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"range","id":"speed","min":10,"max":100,"step":1,"unit":"s","label":"Marquee speed","default":60}],"presets":[{"name":"large_heading","category":"Liquify"}]} {% endschema %}
+ {% schema %} {"tag":"div","name":"large_heading","class":"section_large_heading","settings":[{"id":"checkbox_show_static_heading","type":"checkbox","label":"Show static heading","default":true},{"id":"url_link","type":"url","label":"Link"},{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"},{"id":"checkbox_show_marquee","type":"checkbox","label":"Show marquee","default":true},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"range","id":"animation_speed","min":1,"max":100,"step":1,"unit":"s","label":"Animation Speed","default":60}],"presets":[{"name":"large_heading","category":"Liquify"}]} {% endschema %}
