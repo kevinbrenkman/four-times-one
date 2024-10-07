@@ -17,19 +17,20 @@
         "checkbox_show_marquee": true,
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 9,
+        "animation_speed": 95,
         "url_link": "shopify://pages/the-underdog"
       }
     },
-    "static_heading": {
-      "type": "static_heading",
+    "large_heading_MMinMh": {
+      "type": "large_heading",
       "settings": {
         "checkbox_show_static_heading": true,
+        "url_link": "",
         "text_heading": "Toning chests, not personalities",
         "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#00ff00",
-        "speed": 38
+        "animation_speed": 76
       }
     },
     "hero": {
@@ -78,15 +79,16 @@
         "flex-direction": "row"
       }
     },
-    "static_heading_7mWm47": {
-      "type": "static_heading",
+    "large_heading_yWFYde": {
+      "type": "large_heading",
       "settings": {
         "checkbox_show_static_heading": true,
+        "url_link": "",
         "text_heading": "All-body embracing menswear",
         "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#ffffff",
-        "speed": 60
+        "animation_speed": 76
       }
     },
     "images": {
@@ -122,15 +124,16 @@
       "settings": {
       }
     },
-    "static_heading_6mtqTX": {
-      "type": "static_heading",
+    "large_heading_kLgxYH": {
+      "type": "large_heading",
       "settings": {
         "checkbox_show_static_heading": false,
+        "url_link": "",
         "text_heading": "WORN AND LOVED IT",
         "checkbox_show_marquee": true,
         "color": "#000000",
         "background": "#ffffff",
-        "speed": 35
+        "animation_speed": 13
       }
     }
   },
@@ -138,13 +141,13 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "small_heading_GbrgzJ",
-    "static_heading",
+    "large_heading_MMinMh",
     "hero",
     "static_heading_6tbcBx",
     "category_xGnyiK",
     "image_and_text_3q3Jzj",
-    "static_heading_7mWm47",
+    "large_heading_yWFYde",
     "images",
-    "static_heading_6mtqTX"
+    "large_heading_kLgxYH"
   ]
 }
