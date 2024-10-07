@@ -17,7 +17,7 @@
         "checkbox_show_marquee": true,
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 100,
+        "animation_speed": 93,
         "url_link": "shopify://pages/the-underdog"
       }
     },
@@ -130,7 +130,7 @@
         "checkbox_show_marquee": true,
         "color": "#000000",
         "background": "#ffffff",
-        "speed": 60
+        "speed": 20
       }
     }
   },
