@@ -173,6 +173,26 @@
             "text_product_name": "AT NAMELASTNAME",
             "text_button_text": "Shop this look"
           }
+        },
+        "test_name_biTpbK": {
+          "type": "test-name",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "AT NAMELASTNAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "test_name_NK33jL": {
+          "type": "test-name",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "AT NAMELASTNAME",
+            "text_button_text": "Shop this look"
+          }
         }
       },
       "block_order": [
@@ -180,7 +200,9 @@
         "test_name_BP3JQx",
         "test_name_dU6DdV",
         "test_name_BJh644",
-        "test_name_TLx9UM"
+        "test_name_TLx9UM",
+        "test_name_biTpbK",
+        "test_name_NK33jL"
       ],
       "settings": {}
     }
