@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "small_heading_GbrgzJ": {
@@ -44,23 +44,9 @@
         "background": "#000000"
       }
     },
-    "static_heading_6tbcBx": {
-      "type": "static_heading",
-      "settings": {
-        "checkbox_show_static_heading": true,
-        "text_heading": "CHEST-FLATTENING BASICS",
-        "checkbox_show_marquee": false,
-        "color": "#000000",
-        "background": "#0041dd",
-        "speed": 38
-      }
-    },
     "category_xGnyiK": {
       "type": "category",
       "settings": {
-        "text_headline": "Short heading here",
-        "url_button_link": "",
-        "text_button_text": "All products",
         "collection_collection": "frontpage",
         "collection_collection_limit": 6
       }
@@ -121,8 +107,7 @@
         "block_jN3eQR",
         "block_AW9chm"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "large_heading_kLgxYH": {
       "type": "large_heading",
@@ -135,6 +120,69 @@
         "background": "#ffffff",
         "animation_speed": 13
       }
+    },
+    "feed_slider_KEiHi9": {
+      "type": "feed_slider",
+      "blocks": {
+        "test_name_FfVeYX": {
+          "type": "test-name",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "AT NAMELASTNAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "test_name_BP3JQx": {
+          "type": "test-name",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "AT NAMELASTNAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "test_name_dU6DdV": {
+          "type": "test-name",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "AT NAMELASTNAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "test_name_BJh644": {
+          "type": "test-name",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "AT NAMELASTNAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "test_name_TLx9UM": {
+          "type": "test-name",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/edit-02-1800x-q80_05009ad8-c6bb-4058-b80d-7825900f9ea8.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "AT NAMELASTNAME",
+            "text_button_text": "Shop this look"
+          }
+        }
+      },
+      "block_order": [
+        "test_name_FfVeYX",
+        "test_name_BP3JQx",
+        "test_name_dU6DdV",
+        "test_name_BJh644",
+        "test_name_TLx9UM"
+      ],
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -143,11 +191,11 @@
     "small_heading_GbrgzJ",
     "large_heading_MMinMh",
     "hero",
-    "static_heading_6tbcBx",
     "category_xGnyiK",
     "image_and_text_3q3Jzj",
     "large_heading_yWFYde",
     "images",
-    "large_heading_kLgxYH"
+    "large_heading_kLgxYH",
+    "feed_slider_KEiHi9"
   ]
 }
