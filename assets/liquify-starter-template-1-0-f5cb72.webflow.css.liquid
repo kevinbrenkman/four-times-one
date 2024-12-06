@@ -809,13 +809,13 @@ figcaption {
 }
 
 .section_footer_inside {
-  background-color: var(--iiii-dark);
-  color: var(--base-color-neutral--white);
+  background-color: var(--base-color-neutral--white);
+  color: var(--iiii-dark);
   -webkit-text-stroke-color: var(--base-color-neutral--white);
   flex-flow: column;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 80dvh;
+  min-height: 100dvh;
   margin-top: auto;
   padding: 1rem;
   display: flex;
@@ -2279,7 +2279,8 @@ figcaption {
   color: inherit;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 8rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   display: block;
 }
@@ -3855,6 +3856,8 @@ figcaption {
 
 .logo-footer {
   width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .nav-logo {
@@ -3990,6 +3993,8 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   height: 50vw;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   position: relative;
 }
@@ -4175,6 +4180,13 @@ figcaption {
 
 .open-signup-trigger.open {
   pointer-events: none;
+}
+
+.footer-flex {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
@@ -4796,9 +4808,23 @@ figcaption {
     display: none;
   }
 
-  .newsletter-form-input, .newsletter-heading {
+  .newsletter-form-input {
     font-size: 7vw;
     line-height: 6vw;
+  }
+
+  .newsletter-form-input.open {
+    height: 9vw;
+    padding-top: 1vw;
+  }
+
+  .newsletter-heading {
+    font-size: 7vw;
+    line-height: 6vw;
+  }
+
+  .newsletter-input-field-hidden.open {
+    height: 6.5vw;
   }
 }
 
