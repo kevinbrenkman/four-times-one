@@ -109,18 +109,6 @@
       ],
       "settings": {}
     },
-    "large_heading_kLgxYH": {
-      "type": "large_heading",
-      "settings": {
-        "checkbox_show_static_heading": false,
-        "url_link": "",
-        "text_heading": "WORN AND LOVED IT",
-        "checkbox_show_marquee": true,
-        "color": "#000000",
-        "background": "#ffffff",
-        "animation_speed": 13
-      }
-    },
     "feed_slider_KEiHi9": {
       "type": "feed_slider",
       "blocks": {
@@ -217,7 +205,6 @@
     "image_and_text_3q3Jzj",
     "large_heading_yWFYde",
     "images",
-    "large_heading_kLgxYH",
     "feed_slider_KEiHi9"
   ]
 }
