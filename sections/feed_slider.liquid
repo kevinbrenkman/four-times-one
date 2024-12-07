@@ -1,21 +1,23 @@
 <div class="slider-custom-style w-embed"><style>.swiper-slide {
       overflow: hidden;
-      transform: scale(1)!important;
-      padding-left:0rem;
-      padding-right:0rem;
   }
   .swiper-slide img {
-      width: 100%;
+  padding-top: 20px;
+  width:100%;
+  height:100%;
+  padding-bottom: 20px;
+  aspect-ratio 8.5 / 16:
+}
   }
   .swiper-slide-active {
       opacity: 1;
       z-index: 1;
-      padding-left:0rem;
-      padding-right:0rem;
-      transform: scale(1)!important;
   }
   .swiper-slide-active img{
   	opacity: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  aspect-ratio 9 / 16:
   }
   .swiper-slide-active .slider-text {
   		opacity: 1;
@@ -41,4 +43,54 @@
                             </div>
             {% endif %}
 {% endfor %}
-</div></div></div><div class="swiper-button-next"><svg width="1em" height="1em" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.875 3.75L13.125 10L6.875 16.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="swiper-button-prev"><svg width="1em" height="1em" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.125 16.25L6.875 10L13.125 3.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="swiper-pagination"></div></div> {% schema %} {"tag":"div","name":"Feed Slider","class":"section_social_slider","blocks":[{"name":"Item","type":"item","settings":[{"id":"image_slide_image","type":"image_picker","label":"Slide Image"},{"id":"url_link_to_product","type":"url","label":"Link to product"},{"id":"text_social_handle","type":"text","label":"Social Handle","default":"\n                      <div>AT NAMELASTNAME<\/div>\n                    "},{"id":"text_product_name","type":"text","label":"Product name","default":"AT NAMELASTNAME"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"}]}],"presets":[{"name":"Feed Slider","category":"Liquify"}]} {% endschema %}
+{% for block in section.blocks %}
+    {% if block.type == "item" %}
+                    <div li-block="Item" class="swiper-slide">
+                                    <img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image"}>
+
+                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ block.settings.color }}; background-color: {{ block.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
+
+                            </div>
+            {% endif %}
+{% endfor %}
+{% for block in section.blocks %}
+    {% if block.type == "item" %}
+                    <div li-block="Item" class="swiper-slide">
+                                    <img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image"}>
+
+                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ block.settings.color }}; background-color: {{ block.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
+
+                            </div>
+            {% endif %}
+{% endfor %}
+{% for block in section.blocks %}
+    {% if block.type == "item" %}
+                    <div li-block="Item" class="swiper-slide">
+                                    <img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image"}>
+
+                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ block.settings.color }}; background-color: {{ block.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
+
+                            </div>
+            {% endif %}
+{% endfor %}
+{% for block in section.blocks %}
+    {% if block.type == "item" %}
+                    <div li-block="Item" class="swiper-slide">
+                                    <img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image"}>
+
+                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ block.settings.color }}; background-color: {{ block.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
+
+                            </div>
+            {% endif %}
+{% endfor %}
+{% for block in section.blocks %}
+    {% if block.type == "item" %}
+                    <div li-block="Item" class="swiper-slide">
+                                    <img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image"}>
+
+                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ block.settings.color }}; background-color: {{ block.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
+
+                            </div>
+            {% endif %}
+{% endfor %}
+</div></div></div><div class="swiper-button-next"><svg width="1em" height="1em" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.875 3.75L13.125 10L6.875 16.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="swiper-button-prev"><svg width="1em" height="1em" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.125 16.25L6.875 10L13.125 3.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="swiper-pagination"></div></div> {% schema %} {"tag":"div","name":"Feed Slider","class":"section_social_slider","blocks":[{"name":"Item","type":"item","settings":[{"id":"image_slide_image","type":"image_picker","label":"Slide Image"},{"id":"url_link_to_product","type":"url","label":"Link to product"},{"id":"text_social_handle","type":"text","label":"Social Handle","default":"\n                      <div>AT NAMELASTNAME<\/div>\n                    "},{"id":"text_product_name","type":"text","label":"Product name","default":"PRODUCT NAME"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"}]},{"name":"Item","type":"item","settings":[{"id":"image_slide_image","type":"image_picker","label":"Slide Image"},{"id":"url_link_to_product","type":"url","label":"Link to product"},{"id":"text_social_handle","type":"text","label":"Social Handle","default":"\n                      <div>AT NAMELASTNAME<\/div>\n                    "},{"id":"text_product_name","type":"text","label":"Product name","default":"PRODUCT NAME"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"}]},{"name":"Item","type":"item","settings":[{"id":"image_slide_image","type":"image_picker","label":"Slide Image"},{"id":"url_link_to_product","type":"url","label":"Link to product"},{"id":"text_social_handle","type":"text","label":"Social Handle","default":"\n                      <div>AT NAMELASTNAME<\/div>\n                    "},{"id":"text_product_name","type":"text","label":"Product name","default":"PRODUCT NAME"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"}]},{"name":"Item","type":"item","settings":[{"id":"image_slide_image","type":"image_picker","label":"Slide Image"},{"id":"url_link_to_product","type":"url","label":"Link to product"},{"id":"text_social_handle","type":"text","label":"Social Handle","default":"\n                      <div>AT NAMELASTNAME<\/div>\n                    "},{"id":"text_product_name","type":"text","label":"Product name","default":"PRODUCT NAME"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"}]},{"name":"Item","type":"item","settings":[{"id":"image_slide_image","type":"image_picker","label":"Slide Image"},{"id":"url_link_to_product","type":"url","label":"Link to product"},{"id":"text_social_handle","type":"text","label":"Social Handle","default":"\n                      <div>AT NAMELASTNAME<\/div>\n                    "},{"id":"text_product_name","type":"text","label":"Product name","default":"PRODUCT NAME"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"}]},{"name":"Item","type":"item","settings":[{"id":"image_slide_image","type":"image_picker","label":"Slide Image"},{"id":"url_link_to_product","type":"url","label":"Link to product"},{"id":"text_social_handle","type":"text","label":"Social Handle","default":"\n                      <div>AT NAMELASTNAME<\/div>\n                    "},{"id":"text_product_name","type":"text","label":"Product name","default":"PRODUCT NAME"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop this look"}]}],"presets":[{"name":"Feed Slider","category":"Liquify"}]} {% endschema %}
