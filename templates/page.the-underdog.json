@@ -56,6 +56,30 @@
         "background": "#000000"
       }
     },
+    "large_heading_hEfpBM": {
+      "type": "large_heading",
+      "settings": {
+        "checkbox_show_static_heading": true,
+        "url_link": "",
+        "text_heading": "TALKING ABOUT AN AESTHETHICK",
+        "checkbox_show_marquee": false,
+        "color": "#000000",
+        "background": "#ffffff",
+        "animation_speed": 60
+      }
+    },
+    "large_heading_ctNRU9": {
+      "type": "large_heading",
+      "settings": {
+        "checkbox_show_static_heading": true,
+        "url_link": "",
+        "text_heading": "WEAR UPPER DOG ENERGY",
+        "checkbox_show_marquee": false,
+        "color": "#000000",
+        "background": "#ff0000",
+        "animation_speed": 60
+      }
+    },
     "images_Hiz4VF": {
       "type": "images",
       "blocks": {
@@ -94,7 +118,7 @@
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
         "text_heading": "CHEST-FLATTENING TEES FOR PRESONALITIES",
         "checkbox_show_logo": false,
-        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
         "color": "#ff0000",
         "background": "#000000",
         "padding": "2rem",
@@ -112,7 +136,7 @@
             "text_heading": "I WAS ALWAYS THE FIRST ONE",
             "color": "#000000",
             "background": "#ffffff",
-            "padding": "2rem"
+            "padding": "1rem"
           }
         },
         "block_nBdebF": {
@@ -123,7 +147,7 @@
             "text_heading": "ONE DAY I’LL TAKE OFF MY SHIRT",
             "color": "#000000",
             "background": "#ffffff",
-            "padding": "2rem"
+            "padding": "1rem"
           }
         }
       },
@@ -139,7 +163,7 @@
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
         "text_heading": "“ONE DAY I’LL TAKE OFF MY”",
         "checkbox_show_logo": false,
-        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
         "color": "#00bbff",
         "background": "#000000",
         "padding": "2rem",
@@ -158,6 +182,18 @@
         "padding": "2rem",
         "flex-direction": "row-reverse"
       }
+    },
+    "large_heading_83zY3h": {
+      "type": "large_heading",
+      "settings": {
+        "checkbox_show_static_heading": true,
+        "url_link": "",
+        "text_heading": "AESTHETHICK",
+        "checkbox_show_marquee": false,
+        "color": "#000000",
+        "background": "#00bbff",
+        "animation_speed": 60
+      }
     }
   },
   "layout": "page",
@@ -167,9 +203,12 @@
     "hero_4FinmG",
     "image_and_text_QcW97j",
     "hero_RwmgBA",
+    "large_heading_hEfpBM",
+    "large_heading_ctNRU9",
     "images_Hiz4VF",
     "image_and_text_i3Pep9",
     "images_GdwkWr",
+    "large_heading_83zY3h",
     "image_and_text_AtPdDK",
     "image_and_text_CTj96e"
   ]
