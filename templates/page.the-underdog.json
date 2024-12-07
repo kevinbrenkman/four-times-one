@@ -1,23 +1,24 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "static_heading_GtBM4D": {
-      "type": "static_heading",
+    "large_heading_eEbFX9": {
+      "type": "large_heading",
       "settings": {
         "checkbox_show_static_heading": false,
-        "text_heading": "THE UNDERDOG",
+        "url_link": "",
+        "text_heading": "ODE TO THE UNDERDOG",
         "checkbox_show_marquee": true,
         "color": "#000000",
         "background": "#ffffff",
-        "speed": 60
+        "animation_speed": 66
       }
     },
     "hero_4FinmG": {
@@ -37,7 +38,7 @@
         "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.59.24.png",
         "text_heading": "Dear Underdog,",
         "checkbox_show_logo": false,
-        "textarea_body_text": "Whether you're ready to show some skin or prefer to cover up, you are seen. We create garments that honor every part of your body. Every bump, scratch, proportion, thickness, and toned muscle is celebrated here.",
+        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
         "color": "#000000",
         "background": "#00bbff",
         "padding": "0rem",
@@ -53,17 +54,6 @@
         "text_button_text": "Shop this look",
         "color": "#ffffff",
         "background": "#000000"
-      }
-    },
-    "static_heading_Y8ENC4": {
-      "type": "static_heading",
-      "settings": {
-        "checkbox_show_static_heading": true,
-        "text_heading": "TALKING ABOUT AN AESTHETHICK",
-        "checkbox_show_marquee": false,
-        "color": "#000000",
-        "background": "#ffffff",
-        "speed": 60
       }
     },
     "images_Hiz4VF": {
@@ -96,19 +86,7 @@
         "block_X3rAD7",
         "block_JWHLi6"
       ],
-      "settings": {
-      }
-    },
-    "static_heading_7DP3PY": {
-      "type": "static_heading",
-      "settings": {
-        "checkbox_show_static_heading": true,
-        "text_heading": "WEAR UPPER DOG ENERGY",
-        "checkbox_show_marquee": false,
-        "color": "#000000",
-        "background": "#ff0000",
-        "speed": 60
-      }
+      "settings": {}
     },
     "image_and_text_i3Pep9": {
       "type": "image_and_text",
@@ -116,7 +94,7 @@
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
         "text_heading": "CHEST-FLATTENING TEES FOR PRESONALITIES",
         "checkbox_show_logo": false,
-        "textarea_body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
         "color": "#ff0000",
         "background": "#000000",
         "padding": "2rem",
@@ -153,19 +131,7 @@
         "block_DmGaNR",
         "block_nBdebF"
       ],
-      "settings": {
-      }
-    },
-    "static_heading_RpPaHK": {
-      "type": "static_heading",
-      "settings": {
-        "checkbox_show_static_heading": true,
-        "text_heading": "AESTHETHICK",
-        "checkbox_show_marquee": false,
-        "color": "#000000",
-        "background": "#00bbff",
-        "speed": 60
-      }
+      "settings": {}
     },
     "image_and_text_AtPdDK": {
       "type": "image_and_text",
@@ -173,7 +139,7 @@
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
         "text_heading": "“ONE DAY I’LL TAKE OFF MY”",
         "checkbox_show_logo": false,
-        "textarea_body_text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
         "color": "#00bbff",
         "background": "#000000",
         "padding": "2rem",
@@ -186,7 +152,7 @@
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
         "text_heading": "Manifesto",
         "checkbox_show_logo": false,
-        "textarea_body_text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
         "color": "#000000",
         "background": "#ffffff",
         "padding": "2rem",
@@ -197,16 +163,13 @@
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "static_heading_GtBM4D",
+    "large_heading_eEbFX9",
     "hero_4FinmG",
     "image_and_text_QcW97j",
     "hero_RwmgBA",
-    "static_heading_Y8ENC4",
     "images_Hiz4VF",
-    "static_heading_7DP3PY",
     "image_and_text_i3Pep9",
     "images_GdwkWr",
-    "static_heading_RpPaHK",
     "image_and_text_AtPdDK",
     "image_and_text_CTj96e"
   ]
