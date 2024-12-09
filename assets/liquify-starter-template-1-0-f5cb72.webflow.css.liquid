@@ -2216,6 +2216,7 @@ figcaption {
 
 .nav_predictive-search-holder {
   z-index: 10000;
+  color: var(--base-color-neutral--black);
   background-color: #0006;
   justify-content: flex-start;
   width: 100vw;
@@ -3866,7 +3867,7 @@ figcaption {
 
 .nav-logo {
   width: auto;
-  height: 1.2rem;
+  height: 1rem;
 }
 
 .section_footer {
@@ -4198,6 +4199,10 @@ figcaption {
   display: flex;
 }
 
+.search {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -4307,12 +4312,14 @@ figcaption {
   }
 
   .nav_component {
-    min-height: 5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .nav_container {
-    grid-column-gap: 0rem;
     grid-template-columns: 1fr min-content min-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .nav_menu {
@@ -4328,6 +4335,8 @@ figcaption {
   .nav_menu.is-page-height-tablet {
     border-bottom-color: var(--base-color-neutral--neutral-lightest);
     background-color: var(--base-color-neutral--white);
+    color: var(--base-color-neutral--black);
+    width: 100%;
     max-height: 90vh;
     padding-bottom: 3.9rem;
     padding-right: 5%;
@@ -4398,14 +4407,13 @@ figcaption {
     align-items: center;
     width: 48px;
     height: 48px;
-    margin-right: -.5rem;
     padding-bottom: 0;
     padding-right: 0;
     display: flex;
   }
 
   .menu-icon_line-top {
-    background-color: var(--base-color-neutral--black);
+    background-color: var(--base-color-neutral--white);
     width: 24px;
     height: 2px;
     padding-bottom: 0;
@@ -4413,7 +4421,7 @@ figcaption {
   }
 
   .menu-icon_line-middle {
-    background-color: var(--base-color-neutral--black);
+    background-color: var(--base-color-neutral--white);
     justify-content: center;
     align-items: center;
     width: 24px;
@@ -4433,7 +4441,7 @@ figcaption {
   }
 
   .menu-icon_line-bottom {
-    background-color: var(--base-color-neutral--black);
+    background-color: var(--base-color-neutral--white);
     width: 24px;
     height: 2px;
     padding-bottom: 0;
@@ -4821,6 +4829,14 @@ figcaption {
     padding-top: 1rem;
   }
 
+  .menu-link {
+    color: var(--base-color-neutral--black);
+  }
+
+  .menu-link.cart {
+    color: var(--base-color-neutral--white);
+  }
+
   .swiper-button-next, .swiper-button-prev {
     width: 2.5rem;
     height: 2.5rem;
@@ -5059,11 +5075,6 @@ figcaption {
 
   .product-item_image-wrapper {
     height: 100%;
-  }
-
-  .nav_component {
-    height: auto;
-    min-height: 5.3rem;
   }
 
   .nav_logo-link {
@@ -5533,10 +5544,6 @@ figcaption {
     background-color: #fff;
   }
 
-  .nav_component {
-    min-height: 4.7rem;
-  }
-
   .nav_menu.is-page-height-tablet {
     padding-left: 0%;
     padding-right: 0%;
@@ -5717,6 +5724,10 @@ figcaption {
   .logo-footer {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .nav-logo {
+    max-width: 50vw;
   }
 
   .swiper-button-next {
