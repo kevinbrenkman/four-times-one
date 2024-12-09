@@ -40,7 +40,19 @@
 }
 </style><meta name="theme-color" content="#000" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#fff" media="(prefers-color-scheme: dark)">
-<script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
+<style>html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}  
+</style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body li-page="cart">
 
 <div class="page-wrapper">{% render 'global_styles' %}
@@ -62,6 +74,36 @@
     const formInput = document.querySelector('.newsletter-form-input');
     formInput.classList.add('open');
   }, 500); // 500 milliseconds = 0.5 seconds
+});
+</script><script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script><script>// LENIS SMOOTH SCROLL
+let lenis;
+if (Webflow.env("editor") === undefined) {
+  lenis = new Lenis({
+    lerp: 0.3,
+    wheelMultiplier: 0.7,
+    gestureOrientation: "vertical",
+    normalizeWheel: false,
+    smoothTouch: false
+  });
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+}
+$("[data-lenis-start]").on("click", function () {
+  lenis.start();
+});
+$("[data-lenis-stop]").on("click", function () {
+  lenis.stop();
+});
+$("[data-lenis-toggle]").on("click", function () {
+  $(this).toggleClass("stop-scroll");
+  if ($(this).hasClass("stop-scroll")) {
+    lenis.stop();
+  } else {
+    lenis.start();
+  }
 });
 </script>
 </body>

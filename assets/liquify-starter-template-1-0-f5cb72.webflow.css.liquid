@@ -553,7 +553,7 @@ figcaption {
 }
 
 .text-size-small {
-  font-size: .875rem;
+  font-size: .875em;
 }
 
 .heading-style-h4 {
@@ -816,7 +816,7 @@ figcaption {
   flex-flow: column;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 100dvh;
+  min-height: 90dvh;
   margin-top: auto;
   padding: 1rem;
   display: flex;
@@ -2285,9 +2285,10 @@ figcaption {
   color: inherit;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: block;
 }
 
@@ -3861,12 +3862,11 @@ figcaption {
 
 .logo-footer {
   width: 100%;
-  margin-top: 6rem;
   margin-bottom: 6rem;
 }
 
 .nav-logo {
-  width: auto;
+  width: 15rem;
   height: 1rem;
 }
 
@@ -4176,7 +4176,7 @@ figcaption {
 }
 
 .open-signup-trigger {
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
   padding-top: .5rem;
   position: relative;
@@ -4271,6 +4271,10 @@ figcaption {
   .padding-section-medium {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .section_footer_inside {
+    min-height: auto;
   }
 
   .cart_grid-wrapper {
@@ -4499,6 +4503,10 @@ figcaption {
 
   .footer_member-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .footer_member {
+    margin-top: 4rem;
   }
 
   .footer_grid-payment {
@@ -4799,13 +4807,8 @@ figcaption {
     display: grid;
   }
 
-  ._2c-content {
+  ._2c-content, ._2c-image-wrapper-padding {
     width: 100%;
-  }
-
-  ._2c-image-wrapper-padding {
-    width: 100%;
-    padding: .5rem;
   }
 
   .marquee-horizontal {
@@ -4835,6 +4838,10 @@ figcaption {
 
   .menu-link.cart {
     color: var(--base-color-neutral--white);
+  }
+
+  .logo-footer {
+    margin-top: 4.5rem;
   }
 
   .swiper-button-next, .swiper-button-prev {
@@ -4989,6 +4996,7 @@ figcaption {
 
   .section_footer_inside {
     min-height: auto;
+    padding: .5rem;
   }
 
   .cart_grid-wrapper {
@@ -5117,8 +5125,8 @@ figcaption {
   }
 
   .footer_member {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
   }
 
   .footer_grid-payment {
@@ -5311,6 +5319,11 @@ figcaption {
     padding: 2rem;
   }
 
+  .header_card.bottom {
+    aspect-ratio: 1 / 1.1;
+    min-height: auto;
+  }
+
   .product_heading-wrapper {
     grid-row-gap: 2rem;
     flex-direction: column;
@@ -5385,7 +5398,6 @@ figcaption {
   }
 
   .logo-footer {
-    margin-bottom: 6rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -5601,6 +5613,10 @@ figcaption {
     width: 90vw;
   }
 
+  .footer_member {
+    margin-top: 3rem;
+  }
+
   .nav_dropdown-grid {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
@@ -5721,13 +5737,19 @@ figcaption {
     position: relative;
   }
 
+  .static-h1-heading-wrapper {
+    padding-top: 1rem;
+  }
+
   .logo-footer {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   .nav-logo {
-    max-width: 50vw;
+    max-width: 47vw;
   }
 
   .swiper-button-next {
