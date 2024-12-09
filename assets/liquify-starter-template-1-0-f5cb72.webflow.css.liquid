@@ -11,7 +11,6 @@
   --base-color-system--focus-state: #2d62ff;
   --background-color--background-tertiary: var(--base-color-brand--pink);
   --text-color--text-primary: var(--base-color-neutral--black);
-  --iiii-dark: #1a1919;
   --base-color-neutral--neutral-lightest: #eee;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --text-color--text-error: var(--base-color-system--error-red-dark);
@@ -26,6 +25,7 @@
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
+  --iiii-dark: #1a1919;
   --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--blue: #2d62ff;
   --base-color-brand--blue-dark: #080331;
@@ -446,6 +446,11 @@ figcaption {
   display: flex;
 }
 
+.padding-global.products {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .text-weight-normal {
   font-weight: 400;
 }
@@ -496,10 +501,6 @@ figcaption {
 
 .li-styleguide_heading-medium {
   font-size: 4rem;
-}
-
-.text-size-regular {
-  font-size: 1rem;
 }
 
 .text-align-right {
@@ -809,8 +810,8 @@ figcaption {
 }
 
 .section_footer_inside {
-  background-color: var(--base-color-neutral--white);
-  color: var(--iiii-dark);
+  background-color: var(--base-color-neutral--black);
+  color: var(--base-color-neutral--white);
   -webkit-text-stroke-color: var(--base-color-neutral--white);
   flex-flow: column;
   justify-content: space-between;
@@ -1597,9 +1598,11 @@ figcaption {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
+  padding: 1rem;
   display: flex;
   position: absolute;
-  inset: 1rem auto auto 1rem;
+  inset: 0% 0% auto;
 }
 
 .nav_component {
@@ -1748,6 +1751,7 @@ figcaption {
 
 .nav_mini-cart-holder.w--open {
   display: flex;
+  inset: 0% 0% 0% auto;
 }
 
 .nav_mini-cart-close {
@@ -2413,7 +2417,8 @@ figcaption {
 .product-header_radio {
   border-radius: var(--border-radius--medium);
   background-color: var(--base-color-neutral--neutral-lightest);
-  padding: .4rem 1rem .3rem;
+  margin-bottom: 0;
+  padding-left: 0;
   font-weight: 600;
   position: relative;
 }
@@ -2492,12 +2497,9 @@ figcaption {
 }
 
 .product-item_tag {
-  border-radius: var(--border-radius--medium);
   background-color: var(--base-color-neutral--black);
   color: var(--base-color-neutral--white);
   padding: .3rem .5rem;
-  font-size: .85rem;
-  font-weight: 500;
 }
 
 .product-item_tag.is-red {
@@ -3415,7 +3417,7 @@ figcaption {
 .header_card.bottom {
   justify-content: flex-end;
   align-items: center;
-  min-height: 80dvh;
+  min-height: 80vh;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -3937,7 +3939,7 @@ figcaption {
 
 .slider-image {
   aspect-ratio: 9 / 16;
-  transition: opacity .5s;
+  transition: all .2s;
 }
 
 .slider_slider-wrapper {
@@ -4037,7 +4039,6 @@ figcaption {
 }
 
 .newsletter-signup-btn:hover {
-  color: #fff;
   text-decoration: underline;
 }
 
@@ -4186,6 +4187,12 @@ figcaption {
   flex: 1;
   justify-content: center;
   align-items: center;
+  display: flex;
+}
+
+.footer-column-right {
+  flex-flow: column;
+  justify-content: space-between;
   display: flex;
 }
 
@@ -4467,7 +4474,6 @@ figcaption {
   }
 
   .product_list {
-    grid-column-gap: 2rem;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -4829,6 +4835,10 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    font-size: .8rem;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
@@ -4892,8 +4902,7 @@ figcaption {
   }
 
   .padding-global {
-    padding-left: 1.95rem;
-    padding-right: 1.95rem;
+    padding: .5rem;
   }
 
   .padding-section-small {
@@ -5060,9 +5069,8 @@ figcaption {
   }
 
   .product_list {
-    grid-column-gap: 1.25rem;
-    grid-row-gap: 3rem;
-    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
   }
 
   .nav_logo-img {
@@ -5332,18 +5340,10 @@ figcaption {
     right: -2%;
   }
 
-  .swiper-slide {
-    width: 50%;
-  }
-
   .swiper-button-prev {
     width: 2.5rem;
     height: 2.5rem;
     left: -2%;
-  }
-
-  .swrper_component {
-    height: 80vw;
   }
 }
 
@@ -5364,11 +5364,6 @@ figcaption {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .padding-global {
-    padding-left: 1.35rem;
-    padding-right: 1.35rem;
   }
 
   .hide-mobile-portrait {
@@ -5674,6 +5669,10 @@ figcaption {
   .sort_select.filter_checkbox {
     order: -1;
     margin-left: 0;
+  }
+
+  ._2c-image-wrapper-padding {
+    padding: .5rem;
   }
 
   .track-horizontal {
