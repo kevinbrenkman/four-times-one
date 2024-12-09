@@ -1750,6 +1750,7 @@ figcaption {
 }
 
 .nav_mini-cart-holder.w--open {
+  color: var(--base-color-neutral--black);
   display: flex;
   inset: 0% 0% 0% auto;
 }
@@ -3657,14 +3658,12 @@ figcaption {
   text-align: center;
   letter-spacing: -.01em;
   height: auto;
-  font-size: 6rem;
-  line-height: 5rem;
   position: relative;
 }
 
 .h1-heading-small {
-  font-size: 3rem;
-  line-height: 2.4rem;
+  font-size: 3vw;
+  line-height: 2.4vw;
 }
 
 .h1-heading-small.small {
@@ -3728,7 +3727,7 @@ figcaption {
 }
 
 .marquee-horizontal.small {
-  height: 4rem;
+  height: 4vw;
 }
 
 .marquee-overlay {
@@ -3742,11 +3741,11 @@ figcaption {
 }
 
 .track-horizontal {
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 1.5rem;
+  padding-top: .75rem;
   display: flex;
 }
 
@@ -3760,8 +3759,10 @@ figcaption {
 }
 
 .marquee-wrapper.small {
-  height: 4.6rem;
-  display: block;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5vw;
+  display: flex;
 }
 
 .marquee-collection-item {
@@ -3805,8 +3806,8 @@ figcaption {
 }
 
 .marquee-heading.small {
-  font-size: 3rem;
-  line-height: 2rem;
+  font-size: 3vw;
+  line-height: 2vw;
 }
 
 .static-h1-heading-wrapper {
@@ -3816,9 +3817,10 @@ figcaption {
 }
 
 .static-h1-heading-wrapper.small {
-  height: 4.6rem;
-  padding-top: 1.5rem;
-  display: block;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  display: flex;
 }
 
 .image-block {
@@ -4778,6 +4780,26 @@ figcaption {
     line-height: 6vw;
   }
 
+  ._2c {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    flex-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    height: auto;
+    display: grid;
+  }
+
+  ._2c-content {
+    width: 100%;
+  }
+
+  ._2c-image-wrapper-padding {
+    width: 100%;
+    padding: .5rem;
+  }
+
   .marquee-horizontal {
     height: 9vw;
   }
@@ -4795,6 +4817,10 @@ figcaption {
     line-height: 6vw;
   }
 
+  .static-h1-heading-wrapper.small {
+    padding-top: 1rem;
+  }
+
   .swiper-button-next, .swiper-button-prev {
     width: 2.5rem;
     height: 2.5rem;
@@ -4805,7 +4831,7 @@ figcaption {
   }
 
   .newsletter-signup-btn {
-    height: 9vw;
+    height: 8vw;
     font-size: 7vw;
     line-height: 6vw;
   }
@@ -4821,7 +4847,8 @@ figcaption {
 
   .newsletter-form-input.open {
     height: 9vw;
-    padding-top: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .newsletter-heading {
@@ -5305,14 +5332,19 @@ figcaption {
     padding-top: 66%;
   }
 
-  .h1-heading, .section_heading_small, .h1-heading-small {
+  .h1-heading {
     font-size: 7vw;
     line-height: 6vw;
   }
 
-  ._2c {
-    flex-flow: column;
-    height: auto;
+  .section_heading_small {
+    font-size: 10vw;
+    line-height: 6vw;
+  }
+
+  .h1-heading-small {
+    font-size: 6vw;
+    line-height: 5.5vw;
   }
 
   ._2c-content, ._2c-image-wrapper-padding {
@@ -5323,8 +5355,21 @@ figcaption {
     flex: 1;
   }
 
+  .marquee-horizontal.small {
+    height: 8vw;
+  }
+
+  .marquee-wrapper.small {
+    height: 10vw;
+  }
+
   .marquee-heading {
     font-size: 7vw;
+    line-height: 6vw;
+  }
+
+  .marquee-heading.small {
+    font-size: 6vw;
     line-height: 6vw;
   }
 
@@ -5519,9 +5564,7 @@ figcaption {
   }
 
   .footer_form {
-    grid-row-gap: 12px;
     flex-direction: column;
-    grid-template-columns: 1fr;
   }
 
   .filter_product-list, .product-header_layout {
@@ -5549,10 +5592,6 @@ figcaption {
 
   .swiper-container.is-product-gallery {
     width: 90vw;
-  }
-
-  .footer_member {
-    padding: 1.7rem;
   }
 
   .nav_dropdown-grid {
@@ -5671,17 +5710,8 @@ figcaption {
     margin-left: 0;
   }
 
-  ._2c-image-wrapper-padding {
-    padding: .5rem;
-  }
-
   .track-horizontal {
     position: relative;
-  }
-
-  .marquee-heading.small {
-    font-size: 7vw;
-    line-height: 6vw;
   }
 
   .logo-footer {
@@ -5711,6 +5741,14 @@ figcaption {
   .newsletter-signup-btn.is-secondary.is-icon {
     padding-left: .5rem;
     padding-right: .5rem;
+  }
+
+  .newsletter-heading {
+    margin-bottom: -1vw;
+  }
+
+  .footer-credits {
+    margin-top: 1rem;
   }
 }
 
