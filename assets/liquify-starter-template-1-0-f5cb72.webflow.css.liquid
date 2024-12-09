@@ -3688,6 +3688,8 @@ figcaption {
 }
 
 ._2c-content {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
   text-align: center;
   flex-flow: column;
   justify-content: space-between;
@@ -3858,6 +3860,16 @@ figcaption {
 
 .menu-link {
   color: var(--base-color-neutral--white);
+}
+
+.menu-link:hover {
+  text-underline-offset: .4em;
+  -webkit-text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
+  text-decoration: underline;
+  text-decoration-thickness: .2em;
+  -webkit-text-decoration-color: inherit;
+  text-decoration-color: inherit;
 }
 
 .logo-footer {
@@ -5383,6 +5395,10 @@ figcaption {
     height: 8vw;
   }
 
+  .track-horizontal {
+    padding-top: 2vw;
+  }
+
   .marquee-wrapper.small {
     height: 10vw;
   }
@@ -5731,6 +5747,10 @@ figcaption {
   .sort_select.filter_checkbox {
     order: -1;
     margin-left: 0;
+  }
+
+  ._2c-content {
+    padding: 1rem;
   }
 
   .track-horizontal {
