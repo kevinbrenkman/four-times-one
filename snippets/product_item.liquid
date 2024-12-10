@@ -1,209 +1,53 @@
 <script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
-<div
-  li-element="product-variant-container"
-  class="product-item_component"
-  x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})"
-  x-init="$nextTick(() => { activateVariants() })"
-  data-productid="{{ product.id }}"
-  @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"
->
-  <div class="product-item_image-link">
-    <a li-object:href="product.url" href="{{ product.url }}" class="product-item_image-wrapper w-inline-block"
-      ><img
-        class="product-item_image_ingrid"
-        src="{{ product.featured_image | img_url: 'master' }}"
-        alt="{{ product.featured_image.alt }}"
-        li-object:src="product.featured_image | img_url: 'master'"
-        loading="lazy"
-        x-bind:src="variantImage ? variantImage : product.featured_image"
-        li-object:alt="product.featured_image.alt"
-      >
-      <img
-        li-object:alt="product.featured_image.alt"
-        loading="lazy"
-        li-object:src="product.images[1] | img_url: 'master'"
-        src="{{ product.images[1] | img_url: 'master' }}"
-        alt="{{ product.featured_image.alt }}"
-        class="product-item_image-secondary"
-      >
-    </a>
-    <div class="product-item_tag_list">
-      {% if product.selected_or_first_available_variant.available != true %}
-        <div li-if="product.selected_or_first_available_variant.available != true" class="product-item_tag">
-          Not in Stock
-        </div>
-      {% endif -%}
-      {%- if product.compare_at_price_max > product.price %}
-        <div li-if="product.compare_at_price_max > product.price" class="product-item_tag is-red">Sale</div>
+<div li-element="product-variant-container" class="product-item_component" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" data-productid="{{ product.id }}" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"><div class="product-item_image-link"><a li-object:href="product.url" href="{{ product.url }}" class="product-item_image-wrapper w-inline-block"><img class="product-item_image_ingrid" src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.featured_image.alt }}" li-object:src="product.featured_image | img_url: 'master'" loading="lazy" x-bind:src="variantImage ? variantImage : product.featured_image" li-object:alt="product.featured_image.alt">
+<img li-object:alt="product.featured_image.alt" loading="lazy" li-object:src="product.images[1] | img_url: 'master'" src="{{ product.images[1] | img_url: 'master' }}" alt="{{ product.featured_image.alt }}" class="product-item_image-secondary">
+</a><div class="product-item_tag_list">{% if product.selected_or_first_available_variant.available != true %}    <div li-if="product.selected_or_first_available_variant.available != true" class="product-item_tag">
+    Not in Stock    </div>
+{% endif %}{% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price" class="product-item_tag is-red">
+    Sale    </div>
+{% endif %}</div></div><div class="hide w-embed"><style>{% for optionValues in product.options_with_values %}
+    {% if optionValues.name == 'Farbe' or optionValues.name == 'Color' or optionValues.name == 'Colorway' %}
+    {% for option in optionValues.values %}
+ .colorway-{{ option | handleize }} { background-color: {{ option.variant.metafields.custom.color.value.color }};}
+  {% endfor %}
       {% endif %}
+  {% endfor %}
+.w-form-formradioinput--inputType-custom.w--redirected-focus {
+    box-shadow: none;
+}
+</style><style>/* Initial state for .product-variants-hover */
+.product-variants-hover {
+  display: none;
+}
+/* Show .product-variants-hover when hovering over .product-item_text-link */
+.product-item_text-link:hover .product-variants-hover {
+  display: block;
+}
+</style></div><div class="product-info"><div li-object:href="product.url" class="product-item_text-link" href="{{ product.url }}"><div class="product-item_left"><div li-object="product.title">{{ product.title }}</div></div><div class="product-item_price">{% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price">
+    <div li-object="product.compare_at_price | money" class="text-size-regular text-style-strikethrough">{{ product.compare_at_price | money }}</div>    </div>
+{% endif %}<div li-object="product.price | money" class="text-size-regular">{{ product.price | money }}</div></div><script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
+<div li-element="product-variant-container" class="product-variants-hover" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" data-productid="{{ product.id }}" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)">{% if product.has_only_default_variant != true %}    <div li-if="product.has_only_default_variant != true" class="product-item_text-link-variant">
+    {% form 'product', product %}
+<div class="product-header_option-list"><template x-for="(option, optionKey) in product.options" :key="optionKey">
+    <div li-element="product-options-loop" class="variants-flex" data-productvariantsloop="true"><template x-if="option != 'Color'">
+            <div li-js-if="option != 'Color'" class="product_variant">
+        <div class="variant_item-wrapper"><template x-for="(variantName, variantKey) in options_by_name[option].option.values" :key="variantName">
+    <label li-element="product-option-loop" class="product-header_radio w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectortype="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'">
+<span li-element="product-option-name" class="radio-btn-label w-form-label" for="radio-4" x-text="variantName" :for="variantName">XS</span><div x-bind:id="variantName" class="variant_item"></div></label></template>
+</div>        </div>
+    </template>
+<template x-if="option == 'Color'">
+            <div li-js-if="option == 'Color'" class="product_variant">
+        <div class="variant_item-wrapper colors"><template x-for="(variantName, variantKey) in options_by_name[option].option.values" :key="variantName">
+    <label x-bind:class="selected_or_first_available_variant?.options.includes(variantName) ? 'is-checked' : ''" li-element="product-option-loop" class="product-header_radio w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button is-color w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectortype="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'">
+<span li-element="product-option-name" class="radio-btn-label is-color w-form-label" for="radio-3" x-text="variantName" :for="variantName">XS</span><div x-bind:class="'colorway-' + variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" class="variant_item-alternate"></div></label></template>
+</div>        </div>
+    </template>
+</div></template>
+</div>{% endform %}
     </div>
-  </div>
-  <div class="hide w-embed">
-    <style>
-      {% for optionValues in product.options_with_values %}
-          {% if optionValues.name == 'Farbe' or optionValues.name == 'Color' or optionValues.name == 'Colorway' %}
-          {% for option in optionValues.values %}
-       .colorway-{{ option | handleize }} { background-color: {{ option.variant.metafields.custom.color.value.color }};}
-        {% endfor %}
-            {% endif %}
-        {% endfor %}
-      .w-form-formradioinput--inputType-custom.w--redirected-focus {
-          box-shadow: none;
-      }
-    </style>
-    <style>
-      /* Initial state for .product-variants-hover */
-      .product-variants-hover {
-        display: none;
-      }
-      /* Show .product-variants-hover when hovering over .product-item_text-link */
-      .product-item_text-link:hover .product-variants-hover {
-        display: block;
-      }
-    </style>
-  </div>
-  <div class="product-info">
-    <div li-object:href="product.url" class="product-item_text-link" href="{{ product.url }}">
-      <div class="product-item_left">
-        <div li-object="product.title">{{ product.title }}</div>
-      </div>
-      <div class="product-item_price">
-        {% if product.compare_at_price_max > product.price %}
-          <div li-if="product.compare_at_price_max > product.price">
-            <div li-object="product.compare_at_price | money" class="text-size-regular text-style-strikethrough">
-              {{ product.compare_at_price | money }}
-            </div>
-          </div>
-        {% endif %}
-        <div li-object="product.price | money" class="text-size-regular">{{ product.price | money }}</div>
-      </div>
-      <script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
-      <div
-        li-element="product-variant-container"
-        class="product-variants-hover"
-        x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})"
-        x-init="$nextTick(() => { activateVariants() })"
-        data-productid="{{ product.id }}"
-        @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"
-      >
-        {% if product.has_only_default_variant != true %}
-          <div li-if="product.has_only_default_variant != true" class="product-item_text-link-variant">
-            {% form 'product', product %}
-              <div class="product-header_option-list">
-                <template x-for="(option, optionKey) in product.options" :key="optionKey">
-                  <div li-element="product-options-loop" class="variants-flex" data-productvariantsloop="true">
-                    <template x-if="option != 'Color'">
-                      <div li-js-if="option != 'Colorway'" class="product_variant">
-                        <div class="variant_item-wrapper">
-                          <template
-                            x-for="(variantName, variantKey) in options_by_name[option].option.values"
-                            :key="variantName"
-                          >
-                            <label li-element="product-option-loop" class="product-header_radio w-radio">
-                              <div
-                                class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button w-radio-input"
-                              ></div>
-                              <input
-                                type="radio"
-                                li-element="product-option-input"
-                                style="opacity:0;position:absolute;z-index:-1"
-                                x-on:click="setVariant"
-                                :name="option"
-                                :data-name="option"
-                                :value="variantName"
-                                :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')"
-                                :checked="selected_or_first_available_variant?.options.includes(variantName)"
-                                data-selectortype="radio"
-                                :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'"
-                              >
-                              <span
-                                li-element="product-option-name"
-                                class="radio-btn-label w-form-label"
-                                for="radio-4"
-                                x-text="variantName"
-                                :for="variantName"
-                                >XS</span
-                              >
-                              <div x-bind:id="variantName" class="variant_item"></div></label
-                          ></template>
-                        </div>
-                      </div>
-                    </template>
-                    <template x-if="option == 'Color'">
-                      <div
-                        li-js-if="option == 'Colorway' || option == 'Farbe' || option == 'Color'"
-                        class="product_variant"
-                      >
-                        <div class="variant_item-wrapper colors">
-                          <template
-                            x-for="(variantName, variantKey) in options_by_name[option].option.values"
-                            :key="variantName"
-                          >
-                            <label
-                              x-bind:class="selected_or_first_available_variant?.options.includes(variantName) ? 'is-checked' : ''"
-                              li-element="product-option-loop"
-                              class="product-header_radio w-radio"
-                            >
-                              <div
-                                class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button is-color w-radio-input"
-                              ></div>
-                              <input
-                                type="radio"
-                                li-element="product-option-input"
-                                style="opacity:0;position:absolute;z-index:-1"
-                                x-on:click="setVariant"
-                                :name="option"
-                                :data-name="option"
-                                :value="variantName"
-                                :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')"
-                                :checked="selected_or_first_available_variant?.options.includes(variantName)"
-                                data-selectortype="radio"
-                                :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'"
-                              >
-                              <span
-                                li-element="product-option-name"
-                                class="radio-btn-label is-color w-form-label"
-                                for="radio-3"
-                                x-text="variantName"
-                                :for="variantName"
-                                >XS</span
-                              >
-                              <div
-                                x-bind:class="'colorway-' + variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')"
-                                class="variant_item-alternate"
-                              ></div></label
-                          ></template>
-                        </div>
-                      </div>
-                    </template>
-                  </div>
-                </template>
-              </div>
-            {% endform %}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-  <div class="margin-top-auto">
-    <div class="product-item_form-wrapper">
-      {% if product.available == true %}
-        <div li-if="product.available == true" class="hide-for-now">
-          <a
-            li-element="add-to-cart"
-            href="#"
-            class="button max-width-full w-button"
-            @click="addToCart(true)"
-            :disabled="!addToCartButton"
-            >Add to Cart</a
-          >
-        </div>
-      {% endif -%}
-      {%- if product.available != true %}
-        <div li-if="product.available != true" class="hide-for-now">
-          <a href="#" class="button is-secondary pointer-events-off max-width-full w-button">Not in Stock</a>
-        </div>
-      {% endif %}
-    </div>
-  </div>
-</div>
+{% endif %}</div></div></div><div class="margin-top-auto"><div class="product-item_form-wrapper">{% if product.available == true %}    <div li-if="product.available == true" class="hide-for-now">
+    <a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart(true)" :disabled="!addToCartButton">Add to Cart</a>    </div>
+{% endif %}{% if product.available != true %}    <div li-if="product.available != true" class="hide-for-now">
+    <a href="#" class="button is-secondary pointer-events-off max-width-full w-button">Not in Stock</a>    </div>
+{% endif %}</div></div></div>
