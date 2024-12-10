@@ -124,7 +124,7 @@ body {
   font-family: "Eurostileltstd 2", sans-serif;
   font-size: .9rem;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.1em;
 }
 
 h1 {
@@ -452,7 +452,7 @@ figcaption {
 }
 
 .padding-global.padding-section-collection {
-  padding-top: 12rem;
+  padding-top: 8rem;
 }
 
 .text-weight-normal {
@@ -1598,6 +1598,7 @@ figcaption {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  margin-top: .25rem;
   text-decoration: none;
   position: relative;
 }
@@ -1838,8 +1839,8 @@ figcaption {
 }
 
 .filter_product-list {
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 4rem;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -2901,6 +2902,13 @@ figcaption {
 
 .nav_dropdown {
   display: block;
+}
+
+.nav_dropdown:hover {
+  text-underline-offset: .4em;
+  text-decoration-thickness: .2em;
+  -webkit-text-decoration-color: inherit;
+  text-decoration-color: inherit;
 }
 
 .fs-styleguide_hero-label {
@@ -4234,8 +4242,8 @@ figcaption {
 
 .variant_item-alternate {
   background-color: var(--base-color-neutral--black);
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .radio-button-label {
@@ -4298,7 +4306,7 @@ figcaption {
 
 .product-variants-hover {
   background-color: #fff;
-  min-height: 2rem;
+  min-height: 3rem;
   display: none;
   position: absolute;
   inset: 0% 0% auto;
@@ -5205,6 +5213,7 @@ figcaption {
   }
 
   .filter_product-list {
+    grid-column-gap: .5rem;
     grid-template-columns: 1fr 1fr;
   }
 
