@@ -78,7 +78,11 @@
         <div li-object="product.price | money" class="text-size-regular">{{ product.price | money }}</div>
       </div>
       <script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
-      
+      <div
+        li-element="product-variant-container"
+        class="product-variants-hover"
+       
+      >
         {% if product.has_only_default_variant != true %}
           <div li-if="product.has_only_default_variant != true" class="product-item_text-link-variant">
             {% form 'product', product %}
