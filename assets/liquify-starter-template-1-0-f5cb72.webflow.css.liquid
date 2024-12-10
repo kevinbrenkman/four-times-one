@@ -451,6 +451,10 @@ figcaption {
   padding-bottom: 2.5rem;
 }
 
+.padding-global.padding-section-collection {
+  padding-top: 12rem;
+}
+
 .text-weight-normal {
   font-weight: 400;
 }
@@ -1832,6 +1836,7 @@ figcaption {
 }
 
 .section_small-hero {
+  display: none;
   position: relative;
 }
 
@@ -2426,7 +2431,6 @@ figcaption {
 
 .product-header_radio {
   border-radius: var(--border-radius--medium);
-  background-color: var(--base-color-neutral--neutral-lightest);
   margin-bottom: 0;
   padding-left: 0;
   font-weight: 600;
@@ -2443,12 +2447,11 @@ figcaption {
 .product-header_radio-button {
   border-width: 0;
   border-color: var(--base-color-neutral--black);
-  border-radius: 0%;
   width: auto;
   height: auto;
   margin-top: 0;
   margin-left: 0;
-  display: none;
+  display: block;
   position: absolute;
   inset: 0%;
 }
@@ -2456,6 +2459,10 @@ figcaption {
 .product-header_radio-button.w--redirected-checked {
   border-width: 1px;
   border-color: var(--base-color-neutral--black);
+}
+
+.product-header_radio-button.is-color {
+  display: none;
 }
 
 .product-header_lieferzeit-wrapper {
@@ -4250,8 +4257,8 @@ figcaption {
 }
 
 .variant_item {
-  width: .75rem;
-  height: .75rem;
+  width: 0;
+  height: 0;
 }
 
 .product-page-grid {
@@ -4261,6 +4268,20 @@ figcaption {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
+}
+
+.product-item_image_ingrid {
+  aspect-ratio: 4 / 5;
+  background-color: var(--base-color-neutral--neutral-lightest);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0%;
+}
+
+.radio-button-label-2 {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 991px) {
