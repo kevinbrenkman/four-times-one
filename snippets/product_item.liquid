@@ -5,17 +5,23 @@
     Not in Stock    </div>
 {% endif %}{% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price" class="product-item_tag is-red">
     Sale    </div>
-{% endif %}</div></div><div class="hide w-embed"><style>{% for optionValues in product.options_with_values %}
+{% endif %}</div></div><div class="hide w-embed">
+  
+  
+ <style>
+  {% for optionValues in product.options_with_values %}
     {% if optionValues.name == 'Farbe' or optionValues.name == 'Color' or optionValues.name == 'Colorway' %}
     {% for option in optionValues.values %}
- .colorway{{ option | handleize }} { background-color: {{ option.variant.metafields.custom.color.value.color }};}
+ .colorway-{{ option | handleize }} { background-color: {{ option.variant.metafields.custom.color.value.color }};}
   {% endfor %}
       {% endif %}
   {% endfor %}
 .w-form-formradioinput--inputType-custom.w--redirected-focus {
     box-shadow: none;
 }
-</style><style>/* Initial state for .product-variants-hover */
+</style>
+  
+  <style>/* Initial state for .product-variants-hover */
 .product-variants-hover {
   display: none;
 }
