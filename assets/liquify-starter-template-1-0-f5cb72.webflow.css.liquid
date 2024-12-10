@@ -2454,9 +2454,11 @@ figcaption {
 }
 
 .product-header_radio-button.w--redirected-checked {
-  border-style: solid;
-  border-width: 0 0 4px;
-  border-color: var(--base-color-neutral--black);
+  border: 1px none var(--base-color-neutral--black);
+}
+
+.product-header_radio-button.is-color {
+  display: none;
 }
 
 .product-header_lieferzeit-wrapper {
@@ -4240,7 +4242,14 @@ figcaption {
 }
 
 .variant_item-wrapper {
+  grid-column-gap: .5em;
+  grid-row-gap: .5em;
   display: flex;
+}
+
+.variant_item-wrapper.colors {
+  grid-column-gap: 0em;
+  grid-row-gap: 0em;
 }
 
 .product-item_image-secondary {
@@ -4280,6 +4289,10 @@ figcaption {
 
 .radio-btn-label {
   margin-bottom: 0;
+}
+
+.radio-btn-label.is-color {
+  display: none;
 }
 
 .product-variants-hover {
