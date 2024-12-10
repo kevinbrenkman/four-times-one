@@ -18,7 +18,14 @@
         x-bind:src="variantImage ? variantImage : product.featured_image"
         li-object:alt="product.featured_image.alt"
       >
-     
+      <img
+        li-object:alt="product.featured_image.alt"
+        loading="lazy"
+        li-object:src="product.images[1] | img_url: 'master'"
+        src="{{ product.images[1] | img_url: 'master' }}"
+        alt="{{ product.featured_image.alt }}"
+        class="product-item_image-secondary"
+      >
     </a>
     <div class="product-item_tag_list">
       {% if product.selected_or_first_available_variant.available != true %}
