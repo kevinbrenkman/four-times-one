@@ -8,7 +8,7 @@
 {% endif %}</div></div><div class="hide w-embed"><style>{% for optionValues in product.options_with_values %}
     {% if optionValues.name == 'Farbe' or optionValues.name == 'Color' or optionValues.name == 'Colorway' %}
     {% for option in optionValues.values %}
- .colorway-{{ option | handleize }} { background-color: {{ option.variant.metafields.custom.colorway_color.value.color }};}
+ .colorway-{{ option | handleize }} { background-color: {{ option.variant.metafields.custom.color.value.color }};}
   {% endfor %}
       {% endif %}
   {% endfor %}
