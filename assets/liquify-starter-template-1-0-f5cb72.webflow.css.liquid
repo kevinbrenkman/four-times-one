@@ -1597,12 +1597,9 @@ figcaption {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
   text-decoration: none;
-  display: flex;
-}
-
-.product-item_left {
-  margin-right: 1rem;
+  position: relative;
 }
 
 .margin-top-auto {
@@ -2433,7 +2430,6 @@ figcaption {
   border-radius: var(--border-radius--medium);
   margin-bottom: 0;
   padding-left: 0;
-  font-weight: 600;
   position: relative;
 }
 
@@ -2447,6 +2443,7 @@ figcaption {
 .product-header_radio-button {
   border-width: 0;
   border-color: var(--base-color-neutral--black);
+  border-radius: 0%;
   width: auto;
   height: auto;
   margin-top: 0;
@@ -2457,12 +2454,9 @@ figcaption {
 }
 
 .product-header_radio-button.w--redirected-checked {
-  border-width: 1px;
+  border-style: solid;
+  border-width: 0 0 4px;
   border-color: var(--base-color-neutral--black);
-}
-
-.product-header_radio-button.is-color {
-  display: none;
 }
 
 .product-header_lieferzeit-wrapper {
@@ -4231,10 +4225,14 @@ figcaption {
   display: none;
 }
 
+.product-item_text-link-variant {
+  width: 100%;
+}
+
 .variant_item-alternate {
   background-color: var(--base-color-neutral--black);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .radio-button-label {
@@ -4280,8 +4278,22 @@ figcaption {
   inset: 0%;
 }
 
-.radio-button-label-2 {
+.radio-btn-label {
   margin-bottom: 0;
+}
+
+.product-variants-hover {
+  background-color: #fff;
+  min-height: 2rem;
+  display: none;
+  position: absolute;
+  inset: 0% 0% auto;
+}
+
+.variants-flex {
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
