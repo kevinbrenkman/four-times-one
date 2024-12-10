@@ -503,6 +503,10 @@ figcaption {
   font-size: 4rem;
 }
 
+.text-size-regular.text-weight-semibold {
+  background-color: #fff;
+}
+
 .text-align-right {
   text-align: right;
 }
@@ -1563,6 +1567,7 @@ figcaption {
 }
 
 .product-item_image-wrapper {
+  aspect-ratio: 3 / 4;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -1574,6 +1579,8 @@ figcaption {
   object-fit: contain;
   width: 100%;
   height: 100%;
+  position: absolute;
+  inset: 0%;
 }
 
 .product-item_text-link {
@@ -4228,6 +4235,17 @@ figcaption {
 
 .variant_item-wrapper {
   display: flex;
+}
+
+.product-item_image-secondary {
+  aspect-ratio: 4 / 5;
+  background-color: var(--base-color-neutral--neutral-lightest);
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  inset: 0%;
 }
 
 @media screen and (max-width: 991px) {
