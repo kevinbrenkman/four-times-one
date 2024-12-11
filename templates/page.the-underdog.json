@@ -12,13 +12,12 @@
     "large_heading_eEbFX9": {
       "type": "large_heading",
       "settings": {
-        "checkbox_show_static_heading": false,
         "url_link": "",
         "text_heading": "ODE TO THE UNDERDOG",
-        "checkbox_show_marquee": true,
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 60
+        "animation_speed": 60,
+        "headline": "marquee"
       }
     },
     "hero_4FinmG": {
@@ -59,25 +58,23 @@
     "large_heading_hEfpBM": {
       "type": "large_heading",
       "settings": {
-        "checkbox_show_static_heading": true,
         "url_link": "",
         "text_heading": "TALKING ABOUT AN AESTHETHICK",
-        "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 60
+        "animation_speed": 60,
+        "headline": "static"
       }
     },
     "large_heading_ctNRU9": {
       "type": "large_heading",
       "settings": {
-        "checkbox_show_static_heading": true,
         "url_link": "",
         "text_heading": "WEAR UPPER DOG ENERGY",
-        "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#ff0000",
-        "animation_speed": 60
+        "animation_speed": 60,
+        "headline": "static"
       }
     },
     "images_Hiz4VF": {
@@ -160,13 +157,12 @@
     "large_heading_83zY3h": {
       "type": "large_heading",
       "settings": {
-        "checkbox_show_static_heading": true,
         "url_link": "",
         "text_heading": "AESTHETHICK",
-        "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#00bbff",
-        "animation_speed": 60
+        "animation_speed": 60,
+        "headline": "static"
       }
     },
     "image_and_text_AtPdDK": {

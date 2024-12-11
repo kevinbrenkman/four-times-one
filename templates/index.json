@@ -12,12 +12,11 @@
     "small_heading_GbrgzJ": {
       "type": "small_heading",
       "settings": {
-        "checkbox_show_static_heading": true,
         "text_heading": "SPECIAL announcements",
-        "checkbox_show_marquee": true,
         "color": "#000000",
         "background": "#ffffff",
         "animation_speed": 95,
+        "headline": "marquee",
         "url_link": "shopify://pages/the-underdog"
       }
     },
