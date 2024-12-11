@@ -88,7 +88,7 @@
           "settings": {
             "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
             "checkbox_show_heading": false,
-            "text_heading": "I WAS ALWAYS THE FIRST ONE",
+            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "0rem"
@@ -99,7 +99,7 @@
           "settings": {
             "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.58.04.png",
             "checkbox_show_heading": false,
-            "text_heading": "ONE DAY I’LL TAKE OFF MY SHIRT",
+            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "0rem"
@@ -133,7 +133,7 @@
           "settings": {
             "image_image": "shopify://shop_images/edit-06-1800x-q80.jpg",
             "checkbox_show_heading": true,
-            "text_heading": "I WAS ALWAYS THE FIRST ONE",
+            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "1rem"
@@ -144,7 +144,7 @@
           "settings": {
             "image_image": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
             "checkbox_show_heading": true,
-            "text_heading": "ONE DAY I’LL TAKE OFF MY SHIRT",
+            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "1rem"
@@ -194,6 +194,13 @@
         "padding": "0.5rem",
         "flex-direction": "row-reverse"
       }
+    },
+    "category_Dq7dC3": {
+      "type": "category",
+      "settings": {
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6
+      }
     }
   },
   "layout": "page",
@@ -210,6 +217,7 @@
     "images_GdwkWr",
     "large_heading_83zY3h",
     "image_and_text_AtPdDK",
-    "image_and_text_CTj96e"
+    "image_and_text_CTj96e",
+    "category_Dq7dC3"
   ]
 }
