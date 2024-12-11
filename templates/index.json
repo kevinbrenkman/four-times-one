@@ -12,7 +12,7 @@
     "small_heading_GbrgzJ": {
       "type": "small_heading",
       "settings": {
-        "checkbox_show_static_heading": false,
+        "checkbox_show_static_heading": true,
         "text_heading": "SPECIAL announcements",
         "checkbox_show_marquee": true,
         "color": "#000000",
@@ -24,13 +24,12 @@
     "large_heading_MMinMh": {
       "type": "large_heading",
       "settings": {
-        "checkbox_show_static_heading": true,
         "url_link": "",
         "text_heading": "Toning chests, not personalities",
-        "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#00ff00",
-        "animation_speed": 76
+        "animation_speed": 76,
+        "headline": "static"
       }
     },
     "hero": {
@@ -68,13 +67,12 @@
     "large_heading_yWFYde": {
       "type": "large_heading",
       "settings": {
-        "checkbox_show_static_heading": true,
         "url_link": "",
         "text_heading": "All-body embracing menswear",
-        "checkbox_show_marquee": false,
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 76
+        "animation_speed": 76,
+        "headline": "static"
       }
     },
     "images": {
@@ -182,18 +180,6 @@
         "item_NdEpTL"
       ],
       "settings": {}
-    },
-    "footer_wRR3D4": {
-      "type": "footer",
-      "settings": {
-        "text_newsletter_heading": "{{ shop.metaobjects.text[\"footer-text\"].newsletter.value }}",
-        "text_checkbox": "{{ shop.metaobjects.text[\"footer-text\"].checkbox_message.value }}",
-        "text_succes_message": "{{ shop.metaobjects.text[\"footer-text\"].succes_message.value }}",
-        "text_error_message": "{{ shop.metaobjects.text[\"footer-text\"].error_message.value }}",
-        "text_footer_credit": "{{ shop.metaobjects.text[\"footer-text\"].credits.value }}",
-        "color": "#FFFFFF",
-        "background": "#000000"
-      }
     }
   },
   "layout": "theme",
@@ -206,7 +192,6 @@
     "image_and_text_3q3Jzj",
     "large_heading_yWFYde",
     "images",
-    "feed_slider_KEiHi9",
-    "footer_wRR3D4"
+    "feed_slider_KEiHi9"
   ]
 }
