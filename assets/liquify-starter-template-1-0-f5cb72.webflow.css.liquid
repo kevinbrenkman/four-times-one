@@ -564,6 +564,10 @@ figcaption {
   font-size: .875em;
 }
 
+.text-size-small.link:hover {
+  opacity: .7;
+}
+
 .heading-style-h4 {
   font-size: 1.25rem;
   font-weight: 500;
@@ -1665,8 +1669,6 @@ figcaption {
 }
 
 .nav_dropdown-toggle {
-  grid-column-gap: 2em;
-  grid-row-gap: 2em;
   align-items: center;
   padding: .5rem 0;
   display: flex;
@@ -1744,9 +1746,7 @@ figcaption {
 }
 
 .nav_shop-icon:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-color: var(--base-color-neutral--white);
-  text-decoration-color: var(--base-color-neutral--white);
+  opacity: .7;
 }
 
 .icon-embed-xsmall {
@@ -3892,16 +3892,20 @@ figcaption {
 
 .menu-link {
   color: var(--base-color-neutral--white);
+  margin-right: 2rem;
 }
 
 .menu-link:hover {
-  text-underline-offset: .4em;
-  -webkit-text-decoration-skip-ink: auto;
-  text-decoration-skip-ink: auto;
-  text-decoration: underline;
-  text-decoration-thickness: .2em;
-  -webkit-text-decoration-color: inherit;
-  text-decoration-color: inherit;
+  opacity: .7;
+}
+
+.menu-link.cart {
+  margin-right: 0;
+}
+
+.menu-link.cart:hover {
+  opacity: 100;
+  text-decoration: none;
 }
 
 .logo-footer {
