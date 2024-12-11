@@ -1,10 +1,10 @@
-<div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="section_content small">{% if section.settings.checkbox_show_static_heading == true %}
-<div class="static-h1-heading-wrapper small"><h1 class="h1-heading-small">
+<div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="section_content small">{% if section.settings.headline == 'static' %}    <div li-if="section.settings.headline == 'static'" class="static-h1-heading-wrapper small">
+    <h1 class="h1-heading-small">
 {{ section.settings.text_heading }}
 </h1>
-</div>{% endif %}
-{% if section.settings.checkbox_show_marquee == true %}
-<div class="marquee-wrapper small"><div class="marquee"><div class="marquee-horizontal small"><div style="animation: marquee-horizontal {{ section.settings.animation_speed }}s linear infinite;" class="track-horizontal"><p class="marquee-heading small">
+    </div>
+{% endif %}{% if section.settings.headline == 'marquee' %}    <div li-if="section.settings.headline == 'marquee'" class="marquee-wrapper small">
+    <div class="marquee"><div class="marquee-horizontal small"><div style="animation: marquee-horizontal {{ section.settings.animation_speed }}s linear infinite;" class="track-horizontal"><p class="marquee-heading small">
 {{ section.settings.text_heading }}
 </p>
 <p class="marquee-heading small">
@@ -29,9 +29,10 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-</style></div></div></div></div></div>{% endif %}
-</div><div class="custom-input w-embed"></div>
+</style></div></div></div></div>    </div>
+{% endif %}</div><div class="custom-input w-embed"></div>
+<div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <a class="absolute-link-block" href="{{ section.settings.url_link }}"> </a>
- {% schema %} {"tag":"div","name":"Small Heading","class":"section_heading_small","settings":[{"id":"checkbox_show_static_heading","type":"checkbox","label":"Show static heading","default":true},{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"},{"id":"checkbox_show_marquee","type":"checkbox","label":"Show marquee","default":true},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"range","id":"animation_speed","min":1,"max":100,"step":1,"unit":"s","label":"Animation Speed","default":60},{"id":"url_link","type":"url","label":"Link"}],"presets":[{"name":"Small Heading","category":"Liquify"}]} {% endschema %}
+ {% schema %} {"tag":"div","name":"Small Heading","class":"section_heading_small","settings":[{"id":"text_heading","type":"text","label":"Heading","default":"CHEST-FLATTENING BASICS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"range","id":"animation_speed","min":1,"max":100,"step":1,"unit":"s","label":"Animation Speed","default":60},{"type":"select","id":"headline","label":"Heading","options":[{"value":"static","label":"Static"},{"value":"marquee","label":"Marquee"}],"default":"static"},{"id":"url_link","type":"url","label":"Link"}],"presets":[{"name":"Small Heading","category":"Liquify"}]} {% endschema %}
