@@ -182,18 +182,6 @@
         "item_NdEpTL"
       ],
       "settings": {}
-    },
-    "footer_eKMrqA": {
-      "type": "footer",
-      "settings": {
-        "text_newsletter_heading": "RECEIVE SOME UPPER DOGNESS INYOUR MAILBOX",
-        "text_checkbox": "By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.",
-        "text_succes_message": "Thank you! Your submission has been received!",
-        "text_error_message": "Oops! Something went wrong while submitting the form.",
-        "text_footer_credit": "This is some text inside of a div block.",
-        "color": "#000000",
-        "background": "#ffffff"
-      }
     }
   },
   "layout": "theme",
@@ -206,7 +194,6 @@
     "image_and_text_3q3Jzj",
     "large_heading_yWFYde",
     "images",
-    "feed_slider_KEiHi9",
-    "footer_eKMrqA"
+    "feed_slider_KEiHi9"
   ]
 }
