@@ -1,7 +1,6 @@
-<div class="padding-global padding-section-small"><div class="container-large"><div id="w-node-ed5a3b26-04a6-4901-10b6-5e4206cce2c1-7385b6a1" class="w-dyn-list"><div role="list" class="collections_grid w-dyn-items">{% for collection in collections %}    <div li-for="collection in collections" role="listitem" class="w-dyn-item">
+<div class="padding-global collection-list"><div class="container-large"><div id="w-node-_7847cf02-7ef8-764d-29cb-c6e8a6774e34-7385b69c" class="w-dyn-list"><div role="list" class="collections_grid w-dyn-items">{% for collection in collections %}    <div li-for="collection in collections" role="listitem" class="w-dyn-item">
                                     
-                            <a li-object:href="collection.url" href="{{ collection.url }}" class="collections_item w-inline-block"><img alt="" loading="lazy" li-object:src="collection.featured_image | img_url: 'master'" src="{{ collection.featured_image | img_url: 'master' }}" class="collections_img">
-<div class="collections_overlay"></div><div class="collections_title"><h3 li-object="collection.title" class="heading-style-h3 text-color-white">{{ collection.title }}</h3></div></a>
+                            <a li-object:href="collection.url" href="{{ collection.url }}" class="collections_item w-inline-block"><div li-object="collection.title">{{ collection.title }}</div><div class="w-layout-hflex"><div>(</div><div li-object="collection.products_count">{{ collection.products_count }}</div><div>)</div></div></a>
                             
                         </div>
 {% endfor %}</div><div class="hide w-dyn-empty"><div>No items found.</div></div></div></div></div> {% schema %} {"tag":"section","name":"List-Collection","class":"section_collections","presets":[{"name":"List-Collection","category":"Liquify"}]} {% endschema %}
