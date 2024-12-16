@@ -50,7 +50,7 @@
 </style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body>
 
-<p>{% if template == 'index' or (template == 'page' and page.handle == 'the-underdog') %}
+<p>{% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
   <style>.section_navbar a {
     color: white !important;
   }
@@ -59,7 +59,7 @@
     background-color: black !important;
   }
 </style>{% endif %}
-  {% if template == 'page' and page.handle == 'the-underdog' %}
+  {% if template == 'page.the-underdog' and page.handle == 'the-underdog' %}
   <style>.section_footer{
 color:white!important;
 background-color:black!important;
