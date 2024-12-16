@@ -21,6 +21,9 @@
       },
       "footer": {
         "type": "footer",
+        "custom_css": [
+          ".section_footer{color:red!important; background-color:green!important!}"
+        ],
         "settings": {
           "text_newsletter_heading": "RECEIVE SOME UPPER DOGNESS IN<br>YOUR MAILBOX",
           "text_checkbox": "By subscribing you agree to with our <a href=\"#\"><span class=\"text-color-white text-style-link\">Privacy Policy</span></a> and provide consent to receive updates from our company.",
