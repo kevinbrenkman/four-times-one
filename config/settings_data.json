@@ -34,10 +34,7 @@
       },
       "navigation": {
         "type": "navigation",
-        "custom_css": [
-          ".section_navbar a {color: black !important;}",
-          ".section_navbar {color: black !important; background-color: white !important;}"
-        ],
+        "custom_css": [],
         "settings": {
           "collection_bestseller": "all",
           "collection_bestseller_limit": 6
