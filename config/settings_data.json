@@ -35,8 +35,8 @@
       "navigation": {
         "type": "navigation",
         "custom_css": [
-          ".section_navbar a {color: white!important;}",
-          ".section_navbar {color: white!important; background-color: black!important;}"
+          ".section_navbar a {color: black !important;}",
+          ".section_navbar {color: black !important; background-color: white !important;}"
         ],
         "settings": {
           "collection_bestseller": "all",
