@@ -52,7 +52,21 @@
 .lenis.lenis-stopped {
   overflow: hidden;
 }  
-</style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
+</style>
+  
+<style>
+.section_navbar a {
+  color: white !important;
+}
+.section_navbar {
+  color: white !important;
+  background-color: black !important;
+}
+</style>
+  
+  <script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}
+
+</head>
 <body li-page="page">
 
 <div class="page-wrapper">{% render 'global_styles' %}
