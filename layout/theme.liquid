@@ -64,7 +64,8 @@
     background-color: black !important;
   }
 </style>{% endif %}
-  {% if template == 'index' or (template == 'page' and template.suffix == 'custom-page') %}
+  
+{% if template == 'page' and page.handle == 'the-underdog' %}
   <style>.section_footer{
 color:red!important;
 background-color:green!important;
