@@ -52,8 +52,8 @@
 .lenis.lenis-stopped {
   overflow: hidden;
 }  
-</style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}
-
+</style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
+<body>
 
   
 <p>{% if template == 'index' or (template == 'page' and page.handle == 'the-underdog') %}
@@ -73,11 +73,6 @@ background-color:green!important;
 }
 </style>{% endif %}
 
-  {% if template == 'page.the-underdog' %}
-  <!-- Custom CSS for the-underdog -->
-{% endif %}
-
- </head> <body>
 </p><div class="page-wrapper">{% render 'global_styles' %}
 {% section 'navigation' %}
  {{ content_for_layout }} {% section 'footer' %}
