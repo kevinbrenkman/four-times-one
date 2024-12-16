@@ -55,8 +55,7 @@
 </style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body>
 
-
-<p>{% if template == 'index' or (template == 'the-underdog' and page.handle == 'the-underdog') %}
+<p>{% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
   <style>.section_navbar a {
     color: white !important;
   }
