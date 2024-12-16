@@ -64,6 +64,12 @@
     background-color: black !important;
   }
 </style>{% endif %}
+  {% if template == 'index' or (template == 'page' and template.suffix == 'custom-page') %}
+  <style>.section_footer{
+color:red!important;
+background-color:green!important;
+}
+</style>{% endif %}
   <script type="application/ld+json">{
       "@context": "https://schema.org",
       "@type": "BlogPosting",

@@ -65,6 +65,12 @@
     background-color: black !important;
   }
 </style>{% endif %}
+  {% if template == 'index' or (template == 'page' and template.suffix == 'custom-page') %}
+  <style>.section_footer{
+color:red!important;
+background-color:green!important;
+}
+</style>{% endif %}
 
 </p><div class="page-wrapper">{% render 'global_styles' %}
 {% section 'navigation' %}
