@@ -65,7 +65,13 @@
     background-color: black !important;
   }
 </style>{% endif %}
-  
+
+  {% if template == 'page' and page.handle == 'the-underdog' %}
+  <style>.section_footer{
+color:red!important;
+background-color:green!important;
+}
+</style>{% endif %}
 
 </p><div class="page-wrapper">{% render 'global_styles' %}
 {% section 'navigation' %}
