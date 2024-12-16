@@ -72,7 +72,11 @@ background-color:green!important;
 }
 </style>{% endif %}
 
-</p><div class="page-wrapper">  <!-- Handle: {{ page.handle }} -->
+</p><div class="page-wrapper"> 
+
+  <!-- Template: {{ template }} -->
+<!-- Page Handle: {{ page.handle }} -->
+  
 {% render 'global_styles' %}
 {% section 'navigation' %}
    {{ content_for_layout }}  {% section 'footer' %}
