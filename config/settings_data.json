@@ -34,21 +34,9 @@
       },
       "navigation": {
         "type": "navigation",
-        "blocks": {
-          "vorschlaege_Bc4TDV": {
-            "type": "vorschlaege",
-            "settings": {
-              "url_link": "shopify://products/cfb-01-hoodie-logo",
-              "text_text": "Tag"
-            }
-          }
-        },
-        "block_order": [
-          "vorschlaege_Bc4TDV"
-        ],
         "custom_css": [
-          ".section_navbar a {color: white;}",
-          ".section_navbar {color: white; background-color: black;}"
+          ".section_navbar a {color: white!important;}",
+          ".section_navbar {color: white!important; background-color: black!important;}"
         ],
         "settings": {
           "collection_bestseller": "all",
