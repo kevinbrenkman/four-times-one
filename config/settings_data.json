@@ -22,7 +22,7 @@
       "footer": {
         "type": "footer",
         "custom_css": [
-          ".section_footer{color:red!important; background-color:green!important!}"
+          ".section_footer_inside {color: red !important; background-color: green!important!;}"
         ],
         "settings": {
           "text_newsletter_heading": "RECEIVE SOME UPPER DOGNESS IN<br>YOUR MAILBOX",
