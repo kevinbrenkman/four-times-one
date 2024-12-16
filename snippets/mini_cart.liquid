@@ -90,43 +90,42 @@
         },
 
         /**
-         * @param id
+         * @param key
          * @param quantity
          */
-        increaseCartItemQuantity(id, quantity) {
-            this.updateCartItemQuantity(id, parseInt(quantity) + 1);
+        increaseCartItemQuantity(key, quantity) {
+            this.updateCartItemQuantity(key, parseInt(quantity) + 1);
         },
 
         /**
-         * @param id
+         * @param key
          * @param quantity
          */
-        decreaseCartItemQuantity(id, quantity) {
-            this.updateCartItemQuantity(id, parseInt(quantity) - 1);
+        decreaseCartItemQuantity(key, quantity) {
+            this.updateCartItemQuantity(key, parseInt(quantity) - 1);
         },
 
         /**
          * Update the cart item.
          *
-         * @param id
+         * @param key
          * @param quantity
          */
-        updateCartItemQuantity(id, quantity) {
+        updateCartItemQuantity(key, quantity) {
             this.initAbortController();
-            console.log('updateCartItemQuantity(): id, quantity: ', id, quantity);
+            console.log('updateCartItemQuantity(): key, quantity: ', key, quantity);
             this.products.filter((product)  => {
-                if(parseInt(product.id) === parseInt(id)) {
+                if(parseInt(product.key) === parseInt(key)) {
                     product.quantity = quantity
                 }
             })
-            fetch(window.Shopify.routes.root + 'cart/change.js', {
+            let updates = {};
+            updates[key] = quantity;
+            fetch(window.Shopify.routes.root + 'cart/update.js', {
                 method: 'POST',
                 signal: this.getAbortControllerSignal(),
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({
-                    id: `${id}`,
-                    quantity: quantity,
-                }),
+                body: JSON.stringify({ updates }),
             })
                 .then(response => response.json())
                 .then(data => {
@@ -168,7 +167,6 @@
     }))
 });
 
-
 </script>
 <div data-hover="false" data-delay="0" li-element="mini-cart" class="nav_dropdown w-dropdown" x-data="handleMinicart()" x-init="getCart()" @cartupdated.window="getCart()" @setcartitem.window="updateCartItemQuantity($event.detail.product, $event.detail.quantity)" @increasecartitem.window="increaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @decreasecartitem.window="decreaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @toggleminicart.window="toggleMiniCart()" @showcartmessage.window="showCartMessage"><div li-element="mini-cart-toggle" class="nav_shop-icon w-dropdown-toggle" @click="$dispatch('cartupdated.window')"><div class="menu-link cart">Cart (</div><div li-element="mini-cart-item-count" class="nav_shop-quantity" x-data="{ items: 0 }" x-text="items" @carttotalitems.window="items = event.detail">1</div><div class="menu-link cart">)</div></div><nav li-element="mini-cart-container" class="nav_mini-cart-holder w-dropdown-list" :class="open || 'mini-cart-closed'"><div li-element="dropdown-toggle" class="nav_mini-cart-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div><div class="mini-cart_component"><div li-element="mini-cart-full" class="mini-cart_full" :style="total.items < 1 && { display: 'none' }"><div class="mini-cart_header"><div>CART</div><div li-element="dropdown-toggle" class="close-cart" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">close</div></div><div class="mini-cart_line-item no-scrollbar"><ul role="list" class="mini-cart_line-item_list w-list-unstyled"><template x-for="product in products" :key="product.key">
     <li li-element="mini-cart-item" class="mini-cart_line-item_item" x-init="getCart()"><img src="../images/placholder-3.svg" loading="lazy" alt="" class="mini-cart_line-item_img" x-bind:src="product.image">
@@ -176,8 +174,8 @@
             <div li-js-if="product.price < product.original_price">
         <div li-js-price="product.original_price" class="text-size-small text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(product.original_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>        </div>
     </template>
-</div><div class="mini-cart_line-item_quantity"><a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.id, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1" :productprop="product" @blur="$dispatch('setcartitem', { product: product.id, quantity: product.quantity })" x-model="product.quantity">
-<a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('increasecartitem', { product: product.id, quantity: product.quantity, action: 'increase' })">+</a></div><div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey text-style-link" :productprop="product" @click="$dispatch('setcartitem', { product: product.id, quantity: 0 })">Remove</div></div></li></template>
+</div><div class="mini-cart_line-item_quantity"><a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+<a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a></div><div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey text-style-link" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })">Remove</div></div></li></template>
 </ul></div><div class="mini-cart_footer"><div class="mini-cart_footer_total"><div class="text-size-regular text-weight-bold">Subtotal</div><div><div li-js-price="total.price" class="text-size-regular text-weight-bold" x-text="LiquifyHelper.moneyFormat(total.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div><template x-if="total.price < original_total_price">
             <div li-js-if="total.price < original_total_price">
         <div li-js-price="original_total_price" class="text-size-regular text-weight-bold text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(original_total_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>        </div>
