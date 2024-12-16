@@ -9,6 +9,8 @@
  */
 {
   "current": {
+    "favicon": "shopify://shop_images/IIII_favicon.png",
+    "apple_touch_icon": "shopify://shop_images/IIII_icon_66ee9da0-80ab-432a-afc5-e3d3d719a8f0.png",
     "sections": {
       "header": {
         "type": "header",
