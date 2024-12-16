@@ -73,6 +73,10 @@ background-color:green!important;
 }
 </style>{% endif %}
 
+  {% if template == 'page.the-underdog' %}
+  <!-- Custom CSS for the-underdog -->
+{% endif %}
+
 </p><div class="page-wrapper">{% render 'global_styles' %}
 {% section 'navigation' %}
  {{ content_for_layout }} {% section 'footer' %}
