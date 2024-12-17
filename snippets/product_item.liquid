@@ -139,12 +139,10 @@
                               <div
                                 class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button is-color w-radio-input"
                               ></div>
-                              <input
+                             <input
                                 type="radio"
                                 li-element="product-option-input"
-                                data-name="Radio 3"
-                                id="radio-3"
-                                name="radio-3"
+                                style="opacity:0;position:absolute;z-index:-1"
                                 x-on:click="setVariant"
                                 :name="option"
                                 :data-name="option"
@@ -153,8 +151,6 @@
                                 :checked="selected_or_first_available_variant?.options.includes(variantName)"
                                 data-selectortype="radio"
                                 :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'"
-                                style="opacity:100;position:absolute"
-                                value="Radio 3"
                               >
                               <span
                                 li-element="product-option-name"
