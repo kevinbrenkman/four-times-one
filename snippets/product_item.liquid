@@ -144,7 +144,7 @@
                                 data-name="Radio 3"
                                 id="radio-3"
                                 name="radio-3"
-                                x-on:click="setVariant"
+                                
                                 :name="option"
                                 :data-name="option"
                                 :value="variantName"
@@ -164,6 +164,7 @@
                                 >XS</span
                               >
                               <div
+                                x-on:click="setVariant"
                                 x-bind:id="variantName"
                                 x-bind:class="'colorway-' + variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')"
                                 class="variant_item-alternate"
