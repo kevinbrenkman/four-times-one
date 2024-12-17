@@ -27,9 +27,7 @@
           "text_checkbox": "By subscribing you agree to with our <a href=\"#\"><span class=\"text-color-white text-style-link\">Privacy Policy</span></a> and provide consent to receive updates from our company.",
           "text_succes_message": "Thank you! Your submission has been received!",
           "text_error_message": "Oops! Something went wrong while submitting the form.",
-          "text_footer_credit": "© 2024 FOUR TIMES ONE / ALL RIGHTS RESERVED",
-          "color": "#ffffff",
-          "background": "#000000"
+          "text_footer_credit": "© 2024 FOUR TIMES ONE / ALL RIGHTS RESERVED"
         }
       },
       "navigation": {

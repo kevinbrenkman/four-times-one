@@ -15,7 +15,7 @@
         "text_heading": "SPECIAL announcements",
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 95,
+        "animation_speed": 79,
         "headline": "marquee",
         "url_link": "shopify://pages/the-underdog"
       }
@@ -106,6 +106,17 @@
       ],
       "settings": {}
     },
+    "small_heading_CrHiCQ": {
+      "type": "small_heading",
+      "settings": {
+        "text_heading": "WORN AND LOVED IT",
+        "color": "#00ff00",
+        "background": "#004eff",
+        "animation_speed": 60,
+        "headline": "static",
+        "url_link": ""
+      }
+    },
     "feed_slider_KEiHi9": {
       "type": "feed_slider",
       "blocks": {
@@ -191,6 +202,7 @@
     "image_and_text_3q3Jzj",
     "large_heading_yWFYde",
     "images",
+    "small_heading_CrHiCQ",
     "feed_slider_KEiHi9"
   ]
 }
