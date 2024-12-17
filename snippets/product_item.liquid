@@ -132,6 +132,7 @@
                             :key="variantName"
                           >
                             <label
+                               x-on:mouseover="setVariant"
                               x-bind:class="selected_or_first_available_variant?.options.includes(variantName) ? 'is-checked' : ''"
                               li-element="product-option-loop"
                               class="product-header_radio cursor-pointer w-radio pointer-events-none"
@@ -140,7 +141,7 @@
                                 class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button is-color w-radio-input"
                               ></div>
                              <input
-                                 x-on:mouseover="setVariant"
+                                
                                 type="radio"
                                 li-element="product-option-input"
                                 style="opacity:0;position:absolute;z-index:-1"
