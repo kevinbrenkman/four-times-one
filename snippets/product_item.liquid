@@ -84,7 +84,7 @@
               <div class="product-header_option-list">
                 <template x-for="(option, optionKey) in product.options" :key="optionKey">
                   <div li-element="product-options-loop" data-productvariantsloop="true">
-                    <template x-if="option == 'Color'">
+                    <template x-if="option != 'Color'">
                       <div li-js-if="option != 'Color'" class="product_variant">
                         <div class="variant_item-wrapper">
                           <template
