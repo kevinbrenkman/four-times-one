@@ -136,6 +136,7 @@
                               :name="option"
                                 :data-name="option"
                                 :value="variantName"
+                              :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')"
                               x-bind:class="selected_or_first_available_variant?.options.includes(variantName) ? 'is-checked' : ''"
                               li-element="product-option-loop"
                               class="product-header_radio cursor-pointer w-radio pointer-events-none"
