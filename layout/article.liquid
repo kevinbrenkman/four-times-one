@@ -70,7 +70,12 @@ color:white!important;
 background-color:black!important;
 }
 </style>{% endif %}
-  <script type="application/ld+json">{
+  <style>.slide-into-view{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s, transform 0.5s;
+  }
+</style><script type="application/ld+json">{
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "{{ article.title }} ",
@@ -146,6 +151,27 @@ $("[data-lenis-toggle]").on("click", function () {
     lenis.start();
   }
 });
+</script><script>document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.slide-into-view');
+    let options = {
+      rootMargin: '0px 0px -10%', // Adjust this value to trigger the animation earlier
+      threshold: 0.3 // This can also be adjusted based on how early you want the animation to start
+    };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Add a delay based on the index to stagger the animations
+          setTimeout(() => {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }, index * 300); // Staggered delay
+        }
+      });
+    }, options);
+    items.forEach((item, index) => {
+      observer.observe(item);
+    });
+  });
 </script>
 </body>
 </html>
