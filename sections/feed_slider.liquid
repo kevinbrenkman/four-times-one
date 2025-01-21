@@ -8,24 +8,12 @@
   padding-bottom: 20px;
   aspect-ratio 8.5 / 16:
 }
-  .swiper-slide video {
-  padding-top: 20px;
-  width:100%;
-  height:100%;
-  padding-bottom: 20px;
-  aspect-ratio 8.5 / 16:
-}
+  }
   .swiper-slide-active {
       opacity: 1;
       z-index: 1;
   }
   .swiper-slide-active img{
-  	opacity: 100%;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  aspect-ratio 9 / 16:
-  }
-    .swiper-slide-active video{
   	opacity: 100%;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -46,62 +34,6 @@
     background: #88F452;
 	}
 </style></div><div class="swrper_component"><div class="slider_slider-wrapper"><div class="swiper-container-social"><div class="swiper-wrapper">{% for block in section.blocks %}
-    {% if block.type == "item" %}
-                    <div li-block="Item" class="swiper-slide">
-                                    
-                                    <div class="slider-image"><img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image">
-<div li-object="section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%'" class="slider-video">{{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%' }}</div><div class="video-embed w-embed"></div>
-</div>
-                                    
-                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
-
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-{% for block in section.blocks %}
-    {% if block.type == "item" %}
-                    <div li-block="Item" class="swiper-slide">
-                                    
-                                    <div class="slider-image"><img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image">
-<div li-object="section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%'" class="slider-video">{{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%' }}</div><div class="video-embed w-embed"></div>
-</div>
-                                    
-                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
-
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-{% for block in section.blocks %}
-    {% if block.type == "item" %}
-                    <div li-block="Item" class="swiper-slide">
-                                    
-                                    <div class="slider-image"><img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image">
-<div li-object="section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%'" class="slider-video">{{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%' }}</div><div class="video-embed w-embed"></div>
-</div>
-                                    
-                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
-
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-{% for block in section.blocks %}
-    {% if block.type == "item" %}
-                    <div li-block="Item" class="swiper-slide">
-                                    
-                                    <div class="slider-image"><img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image">
-<div li-object="section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%'" class="slider-video">{{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%' }}</div><div class="video-embed w-embed"></div>
-</div>
-                                    
-                                    <a class="slider-text" href="{{ block.settings.url_link_to_product }}"> <div class="slider-name">{{ block.settings.text_social_handle }}</div><div class="slider-button-wrapper"><div>{{ block.settings.text_product_name }}</div><div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="button white">{{ block.settings.text_button_text }}</div></div> </a>
-
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-{% for block in section.blocks %}
     {% if block.type == "item" %}
                     <div li-block="Item" class="swiper-slide">
                                     
