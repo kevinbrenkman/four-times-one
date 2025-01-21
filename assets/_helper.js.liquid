@@ -96,4 +96,17 @@ const LiquifyHelper = {
             LiquifyHelper.triggerClick(el)
         }
     },
+
+    serializeFormToObject: (formId) => {
+    	const obj = {};
+    	try {
+    		const formData = new FormData(document.querySelector(formId));
+    		for (let [key, value] of formData) {
+    			obj[key] = value;
+    		}
+    	} catch(e) {
+    		console.info("form '" + formId + "' not found")
+    	}
+    	return obj ;
+    }, 
 };
