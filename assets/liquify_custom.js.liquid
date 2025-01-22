@@ -3,22 +3,14 @@ document.addEventListener('alpine:init', () => {
         /**
          * The current product object.
          */
+        selectedVariant : selectedOrFirstAvailable?.id,
         product: {
-            product: pProduct,
+            ...pProduct,
             options_by_name: optionsByName,
-            /**
-             * The options of the currently selected product.
-             */
-            options: pProduct?.options,
-            /**
-             * All variants of the current product.
-             */
-            variants: pProduct?.variants,
             initial_selected_or_first_available_variant: selectedOrFirstAvailable,
             selected_or_first_available_variant: {
-                item : selectedOrFirstAvailable,
+                ...selectedOrFirstAvailable,
                 featured_image: selectedOrFirstAvailable?.featured_image?.src,
-                id: selectedOrFirstAvailable?.id,
                 quantity: 1,
                 addToCartButton: true,
                 _price: selectedOrFirstAvailable?.price ?? 0,
@@ -71,7 +63,7 @@ document.addEventListener('alpine:init', () => {
          */
         get selected_or_first_available_variant() {
             //console.warn('deprecated "get selected_or_first_available_variant" in handleVariant')
-            return this.product.selected_or_first_available_variant.item
+            return this.product.selected_or_first_available_variant
         },
         /**
          * @deprecated
@@ -121,14 +113,14 @@ document.addEventListener('alpine:init', () => {
          */
         firstOptionHasAvailableChildren: {},
         selectorType: 'radio',
-        formSelector: "#product_form_" + pProduct.id,
+        formSelector: "#product_form_" + (pProduct?.id ? pProduct.id : selectedOrFirstAvailable?.id),
         isMainProduct: false,
         filter: {},
 
         // Use init for debugging
         init() {
             const productId = document.querySelector('[li-element="product-variant-container"][data-productid]')?.getAttribute('data-productid');
-            this.isMainProduct = parseInt(productId) === parseInt(pProduct.id);
+            this.isMainProduct = parseInt(productId) === parseInt(pProduct?.id);
         },
 
         qs(selector) {
@@ -146,10 +138,10 @@ document.addEventListener('alpine:init', () => {
 
             // If no filter is set, return all variants
             if (Object.keys(this.filter).length === 0) {
-                result.availableVariants = this.product.variants;
+                result.availableVariants = this.product?.variants;
             } else {
                 // Filter variants based on current filter
-                result.availableVariants = this.product.variants.filter(variant => {
+                result.availableVariants = this.product?.variants.filter(variant => {
                     // Define, how many filters should match
                     // let filter = this.getFirstTwoSelectedFilters()
                     let filter = this.filter
@@ -179,10 +171,11 @@ document.addEventListener('alpine:init', () => {
         },
 
         getExistingOptions(variants) {
+            console.log('variants', variants)
             let uniqueOptions = {
-                option1: [...new Set(variants.map(item => item.option1))],
-                option2: [...new Set(variants.map(item => item.option2))],
-                option3: [...new Set(variants.map(item => item.option3))],
+                option1: [...new Set(variants?.map(item => item.option1))],
+                option2: [...new Set(variants?.map(item => item.option2))],
+                option3: [...new Set(variants?.map(item => item.option3))],
             }
 
             let optionsByName = {}
@@ -241,7 +234,8 @@ document.addEventListener('alpine:init', () => {
 
                     selectedOrFirstAvailable = $this?.product.variants.filter(variant => parseInt(variant.id) === parseInt(variantId))[0]
 
-                    $this.product.selected_or_first_available_variant.item = selectedOrFirstAvailable;
+
+                    $this.product.selected_or_first_available_variant = {...$this.product.selected_or_first_available_variant, ...selectedOrFirstAvailable};
 
                     $this.product.options.forEach(function (option) {
                         let selector = $this.formSelector + " [data-productVariantsLoop] input[name='" + option + "']"
@@ -533,10 +527,9 @@ document.addEventListener('alpine:init', () => {
 
             this.product.selected_or_first_available_variant.addToCartButton = true
 
-            this.product.selected_or_first_available_variant.id = product.id
+            this.product.selected_or_first_available_variant = {...this.product.selected_or_first_available_variant, product};
             this.product.selected_or_first_available_variant.featured_image = product?.featured_image?.src
             this.product.selected_or_first_available_variant.price = product?.price;
-            this.product.selected_or_first_available_variant.item = product;
 
             // nur für die Detailseiten
             if (pushState && this.isMainProduct) {
@@ -575,7 +568,7 @@ document.addEventListener('alpine:init', () => {
 
             // Add selected product
             products.push({
-                id: this.product.selected_or_first_available_variant.id ?? this.product.selected_or_first_available_variant?.item?.id,
+                id: this.product.selected_or_first_available_variant.id ?? this.product.selected_or_first_available_variant?.id,
                 quantity: this.product.selected_or_first_available_variant.quantity ?? 1,
             })
 
@@ -613,14 +606,17 @@ document.addEventListener('alpine:init', () => {
         /**
          * Add a single product to cart.
          */
-        async addToCart(toggleMiniCart = true, productId = undefined, quantity = undefined) {
-            console.log('Liquify - Add to cart called, selected_or_first_available_variant.id:', this.product.selected_or_first_available_variant?.item?.id);
+        async addToCart(e, toggleMiniCart = true, productId = undefined, quantity = undefined) {
+            e = e || window.event;
+            e.preventDefault();
+            console.log('Liquify - Add to cart called, selected_or_first_available_variant.id:', this.product.selected_or_first_available_variant?.id);
 
-            if (!this.product.selected_or_first_available_variant?.item?.available) {
+            if (!this.product.selected_or_first_available_variant?.available) {
                 return
             }
 
-            const payload = LiquifyHelper.serializeFormToObject(this.formSelector);
+
+            const payload = pProduct?.id ? LiquifyHelper.serializeFormToObject(this.formSelector) : {};
             payload['items'] = [{
                 id: productId ?? this.selectedProductId ?? this.selected_or_first_available_variant?.id,
                 quantity: quantity ?? this.quantity ?? 1,
@@ -655,8 +651,8 @@ document.addEventListener('alpine:init', () => {
         /**
          * Add a single product to cart and redirect to checkout.
          */
-        async addToCartAndCheckout(toggleMiniCart = true, productId = undefined, quantity = undefined) {
-            await this.addToCart(toggleMiniCart, productId, quantity)
+        async addToCartAndCheckout(event, toggleMiniCart = true, productId = undefined, quantity = undefined) {
+            await this.addToCart(event, toggleMiniCart, productId, quantity)
                 .then(() => {
                     window.location.href = '/checkout';
                 });
