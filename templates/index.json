@@ -116,81 +116,6 @@
         "headline": "static",
         "url_link": ""
       }
-    },
-    "feed_slider_KEiHi9": {
-      "type": "feed_slider",
-      "blocks": {
-        "item_rYNEn7": {
-          "type": "item",
-          "settings": {
-            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
-            "video": "shopify://files/videos/37fe2ce87e854eed9239550cea0af9a8__88pct_smaller.mp4",
-            "url_link_to_product": "",
-            "text_social_handle": "AT NAMELASTNAME",
-            "text_product_name": "AT NAMELASTNAME",
-            "text_button_text": "Shop this look"
-          }
-        },
-        "item_9myxKD": {
-          "type": "item",
-          "settings": {
-            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
-            "url_link_to_product": "",
-            "text_social_handle": "AT NAMELASTNAME",
-            "text_product_name": "AT NAMELASTNAME",
-            "text_button_text": "Shop this look"
-          }
-        },
-        "item_8i7UyH": {
-          "type": "item",
-          "settings": {
-            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
-            "url_link_to_product": "",
-            "text_social_handle": "AT NAMELASTNAME",
-            "text_product_name": "AT NAMELASTNAME",
-            "text_button_text": "Shop this look"
-          }
-        },
-        "item_WJz7Me": {
-          "type": "item",
-          "settings": {
-            "image_slide_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
-            "url_link_to_product": "",
-            "text_social_handle": "AT NAMELASTNAME",
-            "text_product_name": "AT NAMELASTNAME",
-            "text_button_text": "Shop this look"
-          }
-        },
-        "item_3mLrY8": {
-          "type": "item",
-          "settings": {
-            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
-            "url_link_to_product": "",
-            "text_social_handle": "AT NAMELASTNAME",
-            "text_product_name": "AT NAMELASTNAME",
-            "text_button_text": "Shop this look"
-          }
-        },
-        "item_NdEpTL": {
-          "type": "item",
-          "settings": {
-            "image_slide_image": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
-            "url_link_to_product": "",
-            "text_social_handle": "AT NAMELASTNAME",
-            "text_product_name": "AT NAMELASTNAME",
-            "text_button_text": "Shop this look"
-          }
-        }
-      },
-      "block_order": [
-        "item_rYNEn7",
-        "item_9myxKD",
-        "item_8i7UyH",
-        "item_WJz7Me",
-        "item_3mLrY8",
-        "item_NdEpTL"
-      ],
-      "settings": {}
     }
   },
   "layout": "theme",
@@ -203,7 +128,6 @@
     "image_and_text_3q3Jzj",
     "large_heading_yWFYde",
     "images",
-    "small_heading_CrHiCQ",
-    "feed_slider_KEiHi9"
+    "small_heading_CrHiCQ"
   ]
 }
