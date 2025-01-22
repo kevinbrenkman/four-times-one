@@ -116,6 +116,25 @@
         "headline": "static",
         "url_link": ""
       }
+    },
+    "feed_slider_6HCzzU": {
+      "type": "feed_slider",
+      "blocks": {
+        "item_UgxPLC": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/37fe2ce87e854eed9239550cea0af9a8__88pct_smaller.mp4",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        }
+      },
+      "block_order": [
+        "item_UgxPLC"
+      ],
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -128,6 +147,7 @@
     "image_and_text_3q3Jzj",
     "large_heading_yWFYde",
     "images",
-    "small_heading_CrHiCQ"
+    "small_heading_CrHiCQ",
+    "feed_slider_6HCzzU"
   ]
 }
