@@ -120,10 +120,90 @@
     "feed_slider_6HCzzU": {
       "type": "feed_slider",
       "blocks": {
-        "item_UgxPLC": {
-          "type": "item",
+        "slide_ReQ8Lp": {
+          "type": "slide",
           "settings": {
             "video": "shopify://files/videos/37fe2ce87e854eed9239550cea0af9a8__88pct_smaller.mp4",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_ydMNyM": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_wHJPpC": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_xEBezp": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/edit-02-1800x-q80_05009ad8-c6bb-4058-b80d-7825900f9ea8.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_KxA8QB": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_aiTRjU": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.58.04.png",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_xgiWCj": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_ckAfCn": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_6WJMbM": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/edit-02-1800x-q80_05009ad8-c6bb-4058-b80d-7825900f9ea8.jpg",
             "url_link_to_product": "",
             "text_social_handle": "AT NAMELASTNAME",
             "text_product_name": "PRODUCT NAME",
@@ -132,7 +212,15 @@
         }
       },
       "block_order": [
-        "item_UgxPLC"
+        "slide_ReQ8Lp",
+        "slide_ydMNyM",
+        "slide_wHJPpC",
+        "slide_xEBezp",
+        "slide_KxA8QB",
+        "slide_aiTRjU",
+        "slide_xgiWCj",
+        "slide_ckAfCn",
+        "slide_6WJMbM"
       ],
       "settings": {}
     }
