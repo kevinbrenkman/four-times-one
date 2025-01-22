@@ -209,6 +209,16 @@
             "text_product_name": "PRODUCT NAME",
             "text_button_text": "Shop this look"
           }
+        },
+        "slide_9QcNHx": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/37fe2ce87e854eed9239550cea0af9a8__88pct_smaller.mp4",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
         }
       },
       "block_order": [
@@ -220,7 +230,8 @@
         "slide_aiTRjU",
         "slide_xgiWCj",
         "slide_ckAfCn",
-        "slide_6WJMbM"
+        "slide_6WJMbM",
+        "slide_9QcNHx"
       ],
       "settings": {}
     }
