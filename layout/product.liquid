@@ -80,7 +80,24 @@ background-color:black!important;
 </style><script src="https://cdn.unicorn.studio/v1.4.0/unicornStudio.umd.js"></script><script>&nbsp;&nbsp;document.addEventListener('DOMContentLoaded', () => {
 &nbsp;&nbsp;&nbsp;&nbsp;UnicornStudio.init()
 &nbsp;&nbsp;});
-</script><script type="application/ld+json">{
+</script><style>.newsletter-form-input:-webkit-autofill {
+    background-color: white !important;
+    -webkit-box-shadow: 0 0 0 50px white inset;
+    padding: 0em;
+    padding-left: 0.5em;
+    border-radius: 0.5rem;
+}
+input:-webkit-autofill {
+    background-color: white !important;
+		-webkit-box-shadow: 0 0 0 50px white;
+    padding: 0px;
+		padding-left:0px;
+		border-radius: 0px;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+</style><script type="application/ld+json">{
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "{{ product.title }}",
