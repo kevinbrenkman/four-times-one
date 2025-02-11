@@ -605,6 +605,10 @@ figcaption {
   padding: .5rem 1rem;
 }
 
+.form-input:focus {
+  border: 1px solid #000;
+}
+
 .form-input.is-text-area {
   min-height: 8rem;
   padding-top: .75rem;
@@ -4560,7 +4564,7 @@ figcaption {
 .close-line {
   background-color: #000;
   width: 100%;
-  height: 2px;
+  height: 1px;
   position: absolute;
   inset: 0%;
   transform: translate(0, 1.5rem)rotate(45deg);
@@ -4576,7 +4580,6 @@ figcaption {
 
 .spline {
   z-index: 1;
-  pointer-events: none;
   display: none;
   position: fixed;
   inset: 0%;
