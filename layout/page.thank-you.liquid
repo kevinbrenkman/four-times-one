@@ -166,6 +166,40 @@ $("[data-lenis-toggle]").on("click", function () {
       observer.observe(item);
     });
   });
+</script><script>document.addEventListener('DOMContentLoaded', function () {
+    // After 5 seconds, add the `.open` class to `.cs-form-wrapper`
+    setTimeout(function () {
+        const formWrapper = document.querySelector('.cs-form-wrapper');
+        if (formWrapper) {
+            formWrapper.classList.add('open');
+        }
+    }, 5000);
+    // When #closeSignUp is clicked, remove the `.open` class from `.cs-form-wrapper`
+    const closeSignUpButton = document.querySelector('#closeSignUp');
+    if (closeSignUpButton) {
+        closeSignUpButton.addEventListener('click', function () {
+            const formWrapper = document.querySelector('.cs-form-wrapper');
+            if (formWrapper) {
+                formWrapper.classList.remove('open');
+            }
+        });
+    }
+    // When #openLogin is clicked, remove the `.hidden` class from `.section_under-construction`
+    // and add the `.close` class to `.section_cs_signup`
+    const openLoginButton = document.querySelector('#openLogin');
+    if (openLoginButton) {
+        openLoginButton.addEventListener('click', function () {
+            const underConstructionSection = document.querySelector('.section_under-construction');
+            const signupSection = document.querySelector('.section_cs_signup');
+            if (underConstructionSection) {
+                underConstructionSection.classList.remove('hidden');
+            }
+            if (signupSection) {
+                signupSection.classList.add('close');
+            }
+        });
+    }
+});
 </script>
 </body>
 </html>
