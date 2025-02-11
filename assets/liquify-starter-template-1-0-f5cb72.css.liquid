@@ -4344,7 +4344,7 @@ figcaption {
 }
 
 .section_cs_signup {
-  z-index: 10;
+  z-index: 1;
   background-color: #010000;
   transition: opacity .2s;
   position: fixed;
@@ -4357,7 +4357,7 @@ figcaption {
 }
 
 .section_cs_signup_inside {
-  z-index: 5;
+  z-index: 11;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -4572,6 +4572,14 @@ figcaption {
 
 .form-block {
   margin-bottom: 0;
+}
+
+.spline {
+  z-index: 1;
+  pointer-events: none;
+  display: none;
+  position: fixed;
+  inset: 0%;
 }
 
 @media screen and (max-width: 991px) {
