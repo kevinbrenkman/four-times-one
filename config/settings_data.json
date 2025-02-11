@@ -41,11 +41,22 @@
       "signup": {
         "type": "signup",
         "settings": {
-          "text": "test",
-          "text_newsletter_heading": "RECEIVE SOME UPPER DOGNESS IN<br>YOUR MAILBOX",
+          "unicorn": "",
+          "text_newsletter_heading": "Underdog, come sit at our table.",
           "text_checkbox": "By subscribing you agree to with our <a href=\"#\"><span class=\"text-color-white text-style-link\">Privacy Policy</span></a> and provide consent to receive updates from our company.",
           "text_succes_message": "Thank you! Your submission has been received!",
-          "text_error_message": "Oops! Something went wrong while submitting the form."
+          "text_error_message": "Oops! Something went wrong while submitting the form.",
+          "url_button_url_left": "",
+          "text_button_text_left": "TIKTOK",
+          "url_button_url_right": "",
+          "text_button_text_right": "INSTAGRAM",
+          "image_background_image": "shopify://shop_images/FTO_Landingspagina_4_Clouds.jpg"
+        }
+      },
+      "intro_animation": {
+        "type": "intro_animation",
+        "settings": {
+          "unicorn": ""
         }
       }
     },
