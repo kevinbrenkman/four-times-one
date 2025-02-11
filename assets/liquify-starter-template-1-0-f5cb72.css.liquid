@@ -4570,6 +4570,10 @@ figcaption {
   transform: translate(0, 1.5rem)rotate(-45deg);
 }
 
+.form-block {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -5801,6 +5805,11 @@ figcaption {
     justify-content: space-between;
     align-items: flex-end;
   }
+
+  .close-open-button.login {
+    position: fixed;
+    inset: 1rem auto auto 1rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -6185,11 +6194,6 @@ figcaption {
   .close-open-button {
     width: 2rem;
     height: 2rem;
-  }
-
-  .close-open-button.login {
-    margin: 1rem;
-    inset: auto 0% 0% auto;
   }
 
   .coming-soon-text {
