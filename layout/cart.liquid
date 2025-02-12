@@ -166,6 +166,15 @@ $("[data-lenis-toggle]").on("click", function () {
       observer.observe(item);
     });
   });
+</script><script>document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".cart_grid .item-number");
+  items.forEach((item, index) => {
+    // Format the number with leading zero if less than 10
+    const number = (index + 1).toString().padStart(2, '0');
+    // Add the number to the item
+    item.textContent = number;
+  });
+});
 </script>
 </body>
 </html>
