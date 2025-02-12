@@ -175,13 +175,10 @@ $("[data-lenis-toggle]").on("click", function () {
     item.textContent = number;
   });
 });
-</script>    <script>
-        const inputFields = document.querySelectorAll('.cart_quantity');
+</script><script>const inputFields = document.querySelectorAll('.cart_quantity');
         const updateButton = document.querySelector('input[type="submit"][value="Update cart"]');
-
         inputFields.forEach(inputField => {
             let timeout;
-
             inputField.addEventListener('input', function() {
                 clearTimeout(timeout); // Clear previous timeout if still pending
                 timeout = setTimeout(() => {
