@@ -175,12 +175,18 @@ $("[data-lenis-toggle]").on("click", function () {
     item.textContent = number;
   });
 });
-</script><script>const inputField = document.querySelector('.cart_quantity');
+</script>    <script>
+        const inputField = document.querySelector('.cart_quantity');
+        const updateButton = document.querySelector('input[type="submit"][value="Update cart"]');
+
         let timeout;
+        
         inputField.addEventListener('input', function() {
             clearTimeout(timeout); // Clear previous timeout if still pending
             timeout = setTimeout(() => {
-                location.reload(); // Refresh the page after 1000ms
+                if (updateButton) {
+                    updateButton.click(); // Click the "Update cart" button after 1000ms
+                }
             }, 1000);
         });
     </script>
