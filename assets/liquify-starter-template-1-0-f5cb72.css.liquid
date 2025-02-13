@@ -16,6 +16,7 @@
   --base-color-neutral--neutral-lighter: #ccc;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --text-color--text-error: var(--base-color-system--error-red-dark);
+  --iiii-grey: #bfc0bf;
   --base-color-system--success-green-dark: #17660f;
   --base-color-system--error-red: #f8e4e4;
   --base-color-system--error-red-dark: #9b1313;
@@ -28,7 +29,6 @@
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
   --base-color-brand--blue: #2d62ff;
-  --iiii-grey: #bfc0bf;
   --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--blue-dark: #080331;
   --base-color-brand--pink-light: #ffaefe;
@@ -1911,15 +1911,19 @@ figcaption {
 
 .product-header_product-details {
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .product-header_price-wrapper {
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
   align-items: center;
+  margin-bottom: 1rem;
   display: flex;
   position: relative;
+}
+
+.product-header_add-to-cart {
+  margin-bottom: 0;
 }
 
 .product-header_option-list {
@@ -1928,6 +1932,10 @@ figcaption {
   flex-flow: row;
   justify-content: space-between;
   display: flex;
+}
+
+.product-header_option {
+  min-width: 50%;
 }
 
 .error-state {
@@ -2214,8 +2222,8 @@ figcaption {
 }
 
 .product-header_ad-to-cart-wrapper {
-  grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
   flex-direction: column;
   display: flex;
 }
@@ -2407,8 +2415,8 @@ figcaption {
 }
 
 .product-header_radio-button {
-  border-width: 0;
-  border-color: var(--base-color-neutral--black);
+  color: var(--iiii-grey);
+  border: 1px #000;
   border-radius: 0%;
   width: auto;
   height: auto;
@@ -2420,7 +2428,10 @@ figcaption {
 }
 
 .product-header_radio-button.w--redirected-checked {
-  border: 1px none var(--base-color-neutral--black);
+  color: var(--base-color-neutral--black);
+  border: 1px #000;
+  border-bottom: 2px solid #000;
+  text-decoration: underline;
 }
 
 .product-header_radio-button.is-color {
@@ -6626,6 +6637,10 @@ figcaption {
 
 #w-node-_7048b639-be81-c25f-3e39-a62262971160-7385b6a8 {
   align-self: center;
+}
+
+#w-node-b46b2deb-e30f-fb9e-d426-8d95110e9d40-7385b6a8, #w-node-_7048b639-be81-c25f-3e39-a62262971183-7385b6a8 {
+  grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
 #w-node-a80f8362-260a-7256-86a7-00b709fa7e51-7385b6a9 {
