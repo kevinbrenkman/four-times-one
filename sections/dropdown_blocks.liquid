@@ -1,0 +1,12 @@
+{% for block in section.blocks %}
+    {% if block.type == "dropdown" %}
+                    <div li-block="Dropdown" class="dropdown-wrapper">
+                                    
+                                    <div class="dropdown-button"><div>PRODUCT INFO</div><div class="plus-minus-wrap"><div class="plus">+</div><div class="minus">-</div></div></div>
+                                    
+                                    <div class="dropdown-content"><div style="opacity:0" class="dropdown-content-inside"><div li-object="product.description" class="text-rich-text max-width-large w-richtext">{{ product.description }}</div></div></div>
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+ {% schema %} {"tag":"div","name":"Dropdown Blocks","class":"section_dropdown","blocks":[{"name":"Dropdown","type":"dropdown","settings":null}],"presets":[{"name":"Dropdown Blocks","category":"Liquify","blocks":[{"type":"dropdown"}]}]} {% endschema %}
