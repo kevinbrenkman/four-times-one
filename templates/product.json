@@ -27,7 +27,8 @@
         "dropdown_WtfrJj": {
           "type": "dropdown",
           "settings": {
-            "text_dropdown_title": "PRODUCT INFO"
+            "text_dropdown_title": "PRODUCT INFO",
+            "richtext_text": "{{ product.description }}<p>Test</p>"
           }
         }
       },
