@@ -27,13 +27,21 @@
         "dropdown_WtfrJj": {
           "type": "dropdown",
           "settings": {
-            "text_dropdown_title": "PRODUCT INFO",
-            "richtext_text": "{{ product.description }}<p>Test</p>"
+            "text_dropdown_title": "Product info",
+            "richtext_text": "{{ product.description }}"
+          }
+        },
+        "dropdown_pRjUbX": {
+          "type": "dropdown",
+          "settings": {
+            "text_dropdown_title": "Materials",
+            "richtext_text": "<p>{{ product.metafields.custom.materials | metafield_tag }}</p>"
           }
         }
       },
       "block_order": [
-        "dropdown_WtfrJj"
+        "dropdown_WtfrJj",
+        "dropdown_pRjUbX"
       ],
       "settings": {}
     }
