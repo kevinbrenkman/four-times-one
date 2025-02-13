@@ -951,9 +951,14 @@ figcaption {
 }
 
 .cart_details-wrapper {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
   justify-content: space-between;
   align-items: center;
-  display: flex;
+  display: grid;
 }
 
 .cart_action {
@@ -1833,7 +1838,7 @@ figcaption {
 
 .footer_form-block {
   pointer-events: auto;
-  width: 100%;
+  width: 150%;
   margin-bottom: 0;
 }
 
@@ -4063,6 +4068,7 @@ figcaption {
 
 .newsletter-heading {
   color: inherit;
+  max-width: 16ch;
   margin-bottom: -.75rem;
   font-size: 6rem;
   line-height: .85;
@@ -4092,8 +4098,12 @@ figcaption {
   text-align: center;
   cursor: pointer;
   background-color: #0000;
-  max-width: 75vw;
-  padding: 2.5rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
   position: relative;
 }
 
@@ -4432,7 +4442,7 @@ figcaption {
 
 .close-open-button.login {
   z-index: 7;
-  opacity: .05;
+  opacity: 1;
   color: var(--base-color-neutral--black);
   background-color: #0000;
   width: auto;
