@@ -4449,7 +4449,7 @@ figcaption {
 
 .close-open-button.login {
   z-index: 7;
-  opacity: .18;
+  opacity: .05;
   color: var(--base-color-neutral--black);
   width: auto;
   height: auto;
@@ -4801,6 +4801,10 @@ figcaption {
 .cs-video-desktop, .cs-video-mobile {
   width: 100%;
   height: 100%;
+}
+
+.no-ios-zoom {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -5489,6 +5493,7 @@ figcaption {
   }
 
   .cs-form-bg {
+    width: calc(100vw - 2rem);
     max-width: 100%;
   }
 
@@ -6448,7 +6453,8 @@ figcaption {
   }
 
   .cs-form-bg {
-    padding: 2em 1.25em .75em;
+    width: calc(100vw - 1rem);
+    padding: 2em 1.25em 1.25em;
   }
 
   .cs-form-bg.succes {
