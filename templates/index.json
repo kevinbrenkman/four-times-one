@@ -81,8 +81,8 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
-            "checkbox_show_heading": false,
-            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+            "checkbox_show_heading": true,
+            "text_block_heading": "DROP 01UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "0rem"
