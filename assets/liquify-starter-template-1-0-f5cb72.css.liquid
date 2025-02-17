@@ -4442,9 +4442,8 @@ figcaption {
 
 .close-open-button.login {
   z-index: 7;
-  opacity: 1;
+  opacity: .18;
   color: var(--base-color-neutral--black);
-  background-color: #0000;
   width: auto;
   height: auto;
   padding: 0;
@@ -4453,8 +4452,7 @@ figcaption {
 }
 
 .close-open-button.login:hover {
-  opacity: 0;
-  filter: none;
+  opacity: 69;
 }
 
 .open-close-btn-wrapper {
@@ -4526,6 +4524,7 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   display: flex;
 }
 
@@ -4573,8 +4572,9 @@ figcaption {
   text-align: center;
   cursor: pointer;
   background-color: #010000;
-  max-width: 75vw;
+  width: 80vw;
   padding: 4em 3em 2.5em;
+  display: flex;
   position: relative;
 }
 
@@ -4613,6 +4613,7 @@ figcaption {
 }
 
 .form-block {
+  width: 100%;
   margin-bottom: 0;
 }
 
@@ -4636,6 +4637,14 @@ figcaption {
 
 .form-succes-state.succes {
   opacity: 100;
+}
+
+.form-initial-state {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  display: flex;
 }
 
 .form-initial-state.succes {
