@@ -36,7 +36,7 @@
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
         "checkbox_show_button": true,
-        "url_button_link": "shopify://pages/contact",
+        "url_button_link": "shopify://products/cfb-01-hoodie-logo",
         "text_button_text": "Get this tee",
         "color": "#00ff00",
         "background": "#000000"
