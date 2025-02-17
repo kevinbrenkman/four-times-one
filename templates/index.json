@@ -219,6 +219,16 @@
             "text_product_name": "PRODUCT NAME",
             "text_button_text": "Shop this look"
           }
+        },
+        "slide_9bwRWg": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/1111_Roterend_9-16-compress.mp4",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
         }
       },
       "block_order": [
@@ -231,7 +241,8 @@
         "slide_xgiWCj",
         "slide_ckAfCn",
         "slide_6WJMbM",
-        "slide_9QcNHx"
+        "slide_9QcNHx",
+        "slide_9bwRWg"
       ],
       "settings": {}
     }
