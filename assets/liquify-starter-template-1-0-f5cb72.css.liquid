@@ -1904,6 +1904,11 @@ figcaption {
   position: relative;
 }
 
+.product-header_component {
+  flex-flow: row;
+  display: flex;
+}
+
 .product-header_layout {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -4176,6 +4181,7 @@ figcaption {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
+  margin-bottom: 1rem;
   display: grid;
 }
 
@@ -4760,6 +4766,15 @@ figcaption {
   width: 100%;
   height: 40rem;
   padding: 1rem;
+}
+
+.media-wrapper {
+  display: flex;
+}
+
+.product_image-wrapper, .product_video-wrapper, .product_video-embed {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
