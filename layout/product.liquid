@@ -96,7 +96,8 @@ input:-webkit-autofill {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0px 9999px white;
 }
-</style><script type="application/ld+json">{
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<script type="application/ld+json">{
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "{{ product.title }}",
@@ -234,32 +235,84 @@ $("[data-lenis-toggle]").on("click", function () {
       observer.observe(item);
     });
   });
-</script><script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script><script>$(".swiper-container").each(function (index) {
-    const thumbsSwiper = new Swiper($(this).find(".swiper.is-product-thumbnail")[0], {
-      slidesPerView: "auto",
-      rewind: false,
-      loopedSlides: 8,
-      slideToClickedSlide: true,
-      spaceBetween: "4%",
-    });
-    const swiper = new Swiper($(this).find(".swiper.is-product-gallery")[0], {
-      mousewheel: {
-        forceToAxis: true
-      },
-      thumbs: {
-        swiper: thumbsSwiper,
-        slideThumbActiveClass: "is-active",
-      },
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true
-      },
-      navigation: {
-        nextEl: $(this).find(".swiper-next")[0],
-        prevEl: $(this).find(".swiper-prev")[0],
+</script><!--  Include the Splide.js library  -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
+    function initializeSlider() {
+      var splides = document.querySelectorAll('.productslider'); // Updated class name
+      console.log('Number of slider elements found:', splides.length);
+      for (var i = 0; i < splides.length; i++) {
+        console.log('Initializing Splide slider', i + 1);
+        // Ensure slider container is focusable, but remove the default blue outline
+        splides[i].setAttribute("tabindex", "0");
+        splides[i].style.outline = "none"; // Removes blue focus outline
+        let splideInstance = new Splide(splides[i], {
+          focus: 0, 
+          type: 'loop', 
+          gap: '0em', 
+          arrows: 'slider', 
+          pagination: false, 
+          speed: 1000, 
+          dragAngleThreshold: 60, 
+          autoWidth: true, 
+          rewind: false, 
+          rewindSpeed: 400,
+          autoplay: true,
+          interval: 5000,
+          waitForTransition: false,
+          pauseOnHover: true,
+          updateOnMove: true,
+          trimSpace: true, 
+          keyboard: true,  // Ensure keyboard navigation is enabled
+          breakpoints: {
+            1910: {
+              perPage: 2,
+              gap: '0em',
+            },
+            991: {
+              perPage: 2,
+              gap: '0em',
+            },
+            767: {
+              perPage: 1, // Adjusts for smaller screens instead of destroying
+            }
+          }
+        }).mount();
+        // Focus the slider to enable immediate keyboard control
+        splides[i].focus();
+        // Ensure keyboard navigation works on focus
+        splides[i].addEventListener('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            splideInstance.go('<'); // Move to previous slide
+          }
+          if (event.key === 'ArrowRight') {
+            splideInstance.go('>'); // Move to next slide
+          }
+        });
+        // Add wheel event listener for Apple touchpad support
+        let isScrolling = false;
+        const swipeThreshold = 50; 
+        splides[i].addEventListener('wheel', function (event) {
+          if (Math.abs(event.deltaX) > Math.abs(event.deltaY) && Math.abs(event.deltaX) > swipeThreshold) {
+            event.preventDefault();
+            if (!isScrolling) {
+              isScrolling = true;
+              if (event.deltaX > 0) {
+                splideInstance.go('>'); 
+              } else {
+                splideInstance.go('<'); 
+              }
+              setTimeout(() => {
+                isScrolling = false;
+              }, 400);
+            }
+          }
+        }, { passive: false });
       }
-    });
-  }); 
+      console.log('Splide sliders initialized successfully');
+    }
+    // Attempt initializing the slider once after a 1-second delay
+    setTimeout(initializeSlider, 1000);
+  });
 </script><script>document.addEventListener('DOMContentLoaded', function() {
     const productRecommendationsSection = document.querySelector('.product-recommendations');
     const url = productRecommendationsSection.dataset.url;
@@ -278,6 +331,5 @@ $("[data-lenis-toggle]").on("click", function () {
     });
   });
 </script>
-
 </body>
 </html>
