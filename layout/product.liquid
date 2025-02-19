@@ -278,19 +278,6 @@ $("[data-lenis-toggle]").on("click", function () {
     });
   });
 </script>
-  <script>
-    // Save the original function
-const originalAddToCart = window.addToCart;
 
-window.addToCart = function(event, flag) {
-  // Call the original addToCart function
-  originalAddToCart(event, flag);
-
-  // Redirect after 500ms
-  setTimeout(() => {
-    window.location.href = "/cart";
-  }, 500);
-};
-  </script>
 </body>
 </html>
