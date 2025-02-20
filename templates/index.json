@@ -9,6 +9,19 @@
  */
 {
   "sections": {
+    "signup_ppEHec": {
+      "type": "signup",
+      "settings": {
+        "unicorn": "",
+        "text_newsletter_heading": "Underdog, come Sit at our table.",
+        "text_checkbox": "By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.",
+        "text_succes_message": "you have been signed up for the newsletter",
+        "url_button_url_left": "",
+        "text_button_text_left": "TIKTOK",
+        "url_button_url_right": "",
+        "text_button_text_right": "INSTAGRAM"
+      }
+    },
     "small_heading_GbrgzJ": {
       "type": "small_heading",
       "settings": {
@@ -245,19 +258,6 @@
         "slide_9bwRWg"
       ],
       "settings": {}
-    },
-    "signup_ppEHec": {
-      "type": "signup",
-      "settings": {
-        "unicorn": "sITEP3e9N7xVbV7EDrld",
-        "text_newsletter_heading": "Underdog, come Sit at our table.",
-        "text_checkbox": "By subscribing you agree to with our <a href=\"#\"><span class=\"text-color-white text-style-link\">Privacy Policy</span></a> and provide consent to receive updates from our company.",
-        "text_succes_message": "you have been signed up for the newsletter",
-        "url_button_url_left": "",
-        "text_button_text_left": "TIKTOK",
-        "url_button_url_right": "",
-        "text_button_text_right": "INSTAGRAM"
-      }
     }
   },
   "layout": "theme",
