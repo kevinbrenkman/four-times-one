@@ -81,7 +81,7 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
-            "checkbox_show_heading": true,
+            "checkbox_show_heading": false,
             "text_block_heading": "DROP 01UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
@@ -245,11 +245,25 @@
         "slide_9bwRWg"
       ],
       "settings": {}
+    },
+    "signup_ppEHec": {
+      "type": "signup",
+      "settings": {
+        "unicorn": "sITEP3e9N7xVbV7EDrld",
+        "text_newsletter_heading": "Underdog, come Sit at our table.",
+        "text_checkbox": "By subscribing you agree to with our <a href=\"#\"><span class=\"text-color-white text-style-link\">Privacy Policy</span></a> and provide consent to receive updates from our company.",
+        "text_succes_message": "you have been signed up for the newsletter",
+        "url_button_url_left": "",
+        "text_button_text_left": "TIKTOK",
+        "url_button_url_right": "",
+        "text_button_text_right": "INSTAGRAM"
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "signup_ppEHec",
     "small_heading_GbrgzJ",
     "large_heading_MMinMh",
     "hero",
