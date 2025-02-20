@@ -19,7 +19,9 @@
         "url_button_url_left": "",
         "text_button_text_left": "TIKTOK",
         "url_button_url_right": "",
-        "text_button_text_right": "INSTAGRAM"
+        "text_button_text_right": "INSTAGRAM",
+        "desktop": "shopify://files/videos/1111_Roterend_16-9-compress.mp4",
+        "mobile": "shopify://files/videos/1111_Roterend_9-16.mp4"
       }
     },
     "small_heading_GbrgzJ": {
