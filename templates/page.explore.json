@@ -9,13 +9,6 @@
  */
 {
   "sections": {
-    "category_Dq7dC3": {
-      "type": "category",
-      "settings": {
-        "collection_collection": "frontpage",
-        "collection_collection_limit": 6
-      }
-    },
     "image_and_text_EhTPgf": {
       "type": "image_and_text",
       "settings": {
@@ -29,12 +22,26 @@
         "padding": "0rem",
         "flex-direction": "row"
       }
+    },
+    "image_and_text_nAAk8T": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
+        "text_heading": "DROP 02 UNDER TO UPPERDOGS",
+        "checkbox_show_logo": true,
+        "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
+        "color": "#000000",
+        "background": "#004eff",
+        "padding": "0rem",
+        "flex-direction": "row-reverse"
+      }
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "category_Dq7dC3",
-    "image_and_text_EhTPgf"
+    "image_and_text_EhTPgf",
+    "image_and_text_nAAk8T"
   ]
 }
