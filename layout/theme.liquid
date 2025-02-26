@@ -61,9 +61,7 @@
   .section_navbar {
     background-color: black !important;
   }
-    .nav_dropdown-grid a {
-    color: purple !important;
-  }
+   
 
 .nav_logo-link {
     color: red !important;
@@ -76,16 +74,18 @@
 .nav_shop-quantity {
     color: red;
 }
-    /* Default style for above 991px */
-.section_navbar a {
-    color: white;
-}
 
-/* Styles for screens below 991px */
+
+@media (min-width: 991px) {
+ .nav_dropdown-grid a {
+    color: blue !important;
+  }
+}
+    
 @media (max-width: 991px) {
-    .section_navbar a {
-        color: green;
-    }
+ .nav_dropdown-grid a {
+    color: yellow !important;
+  }
 }
 </style>{% endif %}
   {% if template == 'page.the-underdog' and page.handle == 'the-underdog' %}
