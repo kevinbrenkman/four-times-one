@@ -55,13 +55,11 @@
 }  
 </style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body>
-  
+
 <p>{% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
-  <style>
-  .section_navbar {
+  <style>.section_navbar {
     background-color: black !important;
   }
-   
 @media screen and (max-width: 991px) {
     .menu-icon_line-top {
         background-color:green;
@@ -76,15 +74,12 @@
 .nav_logo-link {
     color: white !important;
 }
-    
 .nav_shop-quantity {
     color: white;
 }
-    
  .nav_dropdown-grid a {
     color: black;
   }
-
 @media (min-width: 991px) {
  .nav_dropdown-grid a {
     color: black !important;
@@ -93,7 +88,6 @@
     color: white!important;
 }
 }
-    
 @media (max-width: 991px) {
  .nav_dropdown-grid a {
     color: black !important;

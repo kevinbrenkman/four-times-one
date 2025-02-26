@@ -58,16 +58,48 @@
 
 
 <p>{% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
-  <style>.section_navbar a {
-    color: white !important;
-  }
-  .section_navbar {
-    color: white !important;
+  <style>.section_navbar {
     background-color: black !important;
   }
-    .nav_dropdown-grid a {
+@media screen and (max-width: 991px) {
+    .menu-icon_line-top {
+        background-color:green;
+    }
+    .menu-icon_line-middle {
+        background-color:green;
+    }
+    .menu-icon_line-bottom {
+        background-color:green;
+    }
+}  
+.nav_logo-link {
+    color: white !important;
+}
+.nav_shop-quantity {
+    color: white;
+}
+ .nav_dropdown-grid a {
+    color: black;
+  }
+@media (min-width: 991px) {
+ .nav_dropdown-grid a {
     color: black !important;
   }
+.menu-link {
+    color: white!important;
+}
+}
+@media (max-width: 991px) {
+ .nav_dropdown-grid a {
+    color: black !important;
+  }
+.menu-link {
+    color: black;
+}
+.menu-link.cart {
+    color: white;
+}
+}
 </style>{% endif %}
   {% if template == 'page.the-underdog' and page.handle == 'the-underdog' %}
   <style>.section_footer{
