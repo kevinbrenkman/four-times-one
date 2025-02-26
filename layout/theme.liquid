@@ -59,7 +59,6 @@
 <p>{% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
   <style>
   .section_navbar {
-    color: white !important;
     background-color: black !important;
   }
     .nav_dropdown-grid a {
@@ -76,6 +75,17 @@
 
 .nav_shop-quantity {
     color: red;
+}
+    /* Default style for above 991px */
+.section_navbar a {
+    color: black;
+}
+
+/* Styles for screens below 991px */
+@media (max-width: 991px) {
+    .section_navbar a {
+        color: green;
+    }
 }
 </style>{% endif %}
   {% if template == 'page.the-underdog' and page.handle == 'the-underdog' %}
