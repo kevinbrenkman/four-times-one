@@ -64,6 +64,9 @@
     color: white !important;
     background-color: black !important;
   }
+    .nav_dropdown-grid a {
+    color: black !important;
+  }
 </style>{% endif %}
   {% if template == 'page.the-underdog' and page.handle == 'the-underdog' %}
   <style>.section_footer{
@@ -95,6 +98,9 @@ input:-webkit-autofill {
 }
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+</style><style>html, body {
+  overscroll-behavior-x: none;
 }
 </style></p><div class="page-wrapper">{% render 'global_styles' %}
 {% section 'navigation' %}
@@ -167,6 +173,9 @@ $("[data-lenis-toggle]").on("click", function () {
       observer.observe(item);
     });
   });
-</script>
+</script><script>document.addEventListener('cartupdated', function() {
+    window.location.href = '/cart';
+});
+    </script>
 </body>
 </html>

@@ -99,6 +99,9 @@ input:-webkit-autofill {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0px 9999px white;
 }
+</style><style>html, body {
+  overscroll-behavior-x: none;
+}
 </style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </p><div class="page-wrapper">{% render 'global_styles' %}
 {% section 'navigation' %}
@@ -172,7 +175,10 @@ $("[data-lenis-toggle]").on("click", function () {
       observer.observe(item);
     });
   });
-</script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>const swiperTeam = new Swiper('.swiper.is-team', {
+</script><script>document.addEventListener('cartupdated', function() {
+    window.location.href = '/cart';
+});
+    </script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>const swiperTeam = new Swiper('.swiper.is-team', {
   slidesPerView: 1.65,
   spaceBetween: 10,
   slidesPerGroup: 1,

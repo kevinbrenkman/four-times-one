@@ -1839,6 +1839,10 @@ figcaption {
   display: flex;
 }
 
+.footer_link-list.mobile {
+  display: none;
+}
+
 .footer_form-block {
   pointer-events: auto;
   width: 150%;
@@ -4602,6 +4606,7 @@ figcaption {
   opacity: 0;
   pointer-events: none;
   transition: opacity .2s;
+  display: none;
 }
 
 .cs-form-wrapper.open {
@@ -4830,6 +4835,7 @@ figcaption {
 .splide.productslider {
   width: 100dvw;
   height: 100%;
+  min-height: 80vh;
 }
 
 .splide__arrows {
@@ -4963,8 +4969,8 @@ figcaption {
 
   .nav_container {
     grid-template-columns: 1fr min-content min-content;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 
   .nav_menu {
@@ -5050,8 +5056,8 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 48px;
+    width: 2.5rem;
+    height: 2.5rem;
     padding-bottom: 0;
     padding-right: 0;
     display: flex;
@@ -5071,8 +5077,8 @@ figcaption {
     align-items: center;
     width: 24px;
     height: 2px;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     padding-bottom: 0;
     padding-right: 0;
     display: flex;
@@ -5466,10 +5472,6 @@ figcaption {
 
   .menu-link {
     color: var(--base-color-neutral--black);
-  }
-
-  .menu-link.cart {
-    color: var(--base-color-neutral--white);
   }
 
   .menu-link.cart:hover {
@@ -6291,6 +6293,10 @@ figcaption {
     padding-bottom: .35rem;
   }
 
+  .footer_link-list.mobile {
+    display: block;
+  }
+
   .footer_form {
     flex-direction: column;
   }
@@ -6547,7 +6553,7 @@ figcaption {
   align-self: start;
 }
 
-#w-node-_51f661d0-ebd3-5205-15e7-a98446e29810-cf39daf1, #w-node-ced975e7-1b4d-f69e-9e83-8c61141236df-cf39daf1, #w-node-ced975e7-1b4d-f69e-9e83-8c61141236e0-cf39daf1, #w-node-_8c754474-e4d5-bcc2-d22b-03af6f725bec-cf39daf1, #w-node-cc726d38-1dae-71d7-26fb-d72c108f2ae0-cf39daf1, #w-node-bc2ed300-2308-5dc4-a3b2-7a9c9571447c-cf39daf1 {
+#w-node-_51f661d0-ebd3-5205-15e7-a98446e29810-cf39daf1, #w-node-ced975e7-1b4d-f69e-9e83-8c61141236df-cf39daf1, #w-node-ced975e7-1b4d-f69e-9e83-8c61141236e0-cf39daf1, #w-node-_8c754474-e4d5-bcc2-d22b-03af6f725bec-cf39daf1, #w-node-cc726d38-1dae-71d7-26fb-d72c108f2ae0-cf39daf1, #w-node-bc2ed300-2308-5dc4-a3b2-7a9c9571447c-cf39daf1, #w-node-_58edce19-7ba2-a06d-0f0c-248d1f4a6c32-cf39daf1 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 

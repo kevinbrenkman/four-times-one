@@ -1,26 +1,26 @@
 <div class="padding-global"><div class="container-large">{% if cart.item_count == 0 %}    <div li-if="cart.item_count == 0" class="cart_empty">
-    <div class="w-layout-grid cart_grid"><div id="w-node-_4212514d-bfe2-6103-10e2-f6b48ef17eeb-7385b69b">YOUR CART IS EMPTY </div><div id="w-node-b3c114e9-a088-299e-ec93-32e25ab240d4-7385b69b"><a id="w-node-_4eed5806-b253-3068-3bd8-75ead253b3c2-7385b69b" href="../index.html">Go back home</a></div></div>    </div>
+    <div class="w-layout-grid cart_grid"><div id="w-node-_4212514d-bfe2-6103-10e2-f6b48ef17eeb-7385b69b">YOUR CART IS EMPTY </div><div id="w-node-b3c114e9-a088-299e-ec93-32e25ab240d4-7385b69b"><a href="../index.html">Go back home</a></div></div>    </div>
 {% endif %}<div class="cart-wrapper">{% if cart.item_count > 0 %}    <div li-if="cart.item_count > 0" class="w-form">
     {% form 'cart', cart, class: 'cart_grid-wrapper' %}
 <div class="cart_table">{% for item in cart.items %}    <div li-for="item in cart.items" class="cart_grid is-header">
                                     
-                            <div id="w-node-_02910dd7-c966-2b16-cad9-9dda18793538-7385b69b" class="item-number">01</div>
+                            <div class="item-number">01</div>
                             
                             <div id="w-node-_51dd9338-e259-f546-1410-ab7878c921b7-7385b69b"><a href="{{ item.url }}" li-object:href="item.url" id="w-node-_51dd9338-e259-f546-1410-ab7878c921b8-7385b69b" class="w-inline-block"><img src="{{ item.image |  img_url: 'large' }}" li-object:src="item.image |  img_url: 'large'" alt="" class="cart_image">
 </a></div>
                             
-                            <div id="w-node-_3e801113-c479-b536-ecb1-8d1c89762be3-7385b69b" class="item_info_wrapper"><div class="product-grid-line"><div id="w-node-f7bfcd8e-0430-4a7f-6436-20ea8991d341-7385b69b">item</div><a href="{{ item.url }}" li-object:href="item.url" li-object="item.product.title" id="w-node-_6555415f-2c1e-edbe-851a-b949a07adb3e-7385b69b" class="text-size-regular">{{ item.product.title }}</a></div>{% unless item.product.has_only_default_variant %}    <div li-unless="item.product.has_only_default_variant" class="cart-variants-wrapper">
+                            <div id="w-node-_3e801113-c479-b536-ecb1-8d1c89762be3-7385b69b" class="item_info_wrapper"><div class="product-grid-line"><div>item</div><a href="{{ item.url }}" li-object:href="item.url" li-object="item.product.title" id="w-node-_6555415f-2c1e-edbe-851a-b949a07adb3e-7385b69b" class="text-size-regular">{{ item.product.title }}</a></div>{% unless item.product.has_only_default_variant %}    <div li-unless="item.product.has_only_default_variant" class="cart-variants-wrapper">
     {% for option in item.options_with_values %}    <div li-for="option in item.options_with_values" class="product-grid-line">
                                     
-                            <div li-object="option.name" id="w-node-e2985d56-faae-4b5b-567a-bd358920c54d-7385b69b">{{ option.name }}</div>
+                            <div li-object="option.name">{{ option.name }}</div>
                             
-                            <div li-object="option.value" id="w-node-_0c04d88b-4596-e670-6fcf-2b3ffe23eadb-7385b69b">{{ option.value }}</div>
+                            <div li-object="option.value">{{ option.value }}</div>
                             
                         </div>
 {% endfor %}    </div>
-{% endunless %}<div id="w-node-_51dd9338-e259-f546-1410-ab7878c921c7-7385b69b" class="cart_table-item anzahl"><div class="cart_quantity-wrapper"><div>Quantity</div><input class="cart_quantity w-input" li-object:value="item.quantity" maxlength="256" name="updates[]" data-name="updates[]" placeholder="1" type="number" id="updates[]" required="" value="{{ item.quantity }}">
-</div><div class="product-grid-line"><div id="w-node-_8c502cac-f6ac-7b5f-f6ac-e8546ab08baf-7385b69b">PRICE</div><div id="w-node-_3d7cbf18-159c-e09d-034b-aa8947f77c7f-7385b69b" class="cart_price-info"><div li-object="item.final_line_price | money" id="w-node-_51dd9338-e259-f546-1410-ab7878c921d0-7385b69b" class="text-size-regular">{{ item.final_line_price | money }}</div>{% if item.original_line_price > item.final_line_price %}    <div li-if="item.original_line_price > item.final_line_price" id="w-node-_3f61db21-129c-484c-c7db-5af0a16cea45-7385b69b">
-    <div li-object="item.original_line_price | money" id="w-node-_71195821-f29a-eb19-64c4-f0623c97c5cd-7385b69b" class="text-size-regular text-style-strikethrough">{{ item.original_line_price | money }}</div>    </div>
+{% endunless %}<div class="cart_table-item anzahl"><div class="cart_quantity-wrapper"><div>Quantity</div><input class="cart_quantity w-input" li-object:value="item.quantity" maxlength="256" name="updates[]" data-name="updates[]" placeholder="1" type="number" id="updates[]" required="" value="{{ item.quantity }}">
+</div><div class="product-grid-line"><div>PRICE</div><div id="w-node-_3d7cbf18-159c-e09d-034b-aa8947f77c7f-7385b69b" class="cart_price-info"><div li-object="item.final_line_price | money" class="text-size-regular">{{ item.final_line_price | money }}</div>{% if item.original_line_price > item.final_line_price %}    <div li-if="item.original_line_price > item.final_line_price">
+    <div li-object="item.original_line_price | money" class="text-size-regular text-style-strikethrough">{{ item.original_line_price | money }}</div>    </div>
 {% endif %}</div><div class="update-or-remove"><a href="{{ item.url_to_remove }}" li-object:href="item.url_to_remove" class="text-size-tiny w-inline-block"><div li-object:url="item.url_to_remove" url="{{ item.url_to_remove }}">Remove</div></a></div></div></div></div>
                             
                         </div>

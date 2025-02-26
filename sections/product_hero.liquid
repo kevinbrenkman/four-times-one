@@ -144,8 +144,7 @@ video {
 {% endif %}</div><div class="product-header_ad-to-cart-wrapper"><template x-if="selected_or_first_available_variant.available">
             <div li-js-if="selected_or_first_available_variant.available" class="product-header_quantity">
         <input class="form-input is-quantity w-input" maxlength="256" name="quantity" li-element="add-to-cart-quantity" data-name="quantity" placeholder="1" type="number" id="quantity" required="" x-model="quantity">
-<script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
-<a li-element="checkout-add-to-cart" href="#" class="button max-width-full w-button" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" @click="addToCartAndCheckout($event, true)">Add to cart</a>        </div>
+<a x-on:click="addToCart($event, false)" href="#" class="button max-width-full w-button">Add to cart</a>        </div>
     </template>
 <template x-if="!selected_or_first_available_variant.available">
             <div li-js-if="!selected_or_first_available_variant.available">
