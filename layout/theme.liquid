@@ -55,6 +55,13 @@
 }  
 </style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body>
+  
+<style>
+@media screen and (max-width: 991px) {
+    .menu-icon_line-top {
+        background-color:red;
+    }
+</style>
 
 <p>{% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
   <style>
@@ -62,7 +69,11 @@
     background-color: black !important;
   }
    
-
+@media screen and (max-width: 991px) {
+    .menu-icon_line-top {
+        background-color:green;
+    }
+  
 .nav_logo-link {
     color: white !important;
 }
