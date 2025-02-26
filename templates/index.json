@@ -31,17 +31,6 @@
         "headline": "static"
       }
     },
-    "large_heading_rBerkw": {
-      "type": "large_heading",
-      "settings": {
-        "url_link": "",
-        "text_heading": "CHEST-FLATTENING BASICS",
-        "color": "#ff0000",
-        "background": "#000000",
-        "animation_speed": 60,
-        "headline": "marquee"
-      }
-    },
     "hero": {
       "type": "hero",
       "settings": {
@@ -263,7 +252,6 @@
   "order": [
     "small_heading_GbrgzJ",
     "large_heading_MMinMh",
-    "large_heading_rBerkw",
     "hero",
     "category_xGnyiK",
     "image_and_text_3q3Jzj",
