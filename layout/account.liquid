@@ -209,6 +209,17 @@ $("[data-lenis-toggle]").on("click", function () {
 </script><script>document.addEventListener('cartupdated', function() {
     window.location.href = '/cart';
 });
-    </script>
+    </script><script>document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".nav-link-child-wrapper").forEach(wrapper => {
+        let count = 1;
+        wrapper.querySelectorAll(".nav-child-link-grid .nav_dropdown-link_child").forEach((element, index) => {
+            if (element.textContent.trim().match(/^\d+$/)) {
+                element.textContent = String(count).padStart(2, '0');
+                count++;
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>
