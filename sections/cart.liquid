@@ -1,4 +1,4 @@
-<div class="padding-global"><div class="container-large">{% if cart.item_count == 0 %}    <div li-if="cart.item_count == 0" class="cart_empty">
+<div class="padding-global"><div class="container-large cart-main">{% if cart.item_count == 0 %}    <div li-if="cart.item_count == 0" class="cart_empty">
     <div class="w-layout-grid cart_grid"><div id="w-node-_4212514d-bfe2-6103-10e2-f6b48ef17eeb-7385b69b">YOUR CART IS EMPTY </div><div id="w-node-b3c114e9-a088-299e-ec93-32e25ab240d4-7385b69b"><a href="../index.html">Go back home</a></div></div>    </div>
 {% endif %}<div class="cart-wrapper">{% if cart.item_count > 0 %}    <div li-if="cart.item_count > 0" class="w-form">
     {% form 'cart', cart, class: 'cart_grid-wrapper' %}
