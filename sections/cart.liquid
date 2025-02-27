@@ -4,30 +4,30 @@
     {% form 'cart', cart, class: 'cart_grid-wrapper' %}
 <div class="cart_table">{% for item in cart.items %}    <div li-for="item in cart.items" class="cart_grid is-header">
                                     
-                            <div class="item-number">01</div>
+                            <div id="w-node-_02910dd7-c966-2b16-cad9-9dda18793538-7385b69b" class="item-number">01</div>
                             
                             <div id="w-node-_51dd9338-e259-f546-1410-ab7878c921b7-7385b69b"><a href="{{ item.url }}" li-object:href="item.url" id="w-node-_51dd9338-e259-f546-1410-ab7878c921b8-7385b69b" class="w-inline-block"><img src="{{ item.image |  img_url: 'large' }}" li-object:src="item.image |  img_url: 'large'" alt="" class="cart_image">
 </a></div>
                             
-                            <div id="w-node-_3e801113-c479-b536-ecb1-8d1c89762be3-7385b69b" class="item_info_wrapper"><div class="product-grid-line"><div>item</div><a href="{{ item.url }}" li-object:href="item.url" li-object="item.product.title" id="w-node-_6555415f-2c1e-edbe-851a-b949a07adb3e-7385b69b" class="text-size-regular">{{ item.product.title }}</a></div>{% unless item.product.has_only_default_variant %}    <div li-unless="item.product.has_only_default_variant" class="cart-variants-wrapper">
+                            <div id="w-node-_3e801113-c479-b536-ecb1-8d1c89762be3-7385b69b" class="item_info_wrapper"><div class="product-grid-line"><div id="w-node-f7bfcd8e-0430-4a7f-6436-20ea8991d341-7385b69b">item</div><a href="{{ item.url }}" li-object:href="item.url" li-object="item.product.title" id="w-node-_6555415f-2c1e-edbe-851a-b949a07adb3e-7385b69b" class="text-size-regular">{{ item.product.title }}</a></div>{% unless item.product.has_only_default_variant %}    <div li-unless="item.product.has_only_default_variant" class="cart-variants-wrapper">
     {% for option in item.options_with_values %}    <div li-for="option in item.options_with_values" class="product-grid-line">
                                     
-                            <div li-object="option.name">{{ option.name }}</div>
+                            <div li-object="option.name" id="w-node-e2985d56-faae-4b5b-567a-bd358920c54d-7385b69b">{{ option.name }}</div>
                             
                             <div li-object="option.value">{{ option.value }}</div>
                             
                         </div>
 {% endfor %}    </div>
-{% endunless %}<div class="cart_table-item anzahl"><div class="cart_quantity-wrapper"><div>Quantity</div><input class="cart_quantity w-input" li-object:value="item.quantity" maxlength="256" name="updates[]" data-name="updates[]" placeholder="1" type="number" id="updates[]" required="" value="{{ item.quantity }}">
-</div><div class="product-grid-line"><div>PRICE</div><div id="w-node-_3d7cbf18-159c-e09d-034b-aa8947f77c7f-7385b69b" class="cart_price-info"><div li-object="item.final_line_price | money" class="text-size-regular">{{ item.final_line_price | money }}</div>{% if item.original_line_price > item.final_line_price %}    <div li-if="item.original_line_price > item.final_line_price">
+{% endunless %}<div class="cart_table-item anzahl"><div class="cart_quantity-wrapper"><div id="w-node-_51dd9338-e259-f546-1410-ab7878c921c9-7385b69b">Quantity</div><input class="cart_quantity w-node-cb651c21-bfb0-25f5-c8cc-93f2439889bf-7385b69b w-input" li-object:value="item.quantity" maxlength="256" name="updates[]" data-name="updates[]" placeholder="1" type="number" id="updates[]" required="" value="{{ item.quantity }}">
+</div><div class="product-grid-line"><div id="w-node-_8c502cac-f6ac-7b5f-f6ac-e8546ab08baf-7385b69b">PRICE</div><div class="cart_price-info"><div li-object="item.final_line_price | money" class="text-size-regular">{{ item.final_line_price | money }}</div>{% if item.original_line_price > item.final_line_price %}    <div li-if="item.original_line_price > item.final_line_price">
     <div li-object="item.original_line_price | money" class="text-size-regular text-style-strikethrough">{{ item.original_line_price | money }}</div>    </div>
-{% endif %}</div><div class="update-or-remove"><a href="{{ item.url_to_remove }}" li-object:href="item.url_to_remove" class="text-size-tiny w-inline-block"><div li-object:url="item.url_to_remove" url="{{ item.url_to_remove }}">Remove</div></a></div></div></div></div>
+{% endif %}</div><div id="w-node-_2fe93be1-5893-1653-e8a2-d82ecd8a0cab-7385b69b" class="update-or-remove"><a href="{{ item.url_to_remove }}" li-object:href="item.url_to_remove" class="text-size-tiny w-inline-block"><div li-object:url="item.url_to_remove" url="{{ item.url_to_remove }}">Remove</div></a></div></div></div></div>
                             
                         </div>
-{% endfor %}</div><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0a-7385b69b" class="cart_wrapper-right"><div id="w-node-_8d343197-3763-d007-23ab-edd609ea33ab-7385b69b" class="cart_grid is-checkout"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0b-7385b69b" class="cart_table outline-solid-1"><div class="cart_content"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b11-7385b69b" class="cart_wrapper"><div class="cart_details-wrapper"><div class="text-size-regular">Total</div><div class="cart_details-price">{% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0">
+{% endfor %}</div><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0a-7385b69b" class="cart_wrapper-right"><div id="w-node-_8d343197-3763-d007-23ab-edd609ea33ab-7385b69b" class="cart_grid is-checkout"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0b-7385b69b" class="cart_table outline-solid-1"><div class="cart_content"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b11-7385b69b" class="cart_wrapper"><div class="cart_details-wrapper"><div class="text-size-regular">Total</div><div id="w-node-_7753d45d-f220-28a4-196f-e7c3634531d6-7385b69b" class="cart_details-price">{% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0">
     <div li-object="cart.original_total_price | money" class="text-style-strikethrough">{{ cart.original_total_price | money }}</div>    </div>
 {% endif %}<div li-object="cart.total_price | money">{{ cart.total_price | money }}</div></div></div>{% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0" class="cart_details-wrapper">
-    <div class="text-size-regular">Discount</div><div li-object="cart.total_discount | money">{{ cart.total_discount | money }}</div>    </div>
+    <div class="text-size-regular">Discount</div><div li-object="cart.total_discount | money" id="w-node-e70215e6-46ed-17af-2aa7-195241f33b1c-7385b69b">{{ cart.total_discount | money }}</div>    </div>
 {% endif %}</div><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b1e-7385b69b" class="cart_action"><input type="submit" data-wait="Please wait..." class="button is-outline update w-button" value="Update cart">
 <input type="submit" data-wait="Please wait..." class="button is-outline w-button" value="Checkout" name="checkout">
 </div></div></div></div><div class="cart_table add-comment"><div class="cart_grid is-header w-hidden-tiny"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b23-7385b69b" class="cart_table-header"><p class="text-size-regular">Comment</p></div></div><div class="cart_content"><div class="form_field-wrapper"><textarea class="form-input is-text-area w-input" maxlength="5000" name="note" data-name="field" placeholder="Comment" id="CartNote"></textarea></div></div></div></div>{% endform %}
