@@ -35,6 +35,9 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.59.24.png",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
         "text_heading": "Dear Underdog,",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
@@ -84,11 +87,11 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
-            "checkbox_show_heading": false,
-            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+            "checkbox_show_heading": true,
+            "text_block_heading": "DROP 01UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
-            "padding": "0rem"
+            "padding": "1rem"
           }
         },
         "block_JWHLi6": {
@@ -113,6 +116,9 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
         "text_heading": "CHEST-FLATTENING TEES FOR PRESONALITIES",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
@@ -169,6 +175,9 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
         "text_heading": "“ONE DAY I’LL TAKE OFF MY”",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
@@ -182,6 +191,9 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
         "text_heading": "Manifesto",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
