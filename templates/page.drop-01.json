@@ -161,38 +161,6 @@
       ],
       "settings": {}
     },
-    "images_GdwkWr": {
-      "type": "images",
-      "blocks": {
-        "block_DmGaNR": {
-          "type": "block",
-          "settings": {
-            "image_image": "shopify://shop_images/edit-06-1800x-q80.jpg",
-            "checkbox_show_heading": true,
-            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "1rem"
-          }
-        },
-        "block_nBdebF": {
-          "type": "block",
-          "settings": {
-            "image_image": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
-            "checkbox_show_heading": true,
-            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "1rem"
-          }
-        }
-      },
-      "block_order": [
-        "block_DmGaNR",
-        "block_nBdebF"
-      ],
-      "settings": {}
-    },
     "image_and_text_AtPdDK": {
       "type": "image_and_text",
       "settings": {
@@ -218,6 +186,17 @@
         "padding": "0.5rem",
         "flex-direction": "row-reverse"
       }
+    },
+    "hero_AHUznh": {
+      "type": "hero",
+      "settings": {
+        "image_image": "shopify://shop_images/edit-04-1800x-q80.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "color": "#000000",
+        "background": "#00ff00"
+      }
     }
   },
   "layout": "page",
@@ -233,8 +212,8 @@
     "large_heading_83zY3h",
     "images_dyet8C",
     "images_Hiz4VF",
-    "images_GdwkWr",
     "image_and_text_AtPdDK",
-    "image_and_text_CTj96e"
+    "image_and_text_CTj96e",
+    "hero_AHUznh"
   ]
 }
