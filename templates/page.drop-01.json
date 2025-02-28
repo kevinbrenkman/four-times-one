@@ -35,13 +35,20 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/2-03-1800x-q80_copy.jpg",
-        "text_heading": "FROM <br>UNDERDOG<br> TO UPERDOG",
+        "text_heading": "FROM UNDERDOG TO UPERDOG",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
         "color": "#00ff00",
         "background": "#000000",
         "padding": "0rem",
         "flex-direction": "row"
+      }
+    },
+    "category_Dq7dC3": {
+      "type": "category",
+      "settings": {
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6
       }
     },
     "hero_RwmgBA": {
@@ -59,22 +66,24 @@
       "type": "large_heading",
       "settings": {
         "url_link": "",
-        "text_heading": "TALKING ABOUT AN AESTHETHICK",
-        "color": "#000000",
-        "background": "#ffffff",
+        "text_heading": "WEAR UPPERDOG ENERGY",
+        "color": "#00ff00",
+        "background": "#000000",
         "animation_speed": 60,
         "headline": "static"
       }
     },
-    "large_heading_ctNRU9": {
-      "type": "large_heading",
+    "image_and_text_i3Pep9": {
+      "type": "image_and_text",
       "settings": {
-        "url_link": "",
-        "text_heading": "WEAR UPPER DOG ENERGY",
+        "image_image": "shopify://shop_images/6a13ce0cf8ef2002323353ef343c792e.jpg",
+        "text_heading": "",
+        "checkbox_show_logo": false,
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
         "color": "#000000",
-        "background": "#ff0000",
-        "animation_speed": 60,
-        "headline": "static"
+        "background": "#ffffff",
+        "padding": "0.5rem",
+        "flex-direction": "row"
       }
     },
     "images_Hiz4VF": {
@@ -85,7 +94,7 @@
           "settings": {
             "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
             "checkbox_show_heading": false,
-            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
+            "text_block_heading": "DROP 01UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "0rem"
@@ -108,19 +117,6 @@
         "block_JWHLi6"
       ],
       "settings": {}
-    },
-    "image_and_text_i3Pep9": {
-      "type": "image_and_text",
-      "settings": {
-        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
-        "text_heading": "CHEST-FLATTENING TEES FOR PRESONALITIES",
-        "checkbox_show_logo": false,
-        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#ff0000",
-        "background": "#000000",
-        "padding": "0.5rem",
-        "flex-direction": "row"
-      }
     },
     "images_GdwkWr": {
       "type": "images",
@@ -190,13 +186,6 @@
         "padding": "0.5rem",
         "flex-direction": "row-reverse"
       }
-    },
-    "category_Dq7dC3": {
-      "type": "category",
-      "settings": {
-        "collection_collection": "frontpage",
-        "collection_collection_limit": 6
-      }
     }
   },
   "layout": "page",
@@ -205,15 +194,14 @@
     "large_heading_eEbFX9",
     "hero_4FinmG",
     "image_and_text_QcW97j",
+    "category_Dq7dC3",
     "hero_RwmgBA",
     "large_heading_hEfpBM",
-    "large_heading_ctNRU9",
-    "images_Hiz4VF",
     "image_and_text_i3Pep9",
+    "images_Hiz4VF",
     "images_GdwkWr",
     "large_heading_83zY3h",
     "image_and_text_AtPdDK",
-    "image_and_text_CTj96e",
-    "category_Dq7dC3"
+    "image_and_text_CTj96e"
   ]
 }
