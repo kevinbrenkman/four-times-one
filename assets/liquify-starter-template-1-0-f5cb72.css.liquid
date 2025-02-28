@@ -714,6 +714,11 @@ figcaption {
   display: flex;
 }
 
+.main-wrapper.no-scroll {
+  opacity: 0;
+  overflow: hidden;
+}
+
 .align-center {
   margin-left: auto;
   margin-right: auto;
@@ -4555,6 +4560,10 @@ figcaption {
   inset: 0%;
 }
 
+.cs-background-image.intro {
+  position: absolute;
+}
+
 .cs-form {
   flex-flow: column;
   justify-content: center;
@@ -4898,6 +4907,34 @@ figcaption {
   display: flex;
   position: absolute;
   inset: auto 0% 0%;
+}
+
+.doormat-animation {
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  transition: opacity .2s;
+  display: block;
+  position: fixed;
+  inset: 0%;
+}
+
+.doormat-animation.hide {
+  display: none;
+}
+
+.doormat-animation.play {
+  opacity: 100;
+}
+
+.doormat-animation.play.done {
+  opacity: 0;
+}
+
+.doormat-animation.show {
+  opacity: 100;
 }
 
 @media screen and (max-width: 991px) {
