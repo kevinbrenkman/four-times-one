@@ -154,16 +154,12 @@ input:-webkit-autofill {
     if (sessionStorage.getItem('animationPlayed')) return;
     // Ensure doormat-animation is visible
     document.querySelector('.doormat-animation').classList.remove('hide');
-    // Add .no-scroll to .main-wrapper to prevent scrolling
-    document.querySelector('.main-wrapper').classList.add('no-scroll');
     // Wait 1000ms before adding the 'play' class to .doormat-animation
     setTimeout(function() {
         document.querySelector('.doormat-animation').classList.add('play');
         // Wait an additional 5000ms, then add the 'done' class to .doormat-animation.play
         setTimeout(function() {
             document.querySelector('.doormat-animation.play').classList.add('done');
-            // Remove .no-scroll from .main-wrapper after animation ends
-            document.querySelector('.main-wrapper').classList.remove('no-scroll');
             // Mark the animation as played in this session
             sessionStorage.setItem('animationPlayed', 'true');
         }, 5000);
