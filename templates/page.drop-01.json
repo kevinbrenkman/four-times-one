@@ -161,32 +161,6 @@
       ],
       "settings": {}
     },
-    "image_and_text_AtPdDK": {
-      "type": "image_and_text",
-      "settings": {
-        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
-        "text_heading": "“ONE DAY I’LL TAKE OFF MY”",
-        "checkbox_show_logo": false,
-        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#00bbff",
-        "background": "#000000",
-        "padding": "0.5rem",
-        "flex-direction": "row"
-      }
-    },
-    "image_and_text_CTj96e": {
-      "type": "image_and_text",
-      "settings": {
-        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
-        "text_heading": "Manifesto",
-        "checkbox_show_logo": false,
-        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#000000",
-        "background": "#ffffff",
-        "padding": "0.5rem",
-        "flex-direction": "row-reverse"
-      }
-    },
     "hero_AHUznh": {
       "type": "hero",
       "settings": {
@@ -196,6 +170,19 @@
         "text_button_text": "Shop this look",
         "color": "#000000",
         "background": "#00ff00"
+      }
+    },
+    "image_and_text_CTj96e": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
+        "text_heading": "ONE DAY I’LL TAKEOFF MY SHIRT",
+        "checkbox_show_logo": false,
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
+        "color": "#00ff00",
+        "background": "#000000",
+        "padding": "0.5rem",
+        "flex-direction": "row"
       }
     }
   },
@@ -212,8 +199,7 @@
     "large_heading_83zY3h",
     "images_dyet8C",
     "images_Hiz4VF",
-    "image_and_text_AtPdDK",
-    "image_and_text_CTj96e",
-    "hero_AHUznh"
+    "hero_AHUznh",
+    "image_and_text_CTj96e"
   ]
 }
