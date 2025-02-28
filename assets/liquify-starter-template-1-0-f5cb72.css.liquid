@@ -1773,6 +1773,13 @@ figcaption {
   overflow: scroll;
 }
 
+.nav_dropdown-list.no-scrollbar.w--open {
+  border-style: none;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-height: 12rem;
+}
+
 .nav_dropdown-link {
   padding: .5rem 0;
   font-weight: 700;
@@ -2515,7 +2522,7 @@ figcaption {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   flex-direction: column;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   padding-top: 1rem;
@@ -5296,6 +5303,7 @@ figcaption {
     grid-template-columns: 1fr;
     place-items: start;
     max-width: 100%;
+    margin-top: 0;
   }
 
   .contact_component {
