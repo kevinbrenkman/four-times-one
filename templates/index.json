@@ -53,6 +53,9 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-2.jpg",
+        "checkbox_show_button": false,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
         "text_heading": "DROP 01 UNDER TO UPPERDOGS",
         "checkbox_show_logo": true,
         "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
