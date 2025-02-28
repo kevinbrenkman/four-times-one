@@ -326,25 +326,6 @@ $("[data-lenis-toggle]").on("click", function () {
         });
     });
 });
-</script><script>document.addEventListener("DOMContentLoaded", function () {
-    // Check if the section exists
-    const section = document.querySelector(".shopify-section.section_drops");
-    if (!section) return; // Stop if section not found
-    // Find the drops wrapper
-    const dropsWrapper = section.querySelector(".nav-child-wide");
-    if (!dropsWrapper) return; // Stop if wrapper not found
-    // Check if it contains a link with the text "Drops"
-    const dropsLink = dropsWrapper.querySelector("a");
-    if (!dropsLink || dropsLink.textContent.trim() !== "Drops") return; // Stop if "Drops" link not found
-    // Clone the entire wrapper
-    const clonedDrops = dropsWrapper.cloneNode(true);
-    // Find all elements with the class "drops-links"
-    const dropTargets = document.querySelectorAll(".drops-links");
-    // Append the cloned content to each target
-    dropTargets.forEach(target => {
-        target.appendChild(clonedDrops.cloneNode(true));
-    });
-});
 </script><!--  Include the Splide.js library  -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
     function initializeSlider() {
