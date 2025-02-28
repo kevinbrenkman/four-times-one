@@ -709,13 +709,14 @@ figcaption {
 }
 
 .main-wrapper {
+  pointer-events: auto;
   flex-direction: column;
   flex: 1;
   display: flex;
 }
 
 .main-wrapper.no-scroll {
-  opacity: 0;
+  pointer-events: none;
   overflow: hidden;
 }
 
@@ -888,6 +889,10 @@ figcaption {
   height: 3rem;
   position: sticky;
   top: 0;
+}
+
+.section_navbar.no-scroll {
+  pointer-events: none;
 }
 
 .section_footer_inside {
