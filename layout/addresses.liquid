@@ -141,6 +141,11 @@ input:-webkit-autofill {
 </style><style>html, body {
   overscroll-behavior-x: none;
 }
+html.no-scroll,
+body.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
 </style><style>audio, canvas, progress, video {
     display: inline-block;
     vertical-align: baseline;
@@ -154,16 +159,18 @@ input:-webkit-autofill {
     if (sessionStorage.getItem('animationPlayed')) return;
     // Ensure doormat-animation is visible
     document.querySelector('.doormat-animation').classList.remove('hide');
-    // Add .no-scroll to .section_navbar to prevent scrolling during animation
-    document.querySelector('.section_navbar').classList.add('no-scroll');
+    // Add .no-scroll to <html> and <body> to prevent scrolling during animation
+    document.documentElement.classList.add('no-scroll'); // Apply to <html>
+    document.body.classList.add('no-scroll'); // Apply to <body>
     // Wait 1000ms before adding the 'play' class to .doormat-animation
     setTimeout(function() {
         document.querySelector('.doormat-animation').classList.add('play');
         // Wait an additional 5000ms, then add the 'done' class to .doormat-animation.play
         setTimeout(function() {
             document.querySelector('.doormat-animation.play').classList.add('done');
-            // Remove .no-scroll from .section_navbar after animation ends
-            document.querySelector('.section_navbar').classList.remove('no-scroll');
+            // Remove .no-scroll from <html> and <body> after animation ends
+            document.documentElement.classList.remove('no-scroll');
+            document.body.classList.remove('no-scroll');
             // Mark the animation as played in this session
             sessionStorage.setItem('animationPlayed', 'true');
         }, 5000);
