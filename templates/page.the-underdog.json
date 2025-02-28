@@ -38,13 +38,15 @@
         "checkbox_show_button": true,
         "url_button_link": "",
         "text_button_text": "Shop this look",
-        "text_heading": "Dear Underdog,",
+        "text_heading": "FROM<br>UNDERDOG<br>TO UPPERDOG",
         "checkbox_show_logo": false,
-        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
         "color": "#000000",
         "background": "#00bbff",
         "padding": "0rem",
-        "flex-direction": "row"
+        "flex-direction": "row",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
       }
     },
     "hero_RwmgBA": {
@@ -125,7 +127,9 @@
         "color": "#ff0000",
         "background": "#000000",
         "padding": "0.5rem",
-        "flex-direction": "row"
+        "flex-direction": "row",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
       }
     },
     "images_GdwkWr": {
@@ -184,7 +188,9 @@
         "color": "#00bbff",
         "background": "#000000",
         "padding": "0.5rem",
-        "flex-direction": "row"
+        "flex-direction": "row",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
       }
     },
     "image_and_text_CTj96e": {
@@ -200,7 +206,9 @@
         "color": "#000000",
         "background": "#ffffff",
         "padding": "0.5rem",
-        "flex-direction": "row-reverse"
+        "flex-direction": "row-reverse",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
       }
     },
     "category_Dq7dC3": {
