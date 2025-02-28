@@ -86,6 +86,17 @@
         "flex-direction": "row"
       }
     },
+    "large_heading_83zY3h": {
+      "type": "large_heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "METAMORPHOSIS",
+        "color": "#000000",
+        "background": "#00ff00",
+        "animation_speed": 60,
+        "headline": "static"
+      }
+    },
     "images_Hiz4VF": {
       "type": "images",
       "blocks": {
@@ -150,17 +161,6 @@
       ],
       "settings": {}
     },
-    "large_heading_83zY3h": {
-      "type": "large_heading",
-      "settings": {
-        "url_link": "",
-        "text_heading": "AESTHETHICK",
-        "color": "#000000",
-        "background": "#00bbff",
-        "animation_speed": 60,
-        "headline": "static"
-      }
-    },
     "image_and_text_AtPdDK": {
       "type": "image_and_text",
       "settings": {
@@ -198,9 +198,9 @@
     "hero_RwmgBA",
     "large_heading_hEfpBM",
     "image_and_text_i3Pep9",
+    "large_heading_83zY3h",
     "images_Hiz4VF",
     "images_GdwkWr",
-    "large_heading_83zY3h",
     "image_and_text_AtPdDK",
     "image_and_text_CTj96e"
   ]
