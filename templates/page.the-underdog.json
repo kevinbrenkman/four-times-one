@@ -210,13 +210,6 @@
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
-    },
-    "category_Dq7dC3": {
-      "type": "category",
-      "settings": {
-        "collection_collection": "frontpage",
-        "collection_collection_limit": 6
-      }
     }
   },
   "layout": "page",
@@ -233,7 +226,6 @@
     "images_GdwkWr",
     "large_heading_83zY3h",
     "image_and_text_AtPdDK",
-    "image_and_text_CTj96e",
-    "category_Dq7dC3"
+    "image_and_text_CTj96e"
   ]
 }
