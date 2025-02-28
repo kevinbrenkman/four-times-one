@@ -73,7 +73,7 @@
         "image_image": "shopify://shop_images/6a13ce0cf8ef2002323353ef343c792e.jpg",
         "checkbox_show_button": true,
         "url_button_link": "",
-        "text_button_text": "Shop this look",
+        "text_button_text": "Shop drop 01",
         "text_heading": "",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
@@ -81,7 +81,7 @@
         "background": "#ffffff",
         "padding": "0.5rem",
         "flex-direction": "row",
-        "btn-color": "#ffffff",
+        "btn-color": "#00ff00",
         "btn-background": "#000000"
       }
     },
