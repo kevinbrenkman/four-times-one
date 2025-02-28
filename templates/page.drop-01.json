@@ -44,7 +44,9 @@
         "color": "#00ff00",
         "background": "#000000",
         "padding": "0rem",
-        "flex-direction": "row"
+        "flex-direction": "row",
+        "btn-color": "#000000",
+        "btn-background": "#00ff00"
       }
     },
     "category_Dq7dC3": {
@@ -78,7 +80,9 @@
         "color": "#000000",
         "background": "#ffffff",
         "padding": "0.5rem",
-        "flex-direction": "row"
+        "flex-direction": "row",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
       }
     },
     "large_heading_83zY3h": {
@@ -180,7 +184,9 @@
         "color": "#00ff00",
         "background": "#000000",
         "padding": "0.5rem",
-        "flex-direction": "row"
+        "flex-direction": "row",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
       }
     }
   },
