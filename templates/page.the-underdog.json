@@ -35,10 +35,10 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.59.24.png",
-        "checkbox_show_button": true,
+        "checkbox_show_button": false,
         "url_button_link": "",
         "text_button_text": "Shop this look",
-        "text_heading": "FROM<br>UNDERDOG<br>TO UPPERDOG",
+        "text_heading": "FROMUNDERDOGTO UPPERDOG",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
         "color": "#000000",
