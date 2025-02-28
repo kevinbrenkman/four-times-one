@@ -118,7 +118,7 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
-        "checkbox_show_button": true,
+        "checkbox_show_button": false,
         "url_button_link": "",
         "text_button_text": "Shop this look",
         "text_heading": "CHEST-FLATTENING TEES FOR PRESONALITIES",
@@ -179,7 +179,7 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-5.jpg",
-        "checkbox_show_button": true,
+        "checkbox_show_button": false,
         "url_button_link": "",
         "text_button_text": "Shop this look",
         "text_heading": "“ONE DAY I’LL TAKE OFF MY”",
@@ -197,7 +197,7 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
-        "checkbox_show_button": true,
+        "checkbox_show_button": false,
         "url_button_link": "",
         "text_button_text": "Shop this look",
         "text_heading": "Manifesto",
