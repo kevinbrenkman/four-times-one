@@ -51,17 +51,6 @@
         "collection_collection_limit": 6
       }
     },
-    "hero_RwmgBA": {
-      "type": "hero",
-      "settings": {
-        "image_image": "shopify://shop_images/epoch2-website-poupon-01-1200x1200-crop.avif.jpg",
-        "checkbox_show_button": false,
-        "url_button_link": "",
-        "text_button_text": "Shop this look",
-        "color": "#ffffff",
-        "background": "#000000"
-      }
-    },
     "large_heading_hEfpBM": {
       "type": "large_heading",
       "settings": {
@@ -193,7 +182,6 @@
     "hero_4FinmG",
     "image_and_text_QcW97j",
     "category_Dq7dC3",
-    "hero_RwmgBA",
     "large_heading_hEfpBM",
     "image_and_text_i3Pep9",
     "large_heading_83zY3h",
