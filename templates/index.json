@@ -63,7 +63,9 @@
         "color": "#000000",
         "background": "#ff0000",
         "padding": "0.5rem",
-        "flex-direction": "row"
+        "flex-direction": "row",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
       }
     },
     "large_heading_yWFYde": {
