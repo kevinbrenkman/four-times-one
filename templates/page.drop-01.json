@@ -35,11 +35,11 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/2-03-1800x-q80_copy.jpg",
-        "text_heading": "Dear Underdog,",
+        "text_heading": "FROM <br>UNDERDOG<br> TO UPERDOG",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#000000",
-        "background": "#00bbff",
+        "color": "#00ff00",
+        "background": "#000000",
         "padding": "0rem",
         "flex-direction": "row"
       }
