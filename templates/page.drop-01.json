@@ -13,9 +13,9 @@
       "type": "large_heading",
       "settings": {
         "url_link": "",
-        "text_heading": "ODE TO THE UNDERDOG",
+        "text_heading": "Drop 01: From underdog",
         "color": "#000000",
-        "background": "#ffffff",
+        "background": "#00ff00",
         "animation_speed": 60,
         "headline": "marquee"
       }
@@ -23,7 +23,7 @@
     "hero_4FinmG": {
       "type": "hero",
       "settings": {
-        "image_image": "shopify://shop_images/e-15-1800x-q80_copy.jpg",
+        "image_image": "shopify://shop_images/e-20-1800x-q80.jpg",
         "checkbox_show_button": false,
         "url_button_link": "",
         "text_button_text": "Shop this look",
@@ -34,10 +34,10 @@
     "image_and_text_QcW97j": {
       "type": "image_and_text",
       "settings": {
-        "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.59.24.png",
+        "image_image": "shopify://shop_images/2-03-1800x-q80_copy.jpg",
         "text_heading": "Dear Underdog,",
         "checkbox_show_logo": false,
-        "richtext_body_text": "<p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n              </p>",
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
         "color": "#000000",
         "background": "#00bbff",
         "padding": "0rem",
