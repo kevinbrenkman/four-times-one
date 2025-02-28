@@ -103,7 +103,6 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/2-03-1800x-q80_copy_2.jpg",
-            "checkbox_show_heading": true,
             "text_block_heading": "DROP 01UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
@@ -114,7 +113,6 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/2-03-1800x-q80_copy_3.jpg",
-            "checkbox_show_heading": true,
             "text_block_heading": "DROP 01UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
@@ -135,7 +133,6 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/2-01-1800x-q80_copy_2.jpg",
-            "checkbox_show_heading": true,
             "text_block_heading": "I WAS ALWAYS THE FIRST ONE",
             "color": "#000000",
             "background": "#ffffff",
@@ -146,7 +143,6 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/2-01-1800x-q80_copy.jpg",
-            "checkbox_show_heading": true,
             "text_block_heading": "ONE DAY I’LL TAKE OFF MY SHIRT",
             "color": "#000000",
             "background": "#ffffff",
@@ -188,6 +184,13 @@
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
+    },
+    "drops_bckB3y": {
+      "type": "drops",
+      "settings": {
+        "color": "#000000",
+        "background": "#00ff00"
+      }
     }
   },
   "layout": "page",
@@ -203,6 +206,7 @@
     "images_dyet8C",
     "images_Hiz4VF",
     "hero_AHUznh",
-    "image_and_text_CTj96e"
+    "image_and_text_CTj96e",
+    "drops_bckB3y"
   ]
 }
