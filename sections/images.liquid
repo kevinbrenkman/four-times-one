@@ -1,13 +1,8 @@
-{% for block in section.blocks %}
+<div style="padding: {{ section.settings.padding }}; " class="section_images-inside">{% for block in section.blocks %}
     {% if block.type == "block" %}
                     <div li-block="Block">
                                     
                                     <div class="image-block"><img src="{{ block.settings.image_image | img_url: 'master' }}" loading="eager" alt="{{ block.settings.image_image.alt }}" class="image">
-{% if section.settings.checkbox_show_heading == true %}
-<div><h1 class="h1-heading-small image-block">
-{{ block.settings.text_block_heading }}
-</h1>
-</div>{% endif %}
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
@@ -16,4 +11,4 @@
                             </div>
             {% endif %}
 {% endfor %}
- {% schema %} {"tag":"div","name":"Images","class":"section_images slide-into-view","blocks":[{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"id":"checkbox_show_heading","type":"checkbox","label":"Show heading","default":true},{"id":"text_block_heading","type":"text","label":"Block Heading","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"1rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"1rem"}]}],"presets":[{"name":"Images","category":"Liquify","blocks":[{"type":"block"}]}]} {% endschema %}
+</div> {% schema %} {"tag":"div","name":"Images","class":"section_images slide-into-view","blocks":[{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"1rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"1rem"}]}],"presets":[{"name":"Images","category":"Liquify","blocks":[{"type":"block"}]}]} {% endschema %}

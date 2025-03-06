@@ -3902,7 +3902,6 @@ figcaption {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  display: grid;
 }
 
 .absolute-link-block {
@@ -4962,6 +4961,15 @@ figcaption {
 .doormat-animation.show.done {
   opacity: 100;
   margin-top: -100vh;
+}
+
+.section_images-w-heading, .section_images-inside {
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
 }
 
 @media screen and (max-width: 991px) {

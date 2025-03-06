@@ -1,0 +1,12 @@
+<div class="image-block"><img src="{{ section.settings.image_image_1 | img_url: 'master' }}" loading="eager" alt="{{ section.settings.image_image_1.alt }}" class="image">
+<h1 class="h1-heading-small image-block">
+{{ section.settings.text_heading_1 }}
+</h1>
+</div><div class="image-block"><img src="{{ section.settings.image_image_2 | img_url: 'master' }}" loading="eager" alt="{{ section.settings.image_image_2.alt }}" class="image">
+<h1 class="h1-heading-small image-block">
+{{ section.settings.text_heading_2 }}
+</h1>
+</div><div class="custom-input w-embed"></div>
+<div class="custom-input w-embed"></div>
+<div class="custom-input w-embed"></div>
+ {% schema %} {"tag":"div","name":"Images with Heading","class":"section_images-w-heading slide-into-view","settings":[{"id":"image_image_1","type":"image_picker","label":"Image 1"},{"id":"text_heading_1","type":"text","label":"Heading 1","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"id":"image_image_2","type":"image_picker","label":"Image 2"},{"id":"text_heading_2","type":"text","label":"Heading 2","default":"DROP 01<br\/>UNDER TO UPPERDOGS"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"1rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"1rem"}],"presets":[{"name":"Images with Heading","category":"Liquify","blocks":[]}]} {% endschema %}
