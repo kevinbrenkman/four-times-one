@@ -78,8 +78,6 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
-            "checkbox_show_heading": false,
-            "text_block_heading": "DROP 01UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "0rem"
@@ -89,8 +87,6 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.58.04.png",
-            "checkbox_show_heading": false,
-            "text_block_heading": "DROP 01<br>UNDER TO UPPERDOGS",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "0rem"
@@ -131,38 +127,6 @@
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
-    },
-    "images_GdwkWr": {
-      "type": "images",
-      "blocks": {
-        "block_DmGaNR": {
-          "type": "block",
-          "settings": {
-            "image_image": "shopify://shop_images/edit-06-1800x-q80.jpg",
-            "checkbox_show_heading": true,
-            "text_block_heading": "I WAS ALWAYS THE FIRST ONE",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "1rem"
-          }
-        },
-        "block_nBdebF": {
-          "type": "block",
-          "settings": {
-            "image_image": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
-            "checkbox_show_heading": true,
-            "text_block_heading": "ONE DAY I’LL TAKE OFF MY SHIRT",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "1rem"
-          }
-        }
-      },
-      "block_order": [
-        "block_DmGaNR",
-        "block_nBdebF"
-      ],
-      "settings": {}
     },
     "large_heading_83zY3h": {
       "type": "large_heading",
@@ -210,6 +174,18 @@
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
+    },
+    "images_with_heading_UYq6aF": {
+      "type": "images_with_heading",
+      "settings": {
+        "image_image_1": "shopify://shop_images/edit-06-1800x-q80.jpg",
+        "text_heading_1": "I WAS ALWAYS THEFIRST ONE",
+        "image_image_2": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
+        "text_heading_2": "ONE DAY I’LL TAKEOFF MY SHIRT",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "1rem"
+      }
     }
   },
   "layout": "page",
@@ -223,9 +199,9 @@
     "images_Hiz4VF",
     "large_heading_ctNRU9",
     "image_and_text_i3Pep9",
-    "images_GdwkWr",
     "large_heading_83zY3h",
     "image_and_text_AtPdDK",
-    "image_and_text_CTj96e"
+    "image_and_text_CTj96e",
+    "images_with_heading_UYq6aF"
   ]
 }

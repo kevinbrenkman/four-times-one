@@ -108,8 +108,6 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
-            "checkbox_show_heading": true,
-            "text_block_heading": "test",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "1rem"
@@ -119,8 +117,6 @@
           "type": "block",
           "settings": {
             "image_image": "shopify://shop_images/edit-02-1800x-q80_copy.jpg",
-            "checkbox_show_heading": true,
-            "text_block_heading": "",
             "color": "#000000",
             "background": "#ffffff",
             "padding": "0rem"
