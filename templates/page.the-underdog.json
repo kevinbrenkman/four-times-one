@@ -71,17 +71,6 @@
         "headline": "static"
       }
     },
-    "large_heading_ctNRU9": {
-      "type": "large_heading",
-      "settings": {
-        "url_link": "",
-        "text_heading": "WEAR UPPER DOG ENERGY",
-        "color": "#000000",
-        "background": "#ff0000",
-        "animation_speed": 60,
-        "headline": "static"
-      }
-    },
     "images_Hiz4VF": {
       "type": "images",
       "blocks": {
@@ -113,6 +102,17 @@
         "block_JWHLi6"
       ],
       "settings": {}
+    },
+    "large_heading_ctNRU9": {
+      "type": "large_heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "WEAR UPPER DOG ENERGY",
+        "color": "#000000",
+        "background": "#ff0000",
+        "animation_speed": 60,
+        "headline": "static"
+      }
     },
     "image_and_text_i3Pep9": {
       "type": "image_and_text",
@@ -220,8 +220,8 @@
     "image_and_text_QcW97j",
     "hero_RwmgBA",
     "large_heading_hEfpBM",
-    "large_heading_ctNRU9",
     "images_Hiz4VF",
+    "large_heading_ctNRU9",
     "image_and_text_i3Pep9",
     "images_GdwkWr",
     "large_heading_83zY3h",
