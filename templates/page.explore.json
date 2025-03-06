@@ -13,7 +13,7 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
-        "checkbox_show_button": true,
+        "checkbox_show_button": false,
         "url_button_link": "",
         "text_button_text": "Shop this look",
         "text_heading": "DROP 01: UNDER TO UPPERDOGS",
@@ -32,7 +32,7 @@
       "type": "image_and_text",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
-        "checkbox_show_button": true,
+        "checkbox_show_button": false,
         "url_button_link": "",
         "text_button_text": "Shop this look",
         "text_heading": "DROP 02: UNDER TO UPPERDOGS",
