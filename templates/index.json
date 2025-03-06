@@ -133,17 +133,6 @@
       ],
       "settings": {}
     },
-    "small_heading_CrHiCQ": {
-      "type": "small_heading",
-      "settings": {
-        "text_heading": "WORN AND LOVED IT",
-        "color": "#00ff00",
-        "background": "#004eff",
-        "animation_speed": 60,
-        "headline": "static",
-        "url_link": ""
-      }
-    },
     "feed_slider_6HCzzU": {
       "type": "feed_slider",
       "blocks": {
@@ -286,7 +275,6 @@
     "hero_TtQnEn",
     "large_heading_yWFYde",
     "images",
-    "small_heading_CrHiCQ",
     "feed_slider_6HCzzU"
   ]
 }
