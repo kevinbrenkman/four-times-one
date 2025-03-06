@@ -1,4 +1,4 @@
-<div style="padding: {{ section.settings.padding }}; " class="section_images-inside">{% for block in section.blocks %}
+{% for block in section.blocks %}
     {% if block.type == "block" %}
                     <div li-block="Block">
                                     
@@ -11,4 +11,4 @@
                             </div>
             {% endif %}
 {% endfor %}
-</div> {% schema %} {"tag":"div","name":"Images","class":"section_images slide-into-view","blocks":[{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"1rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"1rem"}]}],"presets":[{"name":"Images","category":"Liquify","blocks":[{"type":"block"}]}]} {% endschema %}
+ {% schema %} {"tag":"div","name":"Images","class":"section_images slide-into-view","blocks":[{"name":"Block","type":"block","settings":[{"id":"image_image","type":"image_picker","label":"Image"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#ffffff"},{"type":"select","id":"padding","label":"Image padding","options":[{"value":"1rem","label":"On"},{"value":"0rem","label":"Off"}],"default":"1rem"}]}],"presets":[{"name":"Images","category":"Liquify","blocks":[{"type":"block"}]}]} {% endschema %}
