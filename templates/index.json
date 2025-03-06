@@ -79,6 +79,17 @@
         "btn-background": "#000000"
       }
     },
+    "hero_TtQnEn": {
+      "type": "hero",
+      "settings": {
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments-3.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "shopify://products/cfb-01-hoodie-logo",
+        "text_button_text": "Shop drop 01",
+        "color": "#ff0000",
+        "background": "#000000"
+      }
+    },
     "large_heading_yWFYde": {
       "type": "large_heading",
       "settings": {
@@ -270,6 +281,7 @@
     "large_heading_mXFGab",
     "category_xGnyiK",
     "image_and_text_3q3Jzj",
+    "hero_TtQnEn",
     "large_heading_yWFYde",
     "images",
     "small_heading_CrHiCQ",
