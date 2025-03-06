@@ -149,9 +149,6 @@ h2 {
 h3 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 1.625rem;
-  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -411,6 +408,10 @@ figcaption {
   line-height: 1.2;
 }
 
+.text-rich-text {
+  text-transform: none;
+}
+
 .text-rich-text h1, .text-rich-text h2, .text-rich-text h3, .text-rich-text h4 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -440,6 +441,10 @@ figcaption {
   font-size: 3.75rem;
   font-weight: 600;
   line-height: 1.1;
+}
+
+.heading-style-h1.align-left {
+  text-align: left;
 }
 
 .padding-global {
@@ -6280,6 +6285,15 @@ figcaption {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .text-rich-text h1 {
+    font-size: 2rem;
+  }
+
+  .text-rich-text h2 {
+    font-size: 1.75rem;
+    line-height: 1em;
   }
 
   .hide-mobile-portrait {
