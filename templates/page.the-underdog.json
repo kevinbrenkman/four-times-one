@@ -128,6 +128,18 @@
         "btn-background": "#000000"
       }
     },
+    "images_with_heading_UYq6aF": {
+      "type": "images_with_heading",
+      "settings": {
+        "image_image_1": "shopify://shop_images/edit-06-1800x-q80.jpg",
+        "text_heading_1": "I WAS ALWAYS THEFIRST ONE",
+        "image_image_2": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
+        "text_heading_2": "ONE DAY I’LL TAKEOFF MY SHIRT",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "1rem"
+      }
+    },
     "large_heading_83zY3h": {
       "type": "large_heading",
       "settings": {
@@ -174,18 +186,6 @@
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
-    },
-    "images_with_heading_UYq6aF": {
-      "type": "images_with_heading",
-      "settings": {
-        "image_image_1": "shopify://shop_images/edit-06-1800x-q80.jpg",
-        "text_heading_1": "I WAS ALWAYS THEFIRST ONE",
-        "image_image_2": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
-        "text_heading_2": "ONE DAY I’LL TAKEOFF MY SHIRT",
-        "color": "#000000",
-        "background": "#ffffff",
-        "padding": "1rem"
-      }
     }
   },
   "layout": "page",
@@ -199,9 +199,9 @@
     "images_Hiz4VF",
     "large_heading_ctNRU9",
     "image_and_text_i3Pep9",
+    "images_with_heading_UYq6aF",
     "large_heading_83zY3h",
     "image_and_text_AtPdDK",
-    "image_and_text_CTj96e",
-    "images_with_heading_UYq6aF"
+    "image_and_text_CTj96e"
   ]
 }
