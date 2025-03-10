@@ -1,0 +1,17 @@
+{% for block in section.blocks %}
+    {% if block.type == "block" %}
+                    <div li-block="Block">
+                                    
+                                    <div class="archived-drop-content"><h1 class="h1-heading-small">
+{{ block.settings.text_top_heading }}
+</h1>
+<img src="{{ block.settings.image_image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.image_image.alt }}" class="archived-drop-bg">
+<h1 class="h1-heading-small">
+{{ block.settings.text_bottom_heading }}
+</h1>
+</div>
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+ {% schema %} {"tag":"div","name":"Archived Drops","class":"section_archived-drops slide-into-view","blocks":[{"name":"Block","type":"block","settings":[{"id":"text_top_heading","type":"text","label":"Top Heading","default":"ARCHIVED DROP 04:"},{"id":"image_image","type":"image_picker","label":"Image"},{"id":"text_bottom_heading","type":"text","label":"Bottom Heading","default":"FROM UNDERDOG TO UPPER DOG"}]}],"presets":[{"name":"Archived Drops","category":"Liquify","blocks":[{"type":"block"}]}]} {% endschema %}
