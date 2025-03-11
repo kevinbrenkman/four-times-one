@@ -61,7 +61,8 @@
   overflow: hidden;
 }  
 </style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
-<body>
+<body>{% section 'navigation' %}
 {{ content_for_layout }}
+{% section 'footer' %}
 </body>
 </html>
