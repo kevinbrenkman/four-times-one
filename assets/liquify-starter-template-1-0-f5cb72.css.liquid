@@ -1803,6 +1803,7 @@ figcaption {
 }
 
 .nav_dropdown-link_child {
+  text-align: left;
   padding: .1rem 0;
   font-family: Ekmodenamonotest, sans-serif;
 }
@@ -5227,7 +5228,6 @@ figcaption {
     align-items: flex-start;
     width: 100%;
     height: auto;
-    font-size: 1.125rem;
     font-weight: 700;
     display: block;
   }
@@ -5347,6 +5347,12 @@ figcaption {
     width: auto;
     padding: .5rem 0 .5rem 0%;
     font-weight: 400;
+    line-height: 1.2em;
+    display: block;
+  }
+
+  .nav_dropdown-link_child.link {
+    white-space: normal;
   }
 
   .nav_shop-icons {
@@ -5855,7 +5861,6 @@ figcaption {
     align-items: flex-start;
     width: 100%;
     height: auto;
-    font-size: 1.125rem;
     font-weight: 700;
     display: flex;
   }
@@ -6617,6 +6622,9 @@ figcaption {
   .nav_dropdown-link_child {
     padding-top: .35rem;
     padding-bottom: .35rem;
+    font-size: .8rem;
+    line-height: 1em;
+    display: block;
   }
 
   .nav_shop-quantity {
@@ -7259,6 +7267,10 @@ figcaption {
 }
 
 @media screen and (max-width: 479px) {
+  #w-node-fd87d5d8-8c6b-1eca-eca8-fdcf3f76b9b3-b641c10b {
+    order: -9999;
+  }
+
   #w-node-aa708b66-30e1-8d40-41a3-a18b79d739d5-7385b66c {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
