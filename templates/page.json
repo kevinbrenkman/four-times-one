@@ -14,7 +14,7 @@
       "settings": {}
     }
   },
-  "layout": "theme",
+  "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
     "default"
