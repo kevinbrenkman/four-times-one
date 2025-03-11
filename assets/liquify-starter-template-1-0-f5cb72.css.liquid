@@ -5212,9 +5212,12 @@ figcaption {
     justify-content: space-between;
     width: 100%;
     height: auto;
+    min-height: calc(100vh - 3rem);
     margin-top: 3rem;
     padding: 1rem .5rem;
-    transition: height .5s;
+    transition-property: height;
+    transition-duration: .5s;
+    transition-timing-function: ease;
     position: absolute;
     overflow: scroll;
   }
@@ -5846,12 +5849,14 @@ figcaption {
 
   .nav_menu-dropdown-follow {
     flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
     height: auto;
     font-size: 1.125rem;
     font-weight: 700;
-    display: block;
+    display: flex;
   }
 }
 
