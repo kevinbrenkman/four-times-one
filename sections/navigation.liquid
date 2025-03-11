@@ -7,12 +7,7 @@
                             {% if link.links.size > 0  %}    <nav li-if="link.links.size > 0 " class="nav_dropdown-list no-scrollbar w-dropdown-list">
     <div class="padding-global max-width-full"><div class="container-large"><div class="nav_dropdown-grid">{% for child_link in link.links %}    <div li-for="child_link in link.links" id="w-node-fd87d5d8-8c6b-1eca-eca8-fdcf3f76b9b3-b641c10b" class="nav-child-wide">
                                     
-                            <div class="nav--custom-dropdown"><a href="{{ child_link.url }}" li-object="child_link.title" li-object:href="child_link.url" class="nav_dropdown-link w-dropdown-link">{{ child_link.title }}</a>{% if child_link.links.size > 0 %}
-    <div class="nav-plus-minus-wrap">
-      <div class="nav-plus">+</div>
-      <div class="nav-minus">-</div>
-    </div>
-  {% endif %}</div>
+                            <div class="nav--custom-dropdown"><a href="{{ child_link.url }}" li-object="child_link.title" li-object:href="child_link.url" class="nav_dropdown-link w-dropdown-link">{{ child_link.title }}</a></div>
                             
                             {% if child_link.links.size > 0 %}    <div li-if="child_link.links.size > 0" class="nav-link-child-wrapper">
     {% for grandchild_link in child_link.links %}    <div li-for="grandchild_link in child_link.links" class="nav-child-link-grid">
