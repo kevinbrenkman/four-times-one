@@ -27,8 +27,8 @@
 {% endif %}
                             
                         </div>
-{% endfor %}<div class="nav_menu-dropdown-follow"><div class="nav-child-wide"><div class="nav--custom-dropdown"><div class="nav_dropdown-link">FOLLOW</div><div class="nav-plus-minus-wrap"><div class="nav-plus">+</div><div class="nav-minus">-</div></div></div><div class="nav-link-child-wrapper"><div li-for:inside="link in linklists['footer-right'].links" class="nav-child-link-grid">
-        {% for link in linklists['footer-right'].links %}                            
+{% endfor %}<div class="nav_menu-dropdown-follow"><div class="nav-child-wide"><div class="nav--custom-dropdown"><div class="nav_dropdown-link">FOLLOW</div><div class="nav-plus-minus-wrap"><div class="nav-plus">+</div><div class="nav-minus">-</div></div></div><div class="nav-link-child-wrapper"><div li-for:inside="link in linklists['follow'].links" class="nav-child-link-grid">
+        {% for link in linklists['follow'].links %}                            
                             <div class="nav_dropdown-link_child">01</div>
                             
                             <div id="w-node-_3020509f-a9bd-d088-a725-bd5ca49464fe-b641c10b"><a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="nav_dropdown-link_child link">{{ link.title }}</a></div>
