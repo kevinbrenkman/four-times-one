@@ -175,9 +175,9 @@ document.addEventListener('alpine:init', () => {
             // Bei einer Variantenauswahl hingegen verweist this.$el auf das Element, das die Auswahl ausgelöst hat.
             let form = this.$el.closest('form') ?? this.$el.querySelector('form');
             const selectedOptionOneVariants = this.product.variants.filter((variant) => {
-                    let element = form.querySelector('[data-productVariantsLoop] input[type="radio"]:checked');
+                    let element = form?.querySelector('[data-productVariantsLoop] input[type="radio"]:checked');
                     if (this.selectorType === 'select') {
-                        element = form.querySelector('[data-productVariantsLoop] select')
+                        element = form?.querySelector('[data-productVariantsLoop] select')
                     }
                     return element?.value === variant.option1
                 }
@@ -185,9 +185,12 @@ document.addEventListener('alpine:init', () => {
 
 
 
-            const inputWrappers = [...form.querySelectorAll('[data-ProductVariantsLoop]')];
+            let inputWrappers = null;
+            if(form?.querySelectorAll('[data-ProductVariantsLoop]')) {
+                inputWrappers = [...form.querySelectorAll('[data-ProductVariantsLoop]')]
+            }
 
-            inputWrappers.forEach((option, index) => {
+            inputWrappers?.forEach((option, index) => {
                 if (index === 0) return;
 
                 let optionInputs = [...option.querySelectorAll('input[type="radio"]')];
@@ -331,19 +334,16 @@ document.addEventListener('alpine:init', () => {
             // Bei einer Variantenauswahl hingegen verweist this.$el auf das Element, das die Auswahl ausgelöst hat.
             let form = this.$el.closest('form') ?? this.$el.querySelector('form');
 
-            let element = form.querySelector("[data-productVariantsLoop] input[name='" + optionName + "']:checked");
-            if (element?.getAttribute('data-disabled') !== null) {
+            let element = form?.querySelector("[data-productVariantsLoop] input[name='" + optionName + "']:checked");
+            if (element && element?.getAttribute('data-disabled') !== null) {
                 element = form.querySelector("[data-productVariantsLoop] input[name='" + optionName + "']:not([data-disabled])")
             }
             //let selector = this.formSelector + " [data-productVariantsLoop] input[name='" + optionName + "']:checked";
 
             if (optionName !== undefined && this.selectorType === 'select') {
-                element = form.querySelector("[data-productVariantsLoop] select[name='" + optionName + "'] option:checked")
+                element = form?.querySelector("[data-productVariantsLoop] select[name='" + optionName + "'] option:checked")
 
-                if (!element) {
-                    throw new Error('Liquify - Element not found for option: ' + optionName);
-                }
-                if (element?.getAttribute('data-disabled') !== null) {
+                if (element && element?.getAttribute('data-disabled') !== null) {
                     element = form.querySelector("[data-productVariantsLoop] select[name='" + optionName + "'] option:not([data-disabled])")
                 }
             }
@@ -509,7 +509,7 @@ document.addEventListener('alpine:init', () => {
          * Add a single product to cart.
          */
         async addToCart(e, toggleMiniCart = true, productId = undefined, quantity = undefined) {
-            if(!(e instanceof Event) || !Object.hasOwn(e, 'preventDefault')){
+            if (!e || !(e instanceof Event) || typeof e.preventDefault !== 'function') {
                 e = window.event
             }
             e.preventDefault();
