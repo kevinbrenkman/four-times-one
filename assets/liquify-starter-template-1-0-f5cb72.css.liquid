@@ -5104,8 +5104,21 @@ figcaption {
   inset: 0% auto auto 0%;
 }
 
-.hidden-code-embed {
+.hidden-liquid-code-embed {
   display: none;
+}
+
+.section_drop-list {
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  padding: .5rem .5rem 10rem;
+}
+
+.section_drop-list.slide-into-view {
+  grid-auto-columns: 1fr;
 }
 
 @media screen and (max-width: 991px) {
@@ -5906,6 +5919,10 @@ figcaption {
     margin-bottom: 3rem;
     font-weight: 700;
     display: flex;
+  }
+
+  .section_drop-list.slide-into-view {
+    grid-template-columns: 1fr;
   }
 }
 
