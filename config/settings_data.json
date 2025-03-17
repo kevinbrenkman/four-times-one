@@ -80,8 +80,9 @@
     "custom_css": [
       ".shopify-policy__container {max-width: none; margin: 0 auto; padding-left: 0.5rem; padding-right: 0.5rem; grid-column-gap: 1em; grid-row-gap: 1em; grid-template-rows: auto; grid-template-columns: 1fr 1fr; grid-auto-columns: 1fr; width: 100%; display: grid; padding-top: 4rem;}",
       ".shopify-policy__container h1 {font-size: 1em; color: black; text-align: left; margin-bottom: 1em; text-transform: capitalize;}",
-      ".shopify-policy__container h2 {font-size: 1em; color: black; text-align: left; margin-bottom: 1em; text-transform: capitalize;}",
-      ".shopify-policy__container p {font-family: Ekmodenamonotest, sans-serif; margin-bottom: 1em; text-transform: none!important;}"
+      ".shopify-policy__container h2 h3 {font-size: 1em; color: black; text-align: left; margin-bottom: 1em; text-transform: capitalize;}",
+      ".shopify-policy__container p {font-family: Ekmodenamonotest, sans-serif; margin-bottom: 1em; text-transform: none !important;}",
+      ".shopify-policy__container li {font-family: Ekmodenamonotest, sans-serif; margin-bottom: 1em; text-transform: none !important;}"
     ]
   }
 }
