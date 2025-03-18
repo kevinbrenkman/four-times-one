@@ -247,40 +247,45 @@ $("[data-lenis-toggle]").on("click", function () {
     window.location.href = '/cart';
 });
     </script><script>document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".nav-link-child-wrapper").forEach(wrapper => {
-      let count = 1;
-      const elements = wrapper.querySelectorAll(".nav-child-link-grid .nav_dropdown-link_child");
-      elements.forEach((element, index) => {
-        if (element.textContent.trim().match(/^\d+$/)) {
-          element.textContent = String(count).padStart(2, '0');
-          count++;
-        }
-      });
-      // Check for "Archived" in link text
-      const link = wrapper.querySelector("a.nav_dropdown-link_child");
-      if (link && link.textContent.includes("Archived")) {
-        // Set opacity on both number and link
-        elements.forEach(el => el.style.opacity = "0.5");
-      }
-    });
-  });
-</script><script>document.addEventListener("DOMContentLoaded", function () {
     const section = document.querySelector("#shopify-section-template--24420473176396__drops_list_pb9RQ9");
     if (section) {
       let count = 1;
       section.querySelectorAll(".nav-link-child-wrapper").forEach(wrapper => {
         const numberEl = wrapper.querySelector(".nav-child-link-grid .nav_dropdown-link_child");
         const linkEl = wrapper.querySelector("a.nav_dropdown-link_child");
+        // Set number
         if (numberEl && numberEl.textContent.trim().match(/^\d+$/)) {
           numberEl.textContent = String(count).padStart(2, '0');
           count++;
         }
+        // Apply opacity if link has "Archived"
         if (linkEl && linkEl.textContent.includes("Archived")) {
           if (numberEl) numberEl.style.opacity = "0.5";
           linkEl.style.opacity = "0.5";
         }
       });
     }
+  });
+</script><script>document.addEventListener("DOMContentLoaded", function () {
+    // Mega menu numbering and Archived opacity
+    let count = 1;
+    document.querySelectorAll("nav .nav-link-child-wrapper").forEach(wrapper => {
+      const rows = wrapper.querySelectorAll(".nav-child-link-grid");
+      rows.forEach(row => {
+        const numberEl = row.querySelector(".nav_dropdown-link_child");
+        const linkEl = row.querySelector("a.nav_dropdown-link_child, a.nav_dropdown-link_child.link");
+        // Set number if it's a number cell
+        if (numberEl && numberEl.textContent.trim().match(/^\d+$/)) {
+          numberEl.textContent = String(count).padStart(2, '0');
+          count++;
+        }
+        // Apply opacity if link has "Archived"
+        if (linkEl && linkEl.textContent.includes("Archived")) {
+          if (numberEl) numberEl.style.opacity = "0.5";
+          linkEl.style.opacity = "0.5";
+        }
+      });
+    });
   });
 </script><script>document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".cart_grid .item-number");
