@@ -257,6 +257,13 @@
         "slide_9bwRWg"
       ],
       "settings": {}
+    },
+    "drops_list_UDeJAz": {
+      "type": "drops_list",
+      "settings": {
+        "color": "#000000",
+        "background": "#00FF00"
+      }
     }
   },
   "layout": "theme",
@@ -271,6 +278,7 @@
     "hero_TtQnEn",
     "large_heading_yWFYde",
     "images",
-    "feed_slider_6HCzzU"
+    "feed_slider_6HCzzU",
+    "drops_list_UDeJAz"
   ]
 }
