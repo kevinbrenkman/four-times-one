@@ -87,7 +87,10 @@ body.no-scroll {
     vertical-align: baseline;
     object-fit: cover;
 }
-    </style></p><div class="page-wrapper">{% render 'global_styles' %}
+    </style><style>.is-archived {
+  opacity: 0.5;
+}
+</style></p><div class="page-wrapper">{% render 'global_styles' %}
 {% section 'navigation' %}
 <main li-content-for-layout="" class="main-wrapper" section-wrapper="main.main-wrapper">{% section 'login' %}
 </main>{% section 'footer' %}
@@ -195,4 +198,13 @@ $("[data-lenis-toggle]").on("click", function () {
         });
     });
 });
+</script><script>document.addEventListener("DOMContentLoaded", function () {
+    const containers = document.querySelectorAll(".nav-child-link-grid");
+    containers.forEach(container => {
+      const link = container.querySelector(".nav_dropdown-link_child.link");
+      if (link && link.textContent.includes("Archived")) {
+        container.classList.add("is-archived");
+      }
+    });
+  });
 </script>

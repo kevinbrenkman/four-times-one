@@ -151,7 +151,10 @@ body.no-scroll {
     vertical-align: baseline;
     object-fit: cover;
 }
-    </style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    </style><style>.is-archived {
+  opacity: 0.5;
+}
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </p><div class="page-wrapper">{% section 'intro' %}
 {% render 'global_styles' %}
 {% section 'navigation' %}
@@ -260,6 +263,15 @@ $("[data-lenis-toggle]").on("click", function () {
         });
     });
 });
+</script><script>document.addEventListener("DOMContentLoaded", function () {
+    const containers = document.querySelectorAll(".nav-child-link-grid");
+    containers.forEach(container => {
+      const link = container.querySelector(".nav_dropdown-link_child.link");
+      if (link && link.textContent.includes("Archived")) {
+        container.classList.add("is-archived");
+      }
+    });
+  });
 </script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>const swiperTeam = new Swiper('.swiper.is-team', {
   slidesPerView: 1.65,
   spaceBetween: 10,
