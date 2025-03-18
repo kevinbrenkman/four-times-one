@@ -1,4 +1,9 @@
 <div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="drop-list-content"><div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
 {% assign drop = linklists['main-menu'].links[2].links[0] %}
-</div> {% schema %} {"tag":"div","name":"Drops List","class":"section_drop-list slide-into-view","settings":[{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#00FF00"}],"presets":[{"name":"Drops List","category":"Liquify","blocks":[]}]} {% endschema %}
+{% for child_link in drop.links %}    <div li-for="child_link in drop.links" class="li-for">
+                                    
+                            <div><a li-object="child_link.title" li-object:href="child_link.url" href="{{ child_link.url }}">{{ child_link.title }}</a></div>
+                            
+                        </div>
+{% endfor %}</div> {% schema %} {"tag":"div","name":"Drops List","class":"section_drop-list slide-into-view","settings":[{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#00FF00"}],"presets":[{"name":"Drops List","category":"Liquify","blocks":[]}]} {% endschema %}
