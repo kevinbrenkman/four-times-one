@@ -12,6 +12,8 @@
   --text-color--text-primary: var(--base-color-neutral--black);
   --link-color--color: white;
   --border-radius--medium: .5rem;
+  --_fonts---monospace: Ekmodenamono, Arial, sans-serif;
+  --_fonts---monospace-weight: 400;
   --base-color-neutral--neutral-lightest: #eee;
   --base-color-neutral--neutral-lighter: #ccc;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
@@ -28,6 +30,8 @@
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
+  --_fonts---eurostille: "Eurostileltstd 2", sans-serif;
+  --_fonts---neue-haas-unica-pro: Neuehaasunicapro, sans-serif;
   --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--blue: #2d62ff;
   --base-color-brand--blue-dark: #080331;
@@ -744,6 +748,7 @@ figcaption {
   pointer-events: auto;
   flex-direction: column;
   flex: 1;
+  min-height: calc(100vh - 3rem);
   display: flex;
 }
 
@@ -975,7 +980,8 @@ figcaption {
 }
 
 .cart_grid.font-change {
-  font-family: Ekmodenamonotest, sans-serif;
+  font-family: var(--_fonts---monospace);
+  font-weight: var(--_fonts---monospace-weight);
 }
 
 .cart_table-header {
@@ -1722,7 +1728,7 @@ figcaption {
   align-items: flex-start;
   width: 100%;
   padding: 1rem;
-  display: flex;
+  display: none;
   position: absolute;
   inset: 0% 0% auto;
 }
@@ -1834,9 +1840,10 @@ figcaption {
 }
 
 .nav_dropdown-link_child {
+  font-family: var(--_fonts---monospace);
+  font-weight: var(--_fonts---monospace-weight);
   text-align: left;
   padding: .1rem 0;
-  font-family: Ekmodenamonotest, sans-serif;
 }
 
 .nav_dropdown-link_child:hover {
@@ -2324,6 +2331,11 @@ figcaption {
   width: 7.3125rem;
   height: 3.125rem;
   display: flex;
+}
+
+.nav_logo-img.gift-card {
+  width: 50%;
+  height: auto;
 }
 
 .product-item_price {
@@ -3786,11 +3798,11 @@ figcaption {
 }
 
 .body-text {
-  text-transform: none;
-  font-family: Ekmodenamonotest, sans-serif;
+  font-family: var(--_fonts---monospace);
   font-size: 1.3em;
-  font-weight: 400;
   line-height: 1.3;
+  font-weight: var(--_fonts---monospace-weight);
+  text-transform: none;
 }
 
 ._2c-grid-wrapper {
@@ -5128,6 +5140,13 @@ figcaption {
 
 .page-title {
   font-family: "Eurostileltstd 2", sans-serif;
+}
+
+.gift-card-logo-wrapper {
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
@@ -6977,6 +6996,10 @@ figcaption {
   grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
+#w-node-eeaaeeb0-8e53-0192-32d9-ed65b61c8b2a-7385b66a, #w-node-eeaaeeb0-8e53-0192-32d9-ed65b61c8b2c-7385b66a {
+  grid-area: span 1 / span 4 / span 1 / span 4;
+}
+
 #w-node-aa708b66-30e1-8d40-41a3-a18b79d739ac-7385b66c {
   align-self: start;
 }
@@ -7292,6 +7315,10 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
+  #w-node-eeaaeeb0-8e53-0192-32d9-ed65b61c8b2a-7385b66a, #w-node-eeaaeeb0-8e53-0192-32d9-ed65b61c8b2c-7385b66a {
+    grid-area: span 1 / span 8 / span 1 / span 8;
+  }
+
   #w-node-c45bff24-6242-fee4-5061-f2f14b06a7bf-4b06a7bd {
     order: -9999;
   }
@@ -7417,8 +7444,8 @@ figcaption {
 
 
 @font-face {
-  font-family: 'Ekmodenamonotest';
-  src: url({{ 'EKModenaMonoTest-Regular.ttf' | asset_url }}) format('truetype');
+  font-family: 'Ekmodenamono';
+  src: url({{ 'EKModenaMono-Regular.woff2' | asset_url }}) format('woff2'), url({{ 'EKModenaMono-Regular.woff' | asset_url }}) format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
