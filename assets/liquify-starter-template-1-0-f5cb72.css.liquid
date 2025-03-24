@@ -482,6 +482,10 @@ figcaption {
   padding: 1rem;
 }
 
+.padding-global.max-width-full.nav {
+  position: relative;
+}
+
 .padding-global.footer {
   flex-flow: column;
   justify-content: center;
@@ -5147,6 +5151,15 @@ figcaption {
   align-items: flex-start;
   width: 100%;
   display: flex;
+}
+
+.nav-overlay {
+  opacity: 0;
+  pointer-events: none;
+  background-color: #0000003b;
+  height: 100vh;
+  position: absolute;
+  inset: 3rem 0% 0%;
 }
 
 @media screen and (max-width: 991px) {
