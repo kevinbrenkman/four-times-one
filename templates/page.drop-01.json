@@ -92,8 +92,8 @@
         "text_heading": "METAMORPHOSIS",
         "color": "#000000",
         "background": "#00ff00",
-        "animation_speed": 60,
-        "headline": "static"
+        "animation_speed": 37,
+        "headline": "marquee"
       }
     },
     "images_dyet8C": {
