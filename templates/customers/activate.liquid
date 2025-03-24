@@ -72,21 +72,27 @@ $("[data-lenis-toggle]").on("click", function () {
     lenis.start();
   }
 });
-</script><script>document.addEventListener('DOMContentLoaded', () => {
+</script><style>.slide-into-view {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+  }
+  /* When the class is removed, default styles (visible) apply */
+</style><script>document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.slide-into-view');
-    // If in Shopify theme customizer, skip animation and show everything
     if (Shopify.designMode) {
+      // In theme editor &ndash; remove the animation class to show content
       items.forEach(item => {
-        item.classList.add('in-view');
+        item.classList.remove('slide-into-view');
       });
-      return; // Exit script early
+      return;
     }
-    // Otherwise, apply scroll-in animation via IntersectionObserver
+    // Normal animation behavior
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
           setTimeout(() => {
-            entry.target.classList.add('in-view');
+            entry.target.classList.remove('slide-into-view');
           }, index * 300); // staggered
           observer.unobserve(entry.target);
         }
