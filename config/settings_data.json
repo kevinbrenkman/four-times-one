@@ -33,10 +33,7 @@
       "navigation": {
         "type": "navigation",
         "custom_css": [],
-        "settings": {
-          "collection_bestseller": "all",
-          "collection_bestseller_limit": 6
-        }
+        "settings": {}
       },
       "signup": {
         "type": "signup",
