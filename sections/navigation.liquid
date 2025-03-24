@@ -95,7 +95,6 @@
 {% endfor %}
 </ul></div></div></div></div>    </div>
 {% endunless %}</div></div></form><div class="hide w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="hide w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></predictive-search></div></div></nav></div><div class="custom-input w-embed"></div>
-<div class="custom-input w-embed"></div>
 </div><a href="/cart" class="cart-link-block w-inline-block"><div class="menu-link cart">Cart (</div><div li-object:text="cart.item_count" class="nav_shop-quantity">
 {{ cart.item_count }}
 </div><div class="menu-link cart">)</div></a></div></div></div><div class="nav-bar-css w-embed"><style>.section_navbar a{
@@ -108,4 +107,4 @@ background-color:white;
 .w-nav-overlay{
 background-color:white;
 }
-</style></div> {% schema %} {"tag":"div","name":"Navigation","class":"section_navbar","blocks":[{"name":"Search Suggestions","type":"search-suggestions","settings":[{"id":"url_link","type":"url","label":"Link"},{"id":"text_text","type":"text","label":"Text","default":"Tag"}]}],"settings":[{"id":"collection_search_bestseller","type":"collection","label":"Search Bestseller"},{"type":"range","id":"collection_search_bestseller_limit","min":1,"max":99,"step":1,"label":"Limit: Search Bestseller","default":6},{"type":"header","content":"Search","info":"Search component in Navigation currently is not used. We left the settings in case we would like to utilise this function in the future. Please reach out to developer: hi@kevinbrenkman.com"}],"presets":[{"name":"Navigation","category":"Liquify","blocks":[{"type":"search-suggestions"}]}]} {% endschema %}
+</style></div> {% schema %} {"tag":"div","name":"Navigation","class":"section_navbar","blocks":[{"name":"Search Suggestions","type":"search-suggestions","settings":[{"id":"url_link","type":"url","label":"Link"},{"id":"text_text","type":"text","label":"Text","default":"Tag"}]}],"settings":[{"id":"collection_search_bestseller","type":"collection","label":"Search Bestseller"},{"type":"range","id":"collection_search_bestseller_limit","min":1,"max":99,"step":1,"label":"Limit: Search Bestseller","default":6}],"presets":[{"name":"Navigation","category":"Liquify","blocks":[{"type":"search-suggestions"}]}]} {% endschema %}
