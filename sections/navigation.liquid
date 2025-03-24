@@ -76,8 +76,8 @@
 {% endif %}    </div>
 {% endif %}{% unless predictive_search.performed %}    <div li-unless="predictive_search.performed">
     <div class="predictive-search_overflow"><div><div><div class="predictive-search_topic"><div class="predictive-search_headline"><div class="text-style-muted">Suggestions</div></div><ul role="list" class="predictive-search_list w-list-unstyled">{% for block in section.blocks %}
-    {% if block.type == "vorschlaege" %}
-                    <li li-block="Vorschlaege" class="predictive-search_item">
+    {% if block.type == "search-suggestions" %}
+                    <li li-block="Search Suggestions" class="predictive-search_item">
                                     
                                     <a href="{{ block.settings.url_link }}" class="predictive-search_link w-inline-block"> <div>{{ block.settings.text_text }}</div> </a>
 
@@ -85,7 +85,7 @@
                             </li>
             {% endif %}
 {% endfor %}
-</ul></div><div class="predictive-search_topic"><div class="predictive-search_headline"><div class="text-style-muted">Bestseller</div></div><ul role="list" class="predictive-search_product-list w-list-unstyled">{% for product in section.settings.collection_bestseller.products limit: section.settings.collection_bestseller_limit %}
+</ul></div><div class="predictive-search_topic"><div class="predictive-search_headline"><div class="text-style-muted">Bestseller</div></div><ul role="list" class="predictive-search_product-list w-list-unstyled">{% for product in section.settings.collection_search_bestseller.products limit: section.settings.collection_search_bestseller_limit %}
 <li class="predictive-search_produt-item">
     
     <a li-object:href="product.url" href="{{ product.url }}" class="predictive-search_line-item w-inline-block"><div class="predictive-search_image-wrapper"><img li-object:src="product.featured_image | img_url: 'master'" li-object:alt="product.featured_image.alt" src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" alt="{{ product.featured_image.alt }}" class="predictive-search_image">
@@ -94,7 +94,8 @@
 </li>
 {% endfor %}
 </ul></div></div></div></div>    </div>
-{% endunless %}</div></div></form><div class="hide w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="hide w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></predictive-search></div></div></nav></div></div><a href="/cart" class="cart-link-block w-inline-block"><div class="menu-link cart">Cart (</div><div li-object:text="cart.item_count" class="nav_shop-quantity">
+{% endunless %}</div></div></form><div class="hide w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="hide w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></predictive-search></div></div></nav></div><div class="custom-input w-embed"></div>
+</div><a href="/cart" class="cart-link-block w-inline-block"><div class="menu-link cart">Cart (</div><div li-object:text="cart.item_count" class="nav_shop-quantity">
 {{ cart.item_count }}
 </div><div class="menu-link cart">)</div></a></div></div></div><div class="nav-bar-css w-embed"><style>.section_navbar a{
 color:black;
@@ -106,4 +107,4 @@ background-color:white;
 .w-nav-overlay{
 background-color:white;
 }
-</style></div> {% schema %} {"tag":"div","name":"Navigation","class":"section_navbar","blocks":[{"name":"Vorschlaege","type":"vorschlaege","settings":[{"id":"url_link","type":"url","label":"Link"},{"id":"text_text","type":"text","label":"Text","default":"Tag"}]}],"settings":[{"id":"collection_bestseller","type":"collection","label":"Bestseller"},{"type":"range","id":"collection_bestseller_limit","min":1,"max":99,"step":1,"label":"Limit: Bestseller","default":6}],"presets":[{"name":"Navigation","category":"Liquify","blocks":[{"type":"vorschlaege"}]}]} {% endschema %}
+</style></div> {% schema %} {"tag":"div","name":"Navigation","class":"section_navbar","blocks":[{"name":"Search Suggestions","type":"search-suggestions","settings":[{"id":"url_link","type":"url","label":"Link"},{"id":"text_text","type":"text","label":"Text","default":"Tag"}]}],"settings":[{"id":"collection_search_bestseller","type":"collection","label":"Search Bestseller"},{"type":"range","id":"collection_search_bestseller_limit","min":1,"max":99,"step":1,"label":"Limit: Search Bestseller","default":6},{"type":"header","content":"Search","info":"Search component in Navigation currently is not used. We left the settings in case we would like to utilise this function in the future. Please reach out to developer hi@kevinbrenkman.com"}],"presets":[{"name":"Navigation","category":"Liquify","blocks":[{"type":"search-suggestions"}]}]} {% endschema %}
