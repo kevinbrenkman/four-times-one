@@ -16,7 +16,7 @@
         "color": "#000000",
         "background": "#ffffff",
         "animation_speed": 59,
-        "headline": "static",
+        "headline": "marquee",
         "url_link": "shopify://pages/the-underdog"
       }
     },
@@ -28,7 +28,7 @@
         "color": "#000000",
         "background": "#00ff00",
         "animation_speed": 76,
-        "headline": "marquee"
+        "headline": "static"
       }
     },
     "hero": {
