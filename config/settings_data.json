@@ -32,6 +32,18 @@
       },
       "navigation": {
         "type": "navigation",
+        "blocks": {
+          "vorschlaege_iEWU9K": {
+            "type": "vorschlaege",
+            "settings": {
+              "url_link": "shopify://products/cfb-02-hoodie-logo-copy",
+              "text_text": "Tag"
+            }
+          }
+        },
+        "block_order": [
+          "vorschlaege_iEWU9K"
+        ],
         "custom_css": [],
         "settings": {
           "collection_bestseller": "all",
