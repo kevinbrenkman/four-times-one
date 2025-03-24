@@ -46,7 +46,7 @@
       "type": "large_heading",
       "settings": {
         "url_link": "shopify://collections",
-        "text_heading": "Chest-flattening basics",
+        "text_heading": "Test tekst",
         "color": "#000000",
         "background": "#004eff",
         "animation_speed": 76,
@@ -262,7 +262,7 @@
       "type": "drops_list",
       "settings": {
         "color": "#000000",
-        "background": "#00FF00"
+        "background": "#00ff00"
       }
     }
   },
