@@ -296,36 +296,26 @@ $("[data-lenis-toggle]").on("click", function () {
     lenis.start();
   }
 });
-</script><style>.slide-into-view {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-  }
-  /* When the class is removed, default styles (visible) apply */
-</style><script>document.addEventListener('DOMContentLoaded', () => {
+</script><script>document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.slide-into-view');
-    if (Shopify.designMode) {
-      // In theme editor &ndash; remove the animation class to show content
-      items.forEach(item => {
-        item.classList.remove('slide-into-view');
-      });
-      return;
-    }
-    // Normal animation behavior
+    let options = {
+      rootMargin: '0px 0px -10%', // Adjust this value to trigger the animation earlier
+      threshold: 0.3 // This can also be adjusted based on how early you want the animation to start
+    };
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
+          // Add a delay based on the index to stagger the animations
           setTimeout(() => {
-            entry.target.classList.remove('slide-into-view');
-          }, index * 300); // staggered
-          observer.unobserve(entry.target);
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }, index * 300); // Staggered delay
         }
       });
-    }, {
-      rootMargin: '0px 0px -10%',
-      threshold: 0.3
+    }, options);
+    items.forEach((item, index) => {
+      observer.observe(item);
     });
-    items.forEach(item => observer.observe(item));
   });
 </script><script>document.addEventListener('cartupdated', function() {
     window.location.href = '/cart';
