@@ -250,6 +250,26 @@
             "text_product_name": "PRODUCT NAME",
             "text_button_text": "Shop this look"
           }
+        },
+        "slide_4eYUpx": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/6a13ce0cf8ef2002323353ef343c792e.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
+        },
+        "slide_dWPiqM": {
+          "type": "slide",
+          "settings": {
+            "image_slide_image": "shopify://shop_images/6a13ce0cf8ef2002323353ef343c792e.jpg",
+            "url_link_to_product": "",
+            "text_social_handle": "AT NAMELASTNAME",
+            "text_product_name": "PRODUCT NAME",
+            "text_button_text": "Shop this look"
+          }
         }
       },
       "block_order": [
@@ -258,7 +278,9 @@
         "slide_BqLBLw",
         "slide_xJRCTV",
         "slide_7HKiMW",
-        "slide_kTr6EE"
+        "slide_kTr6EE",
+        "slide_4eYUpx",
+        "slide_dWPiqM"
       ],
       "settings": {}
     }
