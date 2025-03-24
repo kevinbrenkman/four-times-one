@@ -340,6 +340,28 @@ $("[data-lenis-toggle]").on("click", function () {
       }
     });
   });
+</script><script>document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector(".section_drop-list");
+    if (!section) {
+      console.log("Section not found.");
+      return;
+    }
+    const items = section.querySelectorAll(".nav-link-child-wrapper.drop-list");
+    items.forEach((item, index) => {
+      // Update the number like 01, 02, 03, etc.
+      const numberEl = item.querySelector(".drop-list-number");
+      if (numberEl) {
+        const paddedNumber = String(index + 1).padStart(2, "0");
+        numberEl.textContent = paddedNumber;
+      }
+      // Add .is-archived class if the title contains "archived"
+      const titleLink = item.querySelector("a.nav_dropdown-link_child");
+      if (titleLink && titleLink.textContent.toLowerCase().includes("archived")) {
+        item.classList.add("is-archived");
+      }
+    });
+    console.log("&#9989; Drop list numbers updated and archived items marked.");
+  });
 </script><!--  Include the Splide.js library  -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
     function initializeSlider() {
