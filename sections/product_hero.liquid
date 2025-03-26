@@ -139,32 +139,10 @@ video {
     <div li-element="product-options-loop" class="product-header_option" data-ProductVariantsLoop="true"><div li-element="product-options-name" x-text="option">SELECT SIZE</div><div class="product-header_radio-list"><template x-for="(variantName, variantKey) in options_by_name[option].option.values" :key="variantName">
     <label li-element="product-option-loop" class="product-header_radio w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectorType="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'">
 <span li-element="product-option-name" class="text-size-regular text-weight-semibold w-form-label" for="radio" x-text="variantName" :for="variantName">XS</span></label></template>
-{% assign color_options_handled = '' %}
-
-{% for variant in product.variants %}
-  {% assign color_name = variant.option2 %}
-  {% assign color_hex = variant.metafields.shopify--color-pattern.color.value %}
-  
-  {% unless color_options_handled contains color_name %}
-    {% assign color_options_handled = color_options_handled | append: color_name | append: ',' %}
-    
-    <label class="product-header_radio is-color w-radio" title="{{ color_name }} ({{ color_hex }})">
-      <div 
-        class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button w-radio-input"
-        style="background-color: {{ color_hex }}; height: 2rem; width: 2rem; border-radius: 50%; border: 1px solid #ccc;">
-      </div>
-      
-      <input 
-        type="radio" 
-        name="Color" 
-        value="{{ color_name }}" 
-        id="color-{{ forloop.index }}"
-        class="visually-hidden">
-      
-      <span class="text-size-regular text-weight-semibold is-color w-form-label">{{ color_name }}</span>
-    </label>
-  {% endunless %}
-{% endfor %}
+<template x-for="(variantName, variantKey) in options_by_name[option].option.values" :key="variantName">
+    <label li-element="product-option-loop" class="product-header_radio is-color w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectorType="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'">
+<span li-element="product-option-name" class="text-size-regular text-weight-semibold is-color w-form-label" for="radio-5" x-text="variantName" :for="variantName">XS</span></label></template>
+</div></div></template>
     </div>
 {% endif %}</div><div class="product-header_ad-to-cart-wrapper"><template x-if="selected_or_first_available_variant.available">
             <div li-js-if="selected_or_first_available_variant.available" class="product-header_quantity">
