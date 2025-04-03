@@ -105,6 +105,14 @@
 video {
     max-height:80vh;
 }
+</style><style>.splide__slide:first-child {
+  margin-left: 1rem;
+}
+@media (max-width: 767px) {
+  .splide__slide:first-child {
+    margin-left: 0.5rem;
+  }
+}
 </style></div></div></div></div><div class="padding-global"><script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"><div id="w-node-_7048b639-be81-c25f-3e39-a62262971160-7385b6a8" class="product-header_product-details"><h1 li-object:text="product.title" class="heading-style-h2">
 {{ product.title }}
