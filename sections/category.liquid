@@ -6,4 +6,17 @@
     
 </div>
 {% endfor %}
-</div><div class="hide w-dyn-empty"><div>No items found.</div></div></div></div></div></div> {% schema %} {"tag":"section","name":"Category","class":"section_product slide-into-view","settings":[{"id":"collection_collection","type":"collection","label":"Collection"},{"type":"range","id":"collection_collection_limit","min":1,"max":99,"step":1,"label":"Limit: Collection","default":6}],"presets":[{"name":"Category","category":"Liquify","blocks":[]}]} {% endschema %}
+</div><div class="hide w-dyn-empty"><div>No items found.</div></div></div><div class="hide-last-item-if-uneven w-embed w-script"><script>function updateProductListVisibility() {
+    const items = document.querySelectorAll('.product_list .product_list-item');
+    const isMobile = window.innerWidth < 991;
+    // Reset all items to visible
+    items.forEach(item => item.style.display = '');
+    // If odd number of items and on mobile, hide the last one
+    if (isMobile && items.length % 2 !== 0) {
+      items[items.length - 1].style.display = 'none';
+    }
+  }
+  // Run on page load and resize
+  window.addEventListener('DOMContentLoaded', updateProductListVisibility);
+  window.addEventListener('resize', updateProductListVisibility);
+</script></div></div></div></div> {% schema %} {"tag":"section","name":"Category","class":"section_product slide-into-view","settings":[{"id":"collection_collection","type":"collection","label":"Collection"},{"type":"range","id":"collection_collection_limit","min":1,"max":99,"step":1,"label":"Limit: Collection","default":6}],"presets":[{"name":"Category","category":"Liquify","blocks":[]}]} {% endschema %}
