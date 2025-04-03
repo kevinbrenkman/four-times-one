@@ -32,6 +32,7 @@
   --text-color--text-success: var(--base-color-system--success-green-dark);
   --_fonts---eurostille: "Eurostileltstd 2", sans-serif;
   --_fonts---neue-haas-unica-pro: Neuehaasunicapro, sans-serif;
+  --_variable---padding-size: 1rem;
   --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--blue: #2d62ff;
   --base-color-brand--blue-dark: #080331;
@@ -5185,6 +5186,10 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
+  body {
+    --_variable---padding-size: .5rem;
+  }
+
   .padding-medium {
     padding: 1.5rem;
   }
