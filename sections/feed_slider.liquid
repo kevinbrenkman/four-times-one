@@ -16,7 +16,7 @@
     {% if block.type == "slide" %}
                     <div li-block="Slide" class="swiper-slide is-team">
                                     
-                                    <div class="slider-image"><img loading="eager" alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" class="slider-image">
+                                    <div class="slider-image"><img alt="{{ block.settings.image_slide_image.alt }}" src="{{ block.settings.image_slide_image | img_url: 'master' }}" loading="eager" class="slider-image">
 <div li-object="block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%'" class="slider-video">{{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, width: '100%' }}</div><div class="video-embed w-embed"></div>
 </div>
                                     
