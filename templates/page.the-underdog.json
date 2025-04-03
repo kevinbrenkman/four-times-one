@@ -126,14 +126,14 @@
       "type": "images_with_heading",
       "settings": {
         "image_image_1": "shopify://shop_images/edit-06-1800x-q80.jpg",
-        "checkbox_show_heading_1": false,
+        "checkbox_show_heading_1": true,
         "text_heading_1": "I WAS ALWAYS THE FIRST ONE",
         "image_image_2": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
-        "checkbox_show_heading_2": false,
+        "checkbox_show_heading_2": true,
         "text_heading_2": "ONE DAY I’LL TAKE OFF MY SHIRT",
         "color": "#000000",
         "background": "#ffffff",
-        "padding": "1rem"
+        "padding": "on"
       }
     },
     "large_heading_83zY3h": {
