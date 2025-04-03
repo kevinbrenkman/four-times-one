@@ -77,19 +77,13 @@
         "block_X3rAD7": {
           "type": "block",
           "settings": {
-            "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "0rem"
+            "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png"
           }
         },
         "block_JWHLi6": {
           "type": "block",
           "settings": {
-            "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.58.04.png",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "0rem"
+            "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.58.04.png"
           }
         }
       },
@@ -132,8 +126,10 @@
       "type": "images_with_heading",
       "settings": {
         "image_image_1": "shopify://shop_images/edit-06-1800x-q80.jpg",
+        "checkbox_show_heading_1": false,
         "text_heading_1": "I WAS ALWAYS THE FIRST ONE",
         "image_image_2": "shopify://shop_images/edit-06-1800x-q80_copy.jpg",
+        "checkbox_show_heading_2": false,
         "text_heading_2": "ONE DAY I’LL TAKE OFF MY SHIRT",
         "color": "#000000",
         "background": "#ffffff",
