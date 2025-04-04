@@ -24,7 +24,7 @@
       "type": "large_heading",
       "settings": {
         "url_link": "",
-        "text_heading": "Toning chests, not personalities",
+        "text_heading": "Toning chests not personalities",
         "color": "#000000",
         "background": "#00ff00",
         "animation_speed": 76,
@@ -107,19 +107,13 @@
         "block_jN3eQR": {
           "type": "block",
           "settings": {
-            "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "1rem"
+            "image_image": "shopify://shop_images/edit-02-1800x-q80.jpg"
           }
         },
         "block_AW9chm": {
           "type": "block",
           "settings": {
-            "image_image": "shopify://shop_images/edit-02-1800x-q80_copy.jpg",
-            "color": "#000000",
-            "background": "#ffffff",
-            "padding": "0rem"
+            "image_image": "shopify://shop_images/edit-02-1800x-q80_copy.jpg"
           }
         }
       },
