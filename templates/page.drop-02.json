@@ -1,0 +1,186 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "large_heading_eEbFX9": {
+      "type": "large_heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "From underdog to upperdog",
+        "color": "#000000",
+        "background": "#00ff00",
+        "animation_speed": 60,
+        "headline": "marquee"
+      }
+    },
+    "hero_4FinmG": {
+      "type": "hero",
+      "settings": {
+        "image_image": "shopify://shop_images/e-20-1800x-q80.jpg",
+        "checkbox_show_button": false,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "color": "#ffffff",
+        "background": "#000000"
+      }
+    },
+    "image_and_text_QcW97j": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/2-03-1800x-q80_copy.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "text_heading": "FROM UNDERDOG TO UPERDOG",
+        "checkbox_show_logo": false,
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
+        "color": "#00ff00",
+        "background": "#000000",
+        "padding": "0rem",
+        "flex-direction": "row",
+        "btn-color": "#000000",
+        "btn-background": "#00ff00"
+      }
+    },
+    "category_Dq7dC3": {
+      "type": "category",
+      "settings": {
+        "collection_collection": "frontpage",
+        "collection_collection_limit": 6
+      }
+    },
+    "large_heading_hEfpBM": {
+      "type": "large_heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "WEAR UPPER DOG ENERGY",
+        "color": "#00ff00",
+        "background": "#000000",
+        "animation_speed": 60,
+        "headline": "static"
+      }
+    },
+    "image_and_text_i3Pep9": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/6a13ce0cf8ef2002323353ef343c792e.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop drop 01",
+        "text_heading": "",
+        "checkbox_show_logo": false,
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "on",
+        "flex-direction": "row",
+        "btn-color": "#00ff00",
+        "btn-background": "#000000"
+      }
+    },
+    "large_heading_83zY3h": {
+      "type": "large_heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "METAMORPHOSIS",
+        "color": "#000000",
+        "background": "#00ff00",
+        "animation_speed": 37,
+        "headline": "marquee"
+      }
+    },
+    "images_dyet8C": {
+      "type": "images",
+      "blocks": {
+        "block_qtzR99": {
+          "type": "block",
+          "settings": {
+            "image_image": "shopify://shop_images/2-03-1800x-q80_copy_2.jpg"
+          }
+        },
+        "block_tQnB9W": {
+          "type": "block",
+          "settings": {
+            "image_image": "shopify://shop_images/2-03-1800x-q80_copy_3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "block_qtzR99",
+        "block_tQnB9W"
+      ],
+      "settings": {}
+    },
+    "images_with_heading_Q3tYM9": {
+      "type": "images_with_heading",
+      "settings": {
+        "image_image_1": "shopify://shop_images/2-01-1800x-q80_copy_2.jpg",
+        "text_heading_1": "I WAS ALWAYS THE FIRST ONE",
+        "image_image_2": "shopify://shop_images/2-01-1800x-q80_copy.jpg",
+        "text_heading_2": "ONE DAY I WILL TAKE OFF MY SHIRT",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "1rem"
+      }
+    },
+    "hero_AHUznh": {
+      "type": "hero",
+      "settings": {
+        "image_image": "shopify://shop_images/edit-04-1800x-q80.jpg",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "color": "#000000",
+        "background": "#00ff00"
+      }
+    },
+    "image_and_text_CTj96e": {
+      "type": "image_and_text",
+      "settings": {
+        "image_image": "shopify://shop_images/IMG_7401.png",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "text_heading": "ONE DAY I’LL TAKEOFF MY SHIRT",
+        "checkbox_show_logo": false,
+        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
+        "color": "#00ff00",
+        "background": "#000000",
+        "padding": "on",
+        "flex-direction": "row",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
+      }
+    },
+    "drops_list_pb9RQ9": {
+      "type": "drops_list",
+      "settings": {
+        "color": "#000000",
+        "background": "#00ff00"
+      }
+    }
+  },
+  "layout": "page",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "large_heading_eEbFX9",
+    "hero_4FinmG",
+    "image_and_text_QcW97j",
+    "category_Dq7dC3",
+    "large_heading_hEfpBM",
+    "image_and_text_i3Pep9",
+    "large_heading_83zY3h",
+    "images_dyet8C",
+    "images_with_heading_Q3tYM9",
+    "hero_AHUznh",
+    "image_and_text_CTj96e",
+    "drops_list_pb9RQ9"
+  ]
+}
