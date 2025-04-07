@@ -25,8 +25,7 @@
         "settings": {
           "text_newsletter_heading": "RECEIVE SOME UPPER DOGNESS IN<br>YOUR MAILBOX",
           "text_checkbox": "By subscribing you agree to with our <a href=\"#\"><span class=\"text-color-white text-style-link\">Privacy Policy</span></a> and provide consent to receive updates from our company.",
-          "text_succes_message": "Thank you! Your submission has been received!",
-          "text_error_message": "Oops! Something went wrong while submitting the form.",
+          "text_succes_message": "All set.  See you soon.",
           "richtext_footer_credit": "<p><strong>© 2025 FOUR TIMES ONE / ALL RIGHTS RESERVED</strong></p><p><strong>design by </strong><a href=\"https://www.vrints-kolsteren.com/\" target=\"_blank\" title=\"Vrints-Kolsteren\"><strong>vrints-kolsteren</strong></a><strong> / development by </strong><a href=\"https://www.kevinbrenkman.com/\" target=\"_blank\" title=\"Kevin Brenkman\"><strong>kevin brenkman</strong></a></p>"
         }
       },
