@@ -34,24 +34,13 @@
     "image_with_button_CgMiDH": {
       "type": "image_with_button",
       "settings": {
-        "image_image": "shopify://shop_images/2-03-1800x-q80_copy.jpg",
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
         "checkbox_show_button": true,
         "url_button_link": "",
         "text_button_text": "Shop this look",
         "color": "#00ff00",
         "background": "#000000",
-        "height": "100%"
-      }
-    },
-    "hero": {
-      "type": "hero",
-      "settings": {
-        "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
-        "checkbox_show_button": true,
-        "url_button_link": "shopify://products/cfb-01-hoodie-logo",
-        "text_button_text": "Get this tee",
-        "color": "#00ff00",
-        "background": "#000000"
+        "height": "80vh"
       }
     },
     "large_heading_mXFGab": {
@@ -286,7 +275,6 @@
     "small_heading_GbrgzJ",
     "large_heading_MMinMh",
     "image_with_button_CgMiDH",
-    "hero",
     "large_heading_mXFGab",
     "category_xGnyiK",
     "image_and_text_3q3Jzj",
