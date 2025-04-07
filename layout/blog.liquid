@@ -361,6 +361,60 @@ if (!swiperWrapper) {
     observer.observe(swiperWrapper, { attributes: true, childList: false, subtree: true });
     console.log("Video state updater initialized and observer added.");
 }
+</script><script>document.addEventListener('DOMContentLoaded', function () {
+  console.log('&#9989; DOM fully loaded');
+  const url = window.location.href;
+  console.log('&#127760; Current URL:', url);
+  // 1. If form success URL param exists, show success state
+  if (url.includes('?customer_posted=true#contact_form')) {
+    console.log('&#127881; Success form submission detected via URL');
+    const formInitialState = document.querySelector('.form-initial-state');
+    const formSuccessState = document.querySelector('.form-succes-state');
+    if (formInitialState) {
+      formInitialState.classList.add('succes');
+      console.log('&#9989; .succes class added to .form-initial-state');
+    }
+    if (formSuccessState) {
+      formSuccessState.classList.add('succes');
+      console.log('&#9989; .succes class added to .form-succes-state');
+    }
+    const newsletterElements = document.querySelectorAll('[hs-newsletter-show]');
+    if (newsletterElements.length > 0) {
+      newsletterElements.forEach(el => {
+        el.style.display = 'flex';
+      });
+      console.log(`&#128236; ${newsletterElements.length} newsletter element(s) shown`);
+    } else {
+      console.log('&#8505;&#65039; No [hs-newsletter-show] elements found');
+    }
+  }
+  // 2. Input formatting &mdash; name & last name (capitalize), email (remove spaces)
+  const generalIds = ['name', 'last_name'];
+  generalIds.forEach(function (id) {
+    const input = document.getElementById(id);
+    if (input) {
+      input.addEventListener('input', function (e) {
+        let val = e.target.value.trim().replace(/\s+/g, '');
+        e.target.value = val.charAt(0).toUpperCase() + val.slice(1).toLowerCase();
+        console.log(`&#9997;&#65039; Formatting input: #${id} &rarr; "${e.target.value}"`);
+      });
+    } else {
+      console.warn(`&#9888;&#65039; Input field #${id} not found`);
+    }
+  });
+  const emailIds = ['email'];
+  emailIds.forEach(function (id) {
+    const input = document.getElementById(id);
+    if (input) {
+      input.addEventListener('input', function (e) {
+        e.target.value = e.target.value.trim().replace(/\s+/g, '');
+        console.log(`&#9997;&#65039; Formatting email input: #${id} &rarr; "${e.target.value}"`);
+      });
+    } else {
+      console.warn(`&#9888;&#65039; Email input field #${id} not found`);
+    }
+  });
+});
 </script>
 </body>
 </html>
