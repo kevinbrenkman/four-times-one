@@ -368,15 +368,15 @@ if (!swiperWrapper) {
   // 1. If form success URL param exists, show success state
   if (url.includes('?customer_posted=true#contact_form')) {
     console.log('&#127881; Success form submission detected via URL');
-    const formInitialState = document.querySelector('.form-initial-state');
-    const formSuccessState = document.querySelector('.form-succes-state');
-    if (formInitialState) {
-      formInitialState.classList.add('succes');
-      console.log('&#9989; .succes class added to .form-initial-state');
+    const footerFormInitialState = document.querySelector('.footer-form-initial-state');
+    const footerFormSuccessState = document.querySelector('.footer-form-succes-state');
+    if (footerFormInitialState) {
+      footerFormInitialState.classList.add('succes');
+      console.log('&#9989; .succes class added to .footer-form-initial-state');
     }
-    if (formSuccessState) {
-      formSuccessState.classList.add('succes');
-      console.log('&#9989; .succes class added to .form-succes-state');
+    if (footerFormSuccessState) {
+      footerFormSuccessState.classList.add('succes');
+      console.log('&#9989; .succes class added to .footer-form-succes-state');
     }
     const newsletterElements = document.querySelectorAll('[hs-newsletter-show]');
     if (newsletterElements.length > 0) {
