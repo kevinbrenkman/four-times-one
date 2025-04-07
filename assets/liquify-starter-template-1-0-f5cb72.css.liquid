@@ -10,7 +10,6 @@
   --background-color--background-tertiary: var(--base-color-brand--pink);
   --iiii-dark: #1a1919;
   --text-color--text-primary: var(--base-color-neutral--black);
-  --link-color--color: white;
   --border-radius--medium: .5rem;
   --_fonts---monospace: Ekmodenamono, Arial, sans-serif;
   --_fonts---monospace-weight: 400;
@@ -51,6 +50,7 @@
   --link-color--link-primary: var(--base-color-brand--blue);
   --link-color--link-secondary: var(--base-color-neutral--black);
   --link-color--link-alternate: var(--base-color-neutral--white);
+  --link-color--color: white;
 }
 
 .w-checkbox {
@@ -782,8 +782,8 @@ figcaption {
 }
 
 .button:hover {
-  background-color: var(--base-color-neutral--white);
-  color: var(--base-color-neutral--black);
+  background-color: var(--base-color-neutral--white) !important;
+  color: var(--base-color-neutral--black) !important;
 }
 
 .button.is-secondary {
@@ -877,8 +877,8 @@ figcaption {
 }
 
 .button.white:hover {
-  background-color: var(--base-color-neutral--black);
-  color: var(--link-color--color);
+  background-color: var(--base-color-neutral--black) !important;
+  color: var(--base-color-neutral--white) !important;
 }
 
 .button.outline {
