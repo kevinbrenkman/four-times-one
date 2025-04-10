@@ -207,4 +207,17 @@ text-decoration: none!important;
 .wh-padding-off {
   padding: 0;
 }
+</style><style>/* Hide custom arrows by default */
+  .product-item-slider-prev,
+  .product-item-slider-next {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  /* Show arrows on hover of wrapper */
+  .product-item-slider-wrapper:hover .product-item-slider-prev,
+  .product-item-slider-wrapper:hover .product-item-slider-next {
+    opacity: 1;
+    pointer-events: all;
+  }
 </style>
