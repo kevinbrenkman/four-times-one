@@ -1,4 +1,4 @@
-<div class="container-large"><div class="product-header_component"><div class="splide productslider"><div class="splide__track"><div class="splide__list">{% for media in product.media %}    <div li-for="media in product.media" class="splide__slide">
+<div class="container-large"><div class="product-header_component"><div class="splide productslider"><div class="splide__track"><div class="splide__list">{% for media in product.media %}    <div li-for="media in product.media" class="splide__slide product-page-slider">
                                     
                             {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="product_image-wrapper">
     <img loading="lazy" li-object:src="media.src | product_img_url: 'master'" li-object:alt="media.alt" src="{{ media.src | product_img_url: 'master' }}" alt="{{ media.alt }}" class="product_gallery-image">
@@ -105,11 +105,11 @@
 video {
     max-height:80vh;
 }
-</style><style>.splide__slide:first-child {
+</style><style>.splide__slide.product-page-slider:first-child {
   margin-left: 1rem;
 }
 @media (max-width: 767px) {
-  .splide__slide:first-child {
+  .splide__slide.product-page-slider:first-child {
     margin-left: 0.5rem;
   }
 }
