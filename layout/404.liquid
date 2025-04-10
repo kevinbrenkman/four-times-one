@@ -36,12 +36,14 @@
 /* Setup Font and Background Color if Text is selected */
 ::selection {
   color: #fff;
-  background: #E91B7F;
+  background: var(--iiii-grey);
 }
 ::-moz-selection {
   color: #fff;
-  background: #E91B7F;
+  background: var(--iiii-grey);
 }
+</style><style>* {
+-webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased;}
 </style><meta name="theme-color" content="#000" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#fff" media="(prefers-color-scheme: dark)">
 <style>html.lenis {
@@ -97,7 +99,9 @@ body.no-scroll {
     </style><style>.is-archived {
   opacity: 0.5;
 }
-</style>
+</style><script>//PLAYS VIDEO IN LOW POWER MODE
+$('body').on('click touchstart', function ()  {var videoElement = document.getElementsByClassName('thumbnail-video');if (videoElement.playing) {} else {$('.thumbnail-video').trigger('play');}});
+</script>
 {% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
   <style>
   .section_navbar {
