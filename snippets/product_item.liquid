@@ -51,7 +51,7 @@
 .splide__slide.is-active .rounded {
 	border-radius: 0em;
 }
-</style></div></div><div class="product-item-slider-prev"><div><</div></div><div class="product-item-slider-next"><div>></div></div></div><div class="product-item_image-link"><div class="product-item_tag_list">{% if product.selected_or_first_available_variant.available != true %}    <div li-if="product.selected_or_first_available_variant.available != true" class="product-item_tag">
+</style></div></div><div class="product-item-slider-prev"><div class="product-item-icon rotate"><div class="prev-next-line first"></div><div class="prev-next-line second"></div></div></div><div class="product-item-slider-next"><div class="product-item-icon"><div class="prev-next-line first"></div><div class="prev-next-line second"></div></div></div></div><div class="product-item_image-link"><div class="product-item_tag_list">{% if product.selected_or_first_available_variant.available != true %}    <div li-if="product.selected_or_first_available_variant.available != true" class="product-item_tag">
     Not in Stock    </div>
 {% endif %}{% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price" class="product-item_tag is-red">
     Sale    </div>

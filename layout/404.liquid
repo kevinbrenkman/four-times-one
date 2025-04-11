@@ -498,6 +498,19 @@ updateArrowVisibility(); // ensure it's called right away
     }
     setTimeout(initAllSliders, 1000);
   });
+</script><script>const navItems = document.querySelectorAll('.nav-item');
+const navOverlay = document.querySelector('.nav-overlay');
+navItems.forEach(item => {
+  const hasChildren = item.classList.contains('has-children');
+  if (hasChildren) {
+    item.addEventListener('mouseenter', () => {
+      navOverlay.classList.add('open');
+    });
+    item.addEventListener('mouseleave', () => {
+      navOverlay.classList.remove('open');
+    });
+  }
+});
 </script>
 </body>
 </html>

@@ -571,6 +571,19 @@ updateArrowVisibility(); // ensure it's called right away
     }
     setTimeout(initAllSliders, 1000);
   });
+</script><script>const navItems = document.querySelectorAll('.nav-item');
+const navOverlay = document.querySelector('.nav-overlay');
+navItems.forEach(item => {
+  const hasChildren = item.classList.contains('has-children');
+  if (hasChildren) {
+    item.addEventListener('mouseenter', () => {
+      navOverlay.classList.add('open');
+    });
+    item.addEventListener('mouseleave', () => {
+      navOverlay.classList.remove('open');
+    });
+  }
+});
 </script><!--  Include the Splide.js library  -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
     function initializeSlider() {
