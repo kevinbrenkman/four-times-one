@@ -5229,9 +5229,14 @@ figcaption {
   opacity: 0;
   pointer-events: none;
   background-color: #0000003b;
+  width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   inset: 3rem 0% 0%;
+}
+
+.nav-overlay.open {
+  opacity: 100;
 }
 
 .size-selector-wrapper {
@@ -5264,14 +5269,15 @@ figcaption {
 
 .product-item-slider-wrapper {
   background-color: #f3f3f3;
+  margin-bottom: .25rem;
   position: relative;
 }
 
 .product-item-slider-prev {
   cursor: pointer;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  width: 2rem;
+  width: 3rem;
   height: 100%;
   display: flex;
   position: absolute;
@@ -5280,13 +5286,40 @@ figcaption {
 
 .product-item-slider-next {
   cursor: pointer;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  width: 2rem;
+  width: 3rem;
   height: 100%;
   display: flex;
   position: absolute;
   inset: 0% 0% 0% auto;
+}
+
+.prev-next-line {
+  background-color: #000;
+  width: 1rem;
+  height: 1px;
+  position: absolute;
+}
+
+.prev-next-line.first {
+  transform: translate(0, .325rem)rotate(-45deg);
+}
+
+.prev-next-line.second {
+  transform: translate(0, -.325rem)rotate(45deg);
+}
+
+.product-item-icon {
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+}
+
+.product-item-icon.rotate {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 991px) {
