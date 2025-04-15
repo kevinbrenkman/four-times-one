@@ -16,8 +16,8 @@
         "text_heading": "From underdog to upperdog",
         "color": "#000000",
         "background": "#00ff00",
-        "animation_speed": 60,
-        "headline": "marquee"
+        "headline": "marquee",
+        "animation_speed": 60
       }
     },
     "hero_4FinmG": {
@@ -41,10 +41,8 @@
         "text_heading": "FROM UNDERDOG TO UPERDOG",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#00ff00",
-        "background": "#000000",
-        "padding": "0rem",
         "flex-direction": "row",
+        "padding": "0rem",
         "btn-color": "#000000",
         "btn-background": "#00ff00"
       }
@@ -63,8 +61,8 @@
         "text_heading": "WEAR UPPER DOG ENERGY",
         "color": "#00ff00",
         "background": "#000000",
-        "animation_speed": 60,
-        "headline": "static"
+        "headline": "static",
+        "animation_speed": 60
       }
     },
     "image_and_text_i3Pep9": {
@@ -77,10 +75,8 @@
         "text_heading": "",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#000000",
-        "background": "#ffffff",
-        "padding": "on",
         "flex-direction": "row",
+        "padding": "on",
         "btn-color": "#00ff00",
         "btn-background": "#000000"
       }
@@ -92,8 +88,8 @@
         "text_heading": "METAMORPHOSIS",
         "color": "#000000",
         "background": "#00ff00",
-        "animation_speed": 37,
-        "headline": "marquee"
+        "headline": "marquee",
+        "animation_speed": 37
       }
     },
     "images_dyet8C": {
@@ -129,7 +125,7 @@
         "text_heading_2": "ONE DAY I WILL TAKE OFF MY SHIRT",
         "color": "#000000",
         "background": "#ffffff",
-        "padding": "1rem"
+        "padding": "on"
       }
     },
     "hero_AHUznh": {
@@ -153,10 +149,8 @@
         "text_heading": "ONE DAY I’LL TAKEOFF MY SHIRT",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#00ff00",
-        "background": "#000000",
-        "padding": "on",
         "flex-direction": "row",
+        "padding": "on",
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
