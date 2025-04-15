@@ -1,10 +1,9 @@
 <div style="color: {{ section.settings.color }}; background-color: {{ section.settings.background }}" class="drop-list-content"><div class="custom-input w-embed"></div>
 <div class="custom-input w-embed"></div>
-<div class="custom-input w-embed"></div>
 {% assign drop = linklists['main-menu'].links[2].links[0] %}
 {% for child_link in drop.links %}    <div li-for="child_link in drop.links" class="li-for">
                                     
                             <div><div class="nav-link-child-wrapper drop-list"><div class="nav-child-link-grid _8c"><div class="nav_dropdown-link_child drop-list-number">01</div><div id="w-node-_76f00a2b-750a-94b7-9dc8-ad832850b51d-7385b632"><a li-object="child_link.title" li-object:href="child_link.url" href="{{ child_link.url }}" class="nav_dropdown-link_child">{{ child_link.title }}</a></div></div></div></div>
                             
                         </div>
-{% endfor %}</div> {% schema %} {"tag":"div","name":"Drops List","class":"section_drop-list slide-into-view","settings":[{"type":"header","content":"note"},{"type":"header","content":"color"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"header","content":"background-color"},{"type":"color","id":"background","label":"Background Color","default":"#00FF00"}],"presets":[{"name":"Drops List","category":"Liquify","blocks":[]}]} {% endschema %}
+{% endfor %}</div> {% schema %} {"tag":"div","name":"Drops List","class":"section_drop-list slide-into-view","settings":[{"type":"header","content":"note"},{"type":"header","content":"Colors"},{"type":"color","id":"color","label":"Text color","default":"#000000"},{"type":"color","id":"background","label":"Background Color","default":"#00FF00"}],"presets":[{"name":"Drops List","category":"Liquify","blocks":[]}]} {% endschema %}
