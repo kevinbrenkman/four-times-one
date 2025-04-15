@@ -16,8 +16,8 @@
         "text_heading": "ODE TO THE UNDERDOG",
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 60,
-        "headline": "marquee"
+        "headline": "marquee",
+        "animation_speed": 60
       }
     },
     "hero_4FinmG": {
@@ -38,13 +38,13 @@
         "checkbox_show_button": false,
         "url_button_link": "",
         "text_button_text": "Shop this look",
-        "text_heading": "FROM<br>UNDERDOG<br>TO UPPERDOG",
+        "text_heading": "FROMUNDERDOGTO UPPERDOG",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#000000",
-        "background": "#00bbff",
-        "padding": "0rem",
+        "image_text_color": "#000000",
+        "image_text_background": "#02bbff",
         "flex-direction": "row",
+        "padding": "0rem",
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
@@ -67,8 +67,8 @@
         "text_heading": "TALKING ABOUT AN AESTHETHICK",
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 60,
-        "headline": "static"
+        "headline": "static",
+        "animation_speed": 60
       }
     },
     "images_Hiz4VF": {
@@ -100,8 +100,8 @@
         "text_heading": "WEAR UPPER DOG ENERGY",
         "color": "#000000",
         "background": "#ff0000",
-        "animation_speed": 60,
-        "headline": "static"
+        "headline": "static",
+        "animation_speed": 60
       }
     },
     "image_and_text_i3Pep9": {
@@ -114,10 +114,10 @@
         "text_heading": "CHEST-FLATTENING TEES FOR PRESONALITIES",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#ff0000",
-        "background": "#000000",
-        "padding": "on",
+        "image_text_color": "#ff0000",
+        "image_text_background": "#000000",
         "flex-direction": "row",
+        "padding": "on",
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
@@ -143,8 +143,8 @@
         "text_heading": "AESTHETHICK",
         "color": "#000000",
         "background": "#00bbff",
-        "animation_speed": 60,
-        "headline": "static"
+        "headline": "static",
+        "animation_speed": 60
       }
     },
     "image_and_text_AtPdDK": {
@@ -156,11 +156,11 @@
         "text_button_text": "Shop this look",
         "text_heading": "“ONE DAY I’LL TAKE OFF MY”",
         "checkbox_show_logo": false,
-        "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#00bbff",
-        "background": "#000000",
-        "padding": "on",
+        "richtext_body_text": "",
+        "image_text_color": "#00bbff",
+        "image_text_background": "#000000",
         "flex-direction": "row",
+        "padding": "on",
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
@@ -175,10 +175,10 @@
         "text_heading": "Manifesto",
         "checkbox_show_logo": false,
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#000000",
-        "background": "#ffffff",
-        "padding": "on",
+        "image_text_color": "#000000",
+        "image_text_background": "#ffffff",
         "flex-direction": "row-reverse",
+        "padding": "on",
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
