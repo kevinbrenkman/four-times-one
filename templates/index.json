@@ -13,8 +13,6 @@
       "type": "small_heading",
       "settings": {
         "text_heading": "SPECIAL announcements",
-        "color": "#000000",
-        "background": "#ffffff",
         "animation_speed": 59,
         "headline": "marquee",
         "url_link": "shopify://pages/the-underdog"
@@ -27,8 +25,8 @@
         "text_heading": "Toning chests not personalities",
         "color": "#000000",
         "background": "#00ff00",
-        "animation_speed": 76,
-        "headline": "static"
+        "headline": "static",
+        "animation_speed": 76
       }
     },
     "image_with_button_CgMiDH": {
@@ -50,8 +48,8 @@
         "text_heading": "Chest-flattening basics",
         "color": "#000000",
         "background": "#004eff",
-        "animation_speed": 76,
-        "headline": "static"
+        "headline": "static",
+        "animation_speed": 76
       }
     },
     "category_xGnyiK": {
@@ -72,23 +70,22 @@
         "checkbox_show_logo": true,
         "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
-        "color": "#000000",
-        "background": "#ff0000",
-        "padding": "on",
         "flex-direction": "row",
+        "padding": "on",
         "btn-color": "#ffffff",
         "btn-background": "#000000"
       }
     },
-    "hero_TtQnEn": {
-      "type": "hero",
+    "image_with_button_CFEfAj": {
+      "type": "image_with_button",
       "settings": {
         "image_image": "shopify://shop_images/FTO_Website_16_2_comments-3.jpg",
         "checkbox_show_button": true,
-        "url_button_link": "shopify://products/cfb-01-hoodie-logo",
-        "text_button_text": "Shop drop 01",
-        "color": "#ff0000",
-        "background": "#000000"
+        "url_button_link": "",
+        "text_button_text": "shop drop 01",
+        "color": "#ffffff",
+        "background": "#000000",
+        "height": "80vh"
       }
     },
     "large_heading_yWFYde": {
@@ -98,8 +95,8 @@
         "text_heading": "All-body embracing menswear",
         "color": "#000000",
         "background": "#ffffff",
-        "animation_speed": 76,
-        "headline": "static"
+        "headline": "static",
+        "animation_speed": 76
       }
     },
     "images": {
@@ -278,7 +275,7 @@
     "large_heading_mXFGab",
     "category_xGnyiK",
     "image_and_text_3q3Jzj",
-    "hero_TtQnEn",
+    "image_with_button_CFEfAj",
     "large_heading_yWFYde",
     "images",
     "feed_slider_6HCzzU",
