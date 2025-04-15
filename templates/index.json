@@ -12,10 +12,12 @@
     "small_heading_GbrgzJ": {
       "type": "small_heading",
       "settings": {
+        "url_link": "shopify://pages/the-underdog",
         "text_heading": "SPECIAL announcements",
-        "animation_speed": 59,
+        "color": "#000000",
+        "background": "#ffffff",
         "headline": "marquee",
-        "url_link": "shopify://pages/the-underdog"
+        "animation_speed": 59
       }
     },
     "large_heading_MMinMh": {
@@ -32,7 +34,7 @@
     "image_with_button_CgMiDH": {
       "type": "image_with_button",
       "settings": {
-        "image_image": "shopify://shop_images/2-03-1800x-q80_copy.jpg",
+        "image_image": "shopify://shop_images/FTO_Website_16_2_comments.jpg",
         "checkbox_show_button": true,
         "url_button_link": "",
         "text_button_text": "Shop this look",
@@ -71,7 +73,7 @@
         "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
         "richtext_body_text": "<p><br/>                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>              </p>",
         "image_text_color": "#000000",
-        "image_text_background": "#00ff00",
+        "image_text_background": "#ff0000",
         "flex-direction": "row",
         "padding": "on",
         "btn-color": "#ffffff",
@@ -85,7 +87,7 @@
         "checkbox_show_button": true,
         "url_button_link": "",
         "text_button_text": "shop drop 01",
-        "color": "#ffffff",
+        "color": "#ff0000",
         "background": "#000000",
         "height": "80vh"
       }
@@ -251,21 +253,6 @@
         "slide_9bwRWg"
       ],
       "settings": {}
-    },
-    "full_width_images_FCMi9m": {
-      "type": "full_width_images",
-      "blocks": {
-        "block_UABRzG": {
-          "type": "block",
-          "settings": {
-            "image_image": "shopify://shop_images/IMG_7401.png"
-          }
-        }
-      },
-      "block_order": [
-        "block_UABRzG"
-      ],
-      "settings": {}
     }
   },
   "layout": "theme",
@@ -280,7 +267,6 @@
     "image_with_button_CFEfAj",
     "large_heading_yWFYde",
     "images",
-    "feed_slider_6HCzzU",
-    "full_width_images_FCMi9m"
+    "feed_slider_6HCzzU"
   ]
 }
