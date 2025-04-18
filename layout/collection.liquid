@@ -442,76 +442,6 @@ if (!swiperWrapper) {
 window.addEventListener('beforeunload', function () {
   sessionStorage.setItem('scrollPosition', window.scrollY);
 });
-</script><script>document.addEventListener('DOMContentLoaded', function () {
-    function initializeSlider(wrapperEl) {
-  const sliderEl = wrapperEl.querySelector('.productitemslider');
-  const prevBtn = wrapperEl.querySelector('.product-item-slider-prev');
-  const nextBtn = wrapperEl.querySelector('.product-item-slider-next');
-  if (!sliderEl) return;
-  sliderEl.setAttribute("tabindex", "0");
-  sliderEl.style.outline = "none";
-  const splide = new Splide(sliderEl, {
-    focus: 0,
-    type: 'slide',
-    gap: '0em',
-    arrows: false,
-    pagination: false,
-    speed: 1000,
-    dragAngleThreshold: 60,
-    autoWidth: false,
-    rewind: false,
-    rewindSpeed: 400,
-    autoplay: false,
-    waitForTransition: false,
-    pauseOnHover: false,
-    updateOnMove: true,
-    trimSpace: true,
-    keyboard: false,
-    perPage: 1,
-    breakpoints: {
-      1910: { perPage: 1 },
-      991: { perPage: 1 },
-      767: { perPage: 1 }
-    }
-  });
-  // Toggle arrow visibility
-  function updateArrowVisibility() {
-    const currentIndex = splide.index;
-    const lastIndex = splide.length - 1;
-    if (prevBtn) prevBtn.style.display = currentIndex === 0 ? 'none' : '';
-    if (nextBtn) nextBtn.style.display = currentIndex === lastIndex ? 'none' : '';
-  }
- splide.on('moved updated', updateArrowVisibility);
-splide.mount();
-updateArrowVisibility(); // ensure it's called right away
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => splide.go('<'));
-  }
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => splide.go('>'));
-  }
-  // Touchpad swipe support
-  let isScrolling = false;
-  const swipeThreshold = 50;
-  sliderEl.addEventListener('wheel', function (event) {
-    if (Math.abs(event.deltaX) > Math.abs(event.deltaY) && Math.abs(event.deltaX) > swipeThreshold) {
-      event.preventDefault();
-      if (!isScrolling) {
-        isScrolling = true;
-        splide.go(event.deltaX > 0 ? '>' : '<');
-        setTimeout(() => { isScrolling = false }, 400);
-      }
-    }
-  }, { passive: false });
-}
-    function initAllSliders() {
-      const wrappers = document.querySelectorAll('.product-item-slider-wrapper');
-      console.log('Found', wrappers.length, 'slider wrappers');
-      wrappers.forEach(initializeSlider);
-      console.log('Custom Splide sliders initialized');
-    }
-    setTimeout(initAllSliders, 1000);
-  });
 </script><script>const navItems = document.querySelectorAll('.nav-item');
 const navOverlay = document.querySelector('.nav-overlay');
 navItems.forEach(item => {
@@ -525,6 +455,86 @@ navItems.forEach(item => {
     });
   }
 });
+</script><script>document.addEventListener('DOMContentLoaded', function () {
+    function initializeSlider(wrapperEl) {
+      const sliderEl = wrapperEl.querySelector('.productitemslider');
+      const prevBtn = wrapperEl.querySelector('.product-item-slider-prev');
+      const nextBtn = wrapperEl.querySelector('.product-item-slider-next');
+      const counter = wrapperEl.querySelector('.product-item-slider-counter');
+      const currentNumberEl = counter?.querySelector('.slide-number');
+      const totalNumberEl = counter?.querySelector('.total-slides-number');
+      if (!sliderEl) return;
+      sliderEl.setAttribute("tabindex", "0");
+      sliderEl.style.outline = "none";
+      const splide = new Splide(sliderEl, {
+        focus: 0,
+        type: 'slide',
+        gap: '0em',
+        arrows: false,
+        pagination: false,
+        speed: 1000,
+        dragAngleThreshold: 60,
+        autoWidth: false,
+        rewind: false,
+        rewindSpeed: 400,
+        autoplay: false,
+        waitForTransition: false,
+        pauseOnHover: false,
+        updateOnMove: true,
+        trimSpace: true,
+        keyboard: false,
+        perPage: 1,
+        breakpoints: {
+          1910: { perPage: 1 },
+          991: { perPage: 1 },
+          767: { perPage: 1 }
+        }
+      });
+      function updateArrowVisibility() {
+        const currentIndex = splide.index;
+        const lastIndex = splide.length - 1;
+        if (prevBtn) prevBtn.style.display = currentIndex === 0 ? 'none' : '';
+        if (nextBtn) nextBtn.style.display = currentIndex === lastIndex ? 'none' : '';
+      }
+      function updateCounter() {
+        if (currentNumberEl) currentNumberEl.textContent = (splide.index + 1).toString();
+        if (totalNumberEl) totalNumberEl.textContent = splide.length.toString();
+      }
+      splide.on('mounted moved updated', () => {
+        updateArrowVisibility();
+        updateCounter();
+      });
+      splide.mount();
+      updateArrowVisibility();
+      updateCounter();
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => splide.go('<'));
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => splide.go('>'));
+      }
+      // Touchpad swipe support
+      let isScrolling = false;
+      const swipeThreshold = 50;
+      sliderEl.addEventListener('wheel', function (event) {
+        if (Math.abs(event.deltaX) > Math.abs(event.deltaY) && Math.abs(event.deltaX) > swipeThreshold) {
+          event.preventDefault();
+          if (!isScrolling) {
+            isScrolling = true;
+            splide.go(event.deltaX > 0 ? '>' : '<');
+            setTimeout(() => { isScrolling = false }, 400);
+          }
+        }
+      }, { passive: false });
+    }
+    function initAllSliders() {
+      const wrappers = document.querySelectorAll('.product-item-slider-wrapper');
+      console.log('Found', wrappers.length, 'slider wrappers');
+      wrappers.forEach(initializeSlider);
+      console.log('Custom Splide sliders initialized');
+    }
+    setTimeout(initAllSliders, 1000);
+  });
 </script><script>//sortierung
   Shopify.queryParams = {};
   // Preserve existing query parameters

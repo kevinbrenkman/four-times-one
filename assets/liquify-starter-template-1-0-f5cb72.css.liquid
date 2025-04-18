@@ -5285,7 +5285,7 @@ figcaption {
   align-items: center;
   width: 3rem;
   height: 100%;
-  display: flex;
+  display: none;
   position: absolute;
   inset: 0% auto 0% 0%;
 }
@@ -5296,7 +5296,7 @@ figcaption {
   align-items: center;
   width: 3rem;
   height: 100%;
-  display: flex;
+  display: none;
   position: absolute;
   inset: 0% 0% 0% auto;
 }
@@ -5326,6 +5326,14 @@ figcaption {
 
 .product-item-icon.rotate {
   transform: rotate(180deg);
+}
+
+.product-item-slider-counter {
+  opacity: 0;
+  padding: .5rem .75rem .5rem .5rem;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 0% auto;
 }
 
 @media screen and (max-width: 991px) {
