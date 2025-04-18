@@ -60,6 +60,7 @@
       "intro": {
         "type": "intro",
         "settings": {
+          "checkbox_show_intro": false,
           "image_background_image": "shopify://shop_images/FTO_Landingspagina_4_Clouds.jpg",
           "desktop": "shopify://files/videos/1111_Roterend_16-9.mp4",
           "mobile": "shopify://files/videos/1111_Roterend_9-16.mp4"
