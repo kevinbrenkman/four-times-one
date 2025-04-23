@@ -582,6 +582,18 @@ navItems.forEach(item => {
     }
     setTimeout(initAllSliders, 1000);
   });
+</script><script>document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.nav-child-link-grid').forEach(grid => {
+      const colorDiv = grid.querySelector('.variant-color-placeholder');
+      if (colorDiv) {
+        const bg = window.getComputedStyle(colorDiv).backgroundColor;
+        if (bg && bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent') {
+          grid.style.paddingLeft = '4rem';
+          console.log('&#9989; Added padding to grid with color:', bg);
+        }
+      }
+    });
+  });
 </script><!--  Include the Splide.js library  -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {
     function initializeSlider() {
