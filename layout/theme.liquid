@@ -111,6 +111,7 @@ $('body').on('click touchstart', function ()  {var videoElement = document.getEl
 }
 .shopify-pc__banner__dialog{
 padding: 0px!important;
+z-index: 1!important;
 }
 .shopify-pc__banner__btns {
     gap: 0px!important;
@@ -158,7 +159,7 @@ padding: 0px!important;
     max-width: 100%!important;
     text-align: center!important;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1280px) {
     .shopify-pc__banner__body {
         max-width:50vw!important;
     }
@@ -178,7 +179,7 @@ padding: 0px!important;
     text-decoration: none !important;
 }
 .shopify-pc__banner__btns {
-    flex-direction: row-reverse!important;
+    flex-direction: row!important;
 }
     @media only screen and (max-width: 1280px) {
     .shopify-pc__banner__btns {
