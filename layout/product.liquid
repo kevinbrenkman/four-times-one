@@ -110,7 +110,7 @@ $('body').on('click touchstart', function ()  {var videoElement = document.getEl
     display: none!important;
 }
 .shopify-pc__banner__dialog{
-padding:1rem!important;
+padding: 0px!important;
 }
 .shopify-pc__banner__btns {
     gap: 0px!important;
@@ -121,7 +121,7 @@ padding:1rem!important;
 }
 .shopify-pc__banner__dialog button {
     padding: 1rem!important;
-    height: 15rem !important;
+    height: 18vw !important;
     border-radius: 0px!important;
     color:black!important;
     border: 1px solid hsl(0deg, 0%, 12%, 100%) !important;
@@ -136,6 +136,7 @@ padding:1rem!important;
 }
 .shopify-pc__banner__body {
     margin-bottom: 0px!important;
+    margin-right: 0!important;
 }
 .shopify-pc__banner__dialog {
     position: fixed!important;
@@ -154,7 +155,13 @@ padding:1rem!important;
 }
 .shopify-pc__banner__dialog p {
     color: black!important;
-    max-width: 50vw!important;
+    max-width: 100%!important;
+    text-align: center!important;
+}
+@media only screen and (max-width: 1280px) {
+    .shopify-pc__banner__body {
+        max-width:50vw!important;
+    }
 }
 .shopify-pc__banner__dialog button.shopify-pc__banner__btn-manage-prefs:focus span {
     outline: none!important;
@@ -162,6 +169,21 @@ padding:1rem!important;
 .shopify-pc__banner__dialog button:focus {
     outline: none!important;
     box-shadow: none!important;
+}
+.shopify-pc__banner__body {
+    margin-right: 0px !important;
+    padding: 0.75rem !important;
+}
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-manage-prefs {
+    text-decoration: none !important;
+}
+.shopify-pc__banner__btns {
+    flex-direction: row-reverse!important;
+}
+    @media only screen and (max-width: 1280px) {
+    .shopify-pc__banner__btns {
+        flex-direction: row!important;
+    }
 }
 </style>
 {% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
