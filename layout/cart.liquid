@@ -266,21 +266,9 @@ $("[data-lenis-toggle]").on("click", function () {
     window.location.href = '/cart';
 });
     </script><script>document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".nav-link-child-wrapper").forEach(wrapper => {
-        let count = 1;
-        wrapper.querySelectorAll(".nav-child-link-grid .nav_dropdown-link_child").forEach((element, index) => {
-            if (element.textContent.trim().match(/^\d+$/)) {
-                element.textContent = String(count).padStart(2, '0');
-                count++;
-            }
-        });
-    });
-});
-</script><script>document.addEventListener("DOMContentLoaded", function () {
-    const containers = document.querySelectorAll(".nav-child-link-grid");
-    containers.forEach(container => {
-      const link = container.querySelector(".nav_dropdown-link_child.link");
-      if (link && link.textContent.includes("Archived")) {
+    document.querySelectorAll(".nav-child-wide").forEach(container => {
+      const titleLink = container.querySelector(".nav_dropdown-link");
+      if (titleLink && titleLink.textContent.includes("Archived Drops")) {
         container.classList.add("is-archived");
       }
     });

@@ -15,9 +15,9 @@
 {% endif %}</div>
                             
                             {% if child_link.links.size > 0 %}    <div li-if="child_link.links.size > 0" class="nav-link-child-wrapper _2-columns">
-    {% for grandchild_link in child_link.links %}    <div li-for="grandchild_link in child_link.links" class="nav-child-link-grid">
+    {% for grandchild_link in child_link.links %}    <div li-for="grandchild_link in child_link.links" id="" class="nav-child-link-grid-if-is_color-is-color-endif">
                                     
-                            {% assign parts = grandchild_link.title | split: '|' %}{% assign label = parts[0] %}{% assign hex = parts[1] | default: 'transparent' %}
+                            {% assign parts = grandchild_link.title | split: '|' %}{% assign label = parts[0] %}{% assign hex = parts[1] | default: 'transparent' %}{% assign is_color = hex != 'transparent' and hex != blank %}
                             
                             <div style="background-color: {{ hex }}" class="variant-color-placeholder"></div>
                             
@@ -33,7 +33,7 @@
 {% endif %}
                             
                         </div>
-{% endfor %}<div class="nav_menu-dropdown-follow"><div class="nav-child-wide"><div class="nav--custom-dropdown"><div class="nav_dropdown-link">FOLLOW</div><div class="nav-plus-minus-wrap"><div class="nav-plus">+</div><div class="nav-minus">-</div></div></div><div class="nav-link-child-wrapper"><div li-for:inside="link in linklists['follow'].links" class="nav-child-link-grid">
+{% endfor %}<div class="nav_menu-dropdown-follow"><div class="nav-child-wide"><div class="nav--custom-dropdown"><div class="nav_dropdown-link">FOLLOW</div><div class="nav-plus-minus-wrap"><div class="nav-plus">+</div><div class="nav-minus">-</div></div></div><div class="nav-link-child-wrapper"><div li-for:inside="link in linklists['follow'].links" class="nav-child-link-grid-if-is_color-is-color-endif">
         {% for link in linklists['follow'].links %}                            
                             <div id="w-node-_3020509f-a9bd-d088-a725-bd5ca49464fe-b641c10b"><a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="nav_dropdown-link_child link">{{ link.title }}</a></div>
                             
