@@ -15,9 +15,9 @@
 {% endif %}</div>
                             
                             {% if child_link.links.size > 0 %}    <div li-if="child_link.links.size > 0" class="nav-link-child-wrapper _2-columns">
-    {% for grandchild_link in child_link.links %}    <div li-for="grandchild_link in child_link.links" style="padding-left: {{ padding_left }};" class="nav-child-link-grid">
+    {% for grandchild_link in child_link.links %}    <div li-for="grandchild_link in child_link.links" style="{% if has_color %}padding-left: 3rem;{% endif %}" class="nav-child-link-grid">
                                     
-                            {% assign parts = grandchild_link.title | split: '|' %}{% assign label = parts[0] %}{% assign hex = parts[1] | default: 'transparent' %}{% assign padding_left = '' %}{% if hex != 'transparent' and hex != '' %}{% assign padding_left = '1.5rem' %}{% endif %}
+                            {% assign parts = grandchild_link.title | split: '|' %}{% assign label = parts[0] %}{% assign hex = parts[1] | strip | default: 'transparent' %}{% assign has_color = false %}{% if hex != 'transparent' and hex != '' and hex contains '#' %}{% assign has_color = true %}{% endif %}
                             
                             <div style="background-color: {{ hex }}" class="variant-color-placeholder"></div>
                             
