@@ -235,3 +235,9 @@ padding: 0rem!important;
     background-color: hsl(0deg 0% 100%) !important;
     border-radius: 25px !important;
 }
+
+.shopify-pc__prefs__header-actions button.primary {
+    background: hsl(0deg 0% 100%)!important;
+    color: hsl(0deg 0% 0%)!important;
+    border: 1px solid hsl(0deg 0% 0%)!important;
+}
