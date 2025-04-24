@@ -257,3 +257,11 @@ padding: 0rem!important;
 .shopify-pc__prefs__options {
     margin-bottom: 0.5rem !important;
 }
+
+.shopify-pc__prefs__option label input:focus ~ span svg {
+    box-shadow: none !important;
+}
+
+.shopify-pc__prefs__dialog {
+    border-radius: 0px !important;
+}
