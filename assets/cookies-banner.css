@@ -267,26 +267,3 @@ padding: 0rem!important;
 }
 
 
-
-
-/* Replace the unchecked SVG */
-.shopify-pc__prefs__option input[type="checkbox"]:not(:checked) + span::before {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: url('{{ 'checkbox.svg' | asset_url }}') no-repeat center;
-  background-size: contain;
-  position: absolute;
-}
-
-/* Replace the checked SVG */
-.shopify-pc__prefs__option input[type="checkbox"]:checked + span::before {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: url('{{ 'checkbox-checked.svg' | asset_url }}') no-repeat center;
-  background-size: contain;
-  position: absolute;
-}
