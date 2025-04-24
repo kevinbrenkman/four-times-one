@@ -208,3 +208,8 @@ padding: 0px!important;
         width: 100% !important;
     }
 }
+
+.shopify-pc__prefs__options {
+    padding: 1rem !important;
+    color: black !important;
+}
