@@ -226,3 +226,12 @@ padding: 0rem!important;
     padding: 1rem !important;
     text-align: center;
 }
+
+.shopify-pc__prefs__option p {
+    color: hsl(0deg 0% 0% / 37%) !important;
+}
+
+.shopify-pc__prefs__option label span svg {
+    background-color: hsl(0deg 0% 100%) !important;
+    border-radius: 25px !important;
+}
