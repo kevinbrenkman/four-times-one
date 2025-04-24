@@ -522,29 +522,31 @@ navItems.forEach(item => {
       }
     });
   });
-</script><script>// Wait for the document to be fully loaded before executing the script
-  document.addEventListener('DOMContentLoaded', function() {
-    // Define the custom SVGs for checked and unchecked
-    var checkedSVG = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_293_3)"><circle cx="12" cy="12" r="11.5" stroke="black"/><circle cx="12" cy="12" r="7" fill="black"/><defs><clipPath id="clip0_293_3"><rect width="24" height="24" fill="white"/>';
-    var uncheckedSVG = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_293_2)"><circle cx="12" cy="12" r="11.5" stroke="black"/><defs><clipPath id="clip0_293_2"><rect width="24" height="24" fill="white"/>';
-    // Find checkboxes and replace SVGs
-    var checkboxes = document.querySelectorAll('.shopify-pc__prefs__option input[type="checkbox"]');
-    checkboxes.forEach(function(checkbox) {
-        var span = checkbox.nextElementSibling;
-        if (checkbox.checked) {
-            span.innerHTML = checkedSVG; // Set the checked SVG
-        } else {
-            span.innerHTML = uncheckedSVG; // Set the unchecked SVG
-        }
-        // Update SVG on change
-        checkbox.addEventListener('change', function() {
-            if (checkbox.checked) {
-                span.innerHTML = checkedSVG;
-            } else {
-                span.innerHTML = uncheckedSVG;
-            }
-        });
-    });
+</script><script>document.addEventListener('DOMContentLoaded', function() {
+    // Delay the execution by 0.5 seconds
+    setTimeout(function() {
+      // Define the custom SVGs for checked and unchecked
+      var checkedSVG = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_293_3)"><circle cx="12" cy="12" r="11.5" stroke="black"/><circle cx="12" cy="12" r="7" fill="black"/><defs><clipPath id="clip0_293_3"><rect width="24" height="24" fill="white"/>';
+      var uncheckedSVG = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_293_2)"><circle cx="12" cy="12" r="11.5" stroke="black"/><defs><clipPath id="clip0_293_2"><rect width="24" height="24" fill="white"/>';
+      // Find checkboxes and replace SVGs
+      var checkboxes = document.querySelectorAll('.shopify-pc__prefs__option input[type="checkbox"]');
+      checkboxes.forEach(function(checkbox) {
+          var span = checkbox.nextElementSibling;
+          if (checkbox.checked) {
+              span.innerHTML = checkedSVG; // Set the checked SVG
+          } else {
+              span.innerHTML = uncheckedSVG; // Set the unchecked SVG
+          }
+          // Update SVG on change
+          checkbox.addEventListener('change', function() {
+              if (checkbox.checked) {
+                  span.innerHTML = checkedSVG;
+              } else {
+                  span.innerHTML = uncheckedSVG;
+              }
+          });
+      });
+    }, 500); // Delay of 500 milliseconds (0.5 seconds)
   });
 </script>
 </body>
