@@ -1,0 +1,203 @@
+.shopify-pc__banner__dialog h2 {
+    display: none!important;
+}
+
+
+.shopify-pc__banner__dialog{
+padding: 0px!important;
+}
+
+
+.shopify-pc__banner__btns {
+    gap: 0px!important;
+}
+
+.shopify-pc__banner__dialog button {
+    margin: 0px!important;
+    text-align: center!important;
+}
+
+.shopify-pc__banner__dialog button {
+    padding: 1rem!important;
+    height: 18vw !important;
+    border-radius: 0px!important;
+    color:black!important;
+    border: 1px solid hsl(0deg, 0%, 12%, 100%) !important;
+    border-right: 0px !important;
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: flex-start!important;
+    text-transform: uppercase!important;
+}
+
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-manage-prefs {
+    border-left: 0px !important;
+}
+
+
+.shopify-pc__banner__body {
+    margin-bottom: 0px!important;
+    margin-right: 0!important;
+}
+
+
+.shopify-pc__banner__dialog {
+    position: fixed!important;
+    top: 0rem!important;
+    box-shadow: none!important;
+    max-height: 100%!important;
+    background-color: hsl(0deg 0% 0% / 27%)!important;
+    bottom: 0%;
+    width: 100vw;
+    height: 100dvh;
+}
+
+.shopify-pc__banner__wrapper {
+    flex-direction: column!important;
+}
+
+.shopify-pc__banner__btns {
+    width: 100%!important;
+}
+
+.shopify-pc__banner__dialog button {
+    margin: 0px!important;
+}
+
+.shopify-pc__banner__dialog p {
+    color: black!important;
+    max-width: 100%!important;
+    text-align: center!important;
+}
+
+@media only screen and (min-width: 1280px) {
+    .shopify-pc__banner__body {
+        max-width:50vw!important;
+    }
+}
+
+
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-manage-prefs:focus span {
+    outline: none!important;
+}
+
+.shopify-pc__banner__dialog button:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.shopify-pc__banner__body {
+    margin-right: 0px !important;
+    padding: 0.75rem !important;
+}
+
+
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-manage-prefs {
+    text-decoration: none !important;
+}
+
+.shopify-pc__banner__btns {
+    flex-direction: row!important;
+}
+
+    @media only screen and (max-width: 1280px) {
+    .shopify-pc__banner__btns {
+        flex-direction: row!important;
+    }
+}
+
+.shopify-pc__banner__wrapper {
+    flex-direction: row;
+    background-color: white;
+    margin-top: 3rem!important;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .shopify-pc__banner__btns-granular :nth-child(1) {
+        order: 1!important;
+    }
+    .shopify-pc__banner__btns-granular :nth-child(2) {
+        order: 2!important;
+    }
+    .shopify-pc__banner__btns-granular :nth-child(3) {
+        order: 3!important;
+    }
+}
+
+
+
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-manage-prefs {
+    text-align: left !important;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1900px) {
+    .shopify-pc__prefs__dialog {
+        left: 0;
+        width: 100%;
+    }
+}
+
+.shopify-pc__prefs__dialog {
+    box-shadow: none!important;
+    opacity: 1;
+    background-color: hsl(0deg, 0%, 100%, 100%);
+    max-height: none!important;
+    top: 3rem !important;
+    transform: translate(0, 0%) !important;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.shopify-pc__prefs__dialog header h2 {
+    display: none !important;
+}
+
+.shopify-pc__prefs__header-close {
+    display: none !important;
+}
+
+
+.shopify-pc__prefs__header-actions {
+    padding: 0px !important;
+    width: 100% !important;
+}
+
+
+.shopify-pc__prefs__header-actions button {
+    padding: 1rem !important;
+    margin: 0px !important;
+    font-size: 100% !important;
+    border-radius: 0px !important;
+    width: 100% !important;
+    border-right: 0px !important;
+    height: 18vw!important;
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: flex-start!important;
+    text-transform: uppercase!important;
+}
+
+.shopify-pc__prefs__dialog header {
+    padding: 0px !important;
+}
+
+
+.shopify-pc__prefs__header-actions button:first-child {
+    border-left: 0px!important;
+}
+
+.shopify-pc__prefs__intro h3 {
+    display: none !important;
+}
