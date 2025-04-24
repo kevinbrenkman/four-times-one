@@ -270,5 +270,5 @@ padding: 0rem!important;
     .shopify-pc__prefs__dialog {
         left: 15%;
         width: 70%;
-        padding-top: 3rem !important;
+        padding-top: calc(3.5rem + 1px) !important;
     }
