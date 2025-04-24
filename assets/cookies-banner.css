@@ -210,6 +210,14 @@ padding: 0px!important;
 }
 
 .shopify-pc__prefs__options {
+padding: 0rem!important;
+  color: black !important;
+}
+
+.shopify-pc__prefs__option {
     padding: 1rem !important;
-    color: black !important;
+}
+
+.shopify-pc__prefs__option:first-child {
+    border-top: 1px solid hsl(0deg 0% 0%);
 }
