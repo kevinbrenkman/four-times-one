@@ -278,4 +278,8 @@ padding: 0rem!important;
   .shopify-pc__banner__dialog button {
     padding: 0.5rem !important;
   }
+
+  .shopify-pc__prefs__dialog {
+    padding-top: 0rem!important;
+}
 }
