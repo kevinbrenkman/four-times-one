@@ -141,9 +141,13 @@ z-index: 1!important;
 }
 .shopify-pc__banner__dialog {
     position: fixed!important;
-    top: 3rem!important;
+    top: 0rem!important;
     box-shadow: none!important;
-    max-height: max-content!important;
+    max-height: 100%!important;
+    background-color: hsl(0deg 0% 0% / 45%);
+    bottom: 0%;
+    width: 100vw;
+    height: 100dvh;
 }
 .shopify-pc__banner__wrapper {
     flex-direction: column!important;
@@ -185,6 +189,25 @@ z-index: 1!important;
     .shopify-pc__banner__btns {
         flex-direction: row!important;
     }
+}
+.shopify-pc__banner__wrapper {
+    flex-direction: row;
+    background-color: white;
+    margin-top: 3rem!important;
+}
+@media only screen and (max-width: 480px) {
+    .shopify-pc__banner__btns-granular :nth-child(1) {
+        order: 1!important;
+    }
+    .shopify-pc__banner__btns-granular :nth-child(2) {
+        order: 2!important;
+    }
+    .shopify-pc__banner__btns-granular :nth-child(3) {
+        order: 3!important;
+    }
+}
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-manage-prefs {
+    text-align: left !important;
 }
 </style>
 {% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
