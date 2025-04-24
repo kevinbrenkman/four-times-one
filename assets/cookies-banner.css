@@ -278,12 +278,12 @@ padding: 0rem!important;
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url('{{ "checkbox.png" | asset_url }}') no-repeat center;
+  background: url('{{ "checkbox.svg" | asset_url }}') no-repeat center;
   background-size: contain;
   position: absolute;
 }
 
 /* Add your own SVG for checked */
 .shopify-pc__prefs__option input[type="checkbox"]:checked + span::before {
-  background-image: url('{{ "checkbox-checked.svg" | asset_url }}');
+  background-image: url('{{ "checkbox-checked.png" | asset_url }}');
 }
