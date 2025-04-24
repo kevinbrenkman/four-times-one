@@ -282,4 +282,7 @@ padding: 0rem!important;
   .shopify-pc__prefs__dialog {
     padding-top: 0rem!important;
 }
+      .shopify-pc__prefs__header-actions {
+        flex-direction: row!important;
+    }
 }
