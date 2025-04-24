@@ -248,7 +248,7 @@ padding: 0rem!important;
 }
 
 .shopify-pc__prefs__option:first-child {
-    padding: 25px 0 0 0;
+    padding: 0px 0 0 0;
     margin: 0px !important;
     border-top: 1px solid hsl(0deg 0% 0%) !important;
     padding-top: 1.5rem!important;
