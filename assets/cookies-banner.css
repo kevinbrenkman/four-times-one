@@ -278,7 +278,7 @@ padding: 0rem!important;
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url('{{ "checkbox-unchecked.svg" | asset_url }}') no-repeat center;
+  background: url('{{ "checkbox.png" | asset_url }}') no-repeat center;
   background-size: contain;
   position: absolute;
 }
