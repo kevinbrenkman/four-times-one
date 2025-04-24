@@ -285,7 +285,8 @@ padding: 0rem!important;
      .shopify-pc__prefs__header-actions button {
     padding: 0.5rem !important;
     border-bottom: 1px solid hsl(0deg, 0%, 12%, 100%)!important;
-    border:none!important;
+    border-top:none!important;
+    border-left:none!important;
      }
 
   
