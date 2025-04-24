@@ -272,3 +272,10 @@ padding: 0rem!important;
         width: 70%;
         padding-top: calc(3.5rem + 1px) !important;
     }
+
+
+@media screen and (max-width: 991px) {
+  .shopify-pc__banner__dialog button {
+    padding: 0.5rem !important;
+  }
+}
