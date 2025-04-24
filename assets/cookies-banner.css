@@ -72,7 +72,8 @@ padding: 0px!important;
 
 @media only screen and (min-width: 1280px) {
     .shopify-pc__banner__body {
-        max-width:50vw!important;
+        max-width: 65vw !important;
+        min-height: 3.5rem;
     }
 }
 
@@ -266,4 +267,8 @@ padding: 0rem!important;
     border-radius: 0px !important;
 }
 
-
+    .shopify-pc__prefs__dialog {
+        left: 15%;
+        width: 70%;
+        padding-top: 3rem !important;
+    }
