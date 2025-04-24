@@ -267,10 +267,7 @@ padding: 0rem!important;
 }
 
 
-/* Hide default SVGs */
-.shopify-pc__prefs__option svg[data-icon-type] {
-  display: none !important;
-}
+
 
 /* Replace the unchecked SVG */
 .shopify-pc__prefs__option input[type="checkbox"]:not(:checked) + span::before {
