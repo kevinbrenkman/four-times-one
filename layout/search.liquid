@@ -101,15 +101,7 @@ body.no-scroll {
 }
 </style><script>//PLAYS VIDEO IN LOW POWER MODE
 $('body').on('click touchstart', function ()  {var videoElement = document.getElementsByClassName('thumbnail-video');if (videoElement.playing) {} else {$('.thumbnail-video').trigger('play');}});
-</script><style>@media (max-width: 990px) {
-  .nav_dropdown-grid .nav-child-wide:nth-child(3) {
-    display: none !important;
-  }
-	.nav_dropdown-grid .nav-child-wide:nth-child(2) {
-    margin-bottom:-2rem!important;
-  }
-}
-</style>
+</script>
 {% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
   <style>
   .section_navbar {
