@@ -5396,21 +5396,20 @@ figcaption {
   display: flex;
 }
 
-.product-header_radio-list-2 {
-  grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
+.product-header_radio-list-grid {
+  column-count: 2;
   flex-wrap: wrap;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   margin-top: 1rem;
-  display: grid;
 }
 
 .product-header_radio-2 {
   background-color: #0000;
   border-radius: .5rem;
-  margin-bottom: 0;
+  margin-bottom: .15rem;
+  padding-bottom: .15rem;
   padding-left: 0;
   font-weight: 600;
   position: relative;
@@ -5458,6 +5457,10 @@ figcaption {
   grid-auto-columns: 1fr;
   margin-top: .2rem;
   display: flex;
+}
+
+.grid-css {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
