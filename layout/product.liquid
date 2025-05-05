@@ -725,6 +725,13 @@ navItems.forEach(item => {
       console.error(e);
     });
   });
+</script><script>document.addEventListener("DOMContentLoaded", function () {
+    const element = document.getElementById("selector");
+    const targetDiv = document.getElementById("target");
+    if (element && targetDiv) {
+      targetDiv.appendChild(element);
+    }
+  });
 </script>
 </body>
 </html>
