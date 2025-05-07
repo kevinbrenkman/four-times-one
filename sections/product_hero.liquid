@@ -1,4 +1,14 @@
-<div class="container-large"><div class="product-header_component"><div class="splide productslider"><div class="splide__track"><div class="splide__list">{% for media in product.media %}    <div li-for="media in product.media" class="splide__slide product-page-slider">
+<div class="hide w-embed"><style>{% for optionValues in product.options_with_values %}
+          {% if optionValues.name == 'Farbe' or optionValues.name == 'Color' or optionValues.name == 'Colorway' %}
+          {% for option in optionValues.values %}
+       .colorway-{{ option | handleize }} { background-color: {{ option.swatch.color }};}
+        {% endfor %}
+            {% endif %}
+        {% endfor %}
+      .w-form-formradioinput--inputType-custom.w--redirected-focus {
+          box-shadow: none;
+      }
+    </style></div><div class="container-large"><div class="product-header_component"><div class="splide productslider"><div class="splide__track"><div class="splide__list">{% for media in product.media %}    <div li-for="media in product.media" class="splide__slide product-page-slider">
                                     
                             {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="product_image-wrapper">
     <img loading="lazy" li-object:src="media.src | product_img_url: 'master'" li-object:alt="media.alt" src="{{ media.src | product_img_url: 'master' }}" alt="{{ media.alt }}" class="product_gallery-image">
