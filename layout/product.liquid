@@ -227,7 +227,15 @@ background-color:black!important;
           }{% if forloop.last == false %},{% endif %}{% endfor %}
           ]
         }
-    </script><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
+    </script><style>.size-selector-options-wrapper {
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  display: none;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+</style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body li-page="product">
 
 <div class="page-wrapper">{% render 'global_styles' %}
@@ -732,6 +740,36 @@ navItems.forEach(item => {
       targetDiv.appendChild(element);
     }
   });
+</script><script>const selectSize = document.getElementById('selectSize');
+const optionsWrapper = document.querySelector('.size-selector-options-wrapper');
+selectSize.addEventListener('click', () => {
+  const isOpen = optionsWrapper.classList.contains('open');
+  if (!isOpen) {
+    optionsWrapper.style.display = 'block';
+    const height = optionsWrapper.scrollHeight + 'px';
+    optionsWrapper.style.height = '0px';
+    optionsWrapper.style.opacity = '0';
+    requestAnimationFrame(() => {
+      optionsWrapper.style.height = height;
+      optionsWrapper.style.opacity = '1';
+    });
+    optionsWrapper.classList.add('open');
+  } else {
+    // Set to current height to allow transition from fixed height to 0
+    optionsWrapper.style.height = optionsWrapper.scrollHeight + 'px';
+    optionsWrapper.style.opacity = '0';
+    requestAnimationFrame(() => {
+      optionsWrapper.style.height = '0px';
+    });
+    optionsWrapper.addEventListener('transitionend', function handler(e) {
+      if (e.propertyName === 'height') {
+        optionsWrapper.style.display = 'none';
+        optionsWrapper.classList.remove('open');
+        optionsWrapper.removeEventListener('transitionend', handler);
+      }
+    });
+  }
+});
 </script>
 </body>
 </html>
