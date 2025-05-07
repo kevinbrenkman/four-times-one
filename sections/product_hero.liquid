@@ -8,7 +8,7 @@
       .w-form-formradioinput--inputType-custom.w--redirected-focus {
           box-shadow: none;
       }
-    </style></div><div class="container-large slide-into-view"><div class="product-header_component"><div class="splide productslider"><div class="splide__track"><div class="splide__list">{% for media in product.media %}    <div li-for="media in product.media" class="splide__slide product-page-slider">
+    </style></div><div class="container-large"><div class="product-header_component"><div class="splide productslider"><div class="splide__track"><div class="splide__list">{% for media in product.media %}    <div li-for="media in product.media" class="splide__slide product-page-slider">
                                     
                             {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="product_image-wrapper">
     <img loading="lazy" li-object:src="media.src | product_img_url: 'master'" li-object:alt="media.alt" src="{{ media.src | product_img_url: 'master' }}" alt="{{ media.alt }}" class="product_gallery-image">
@@ -123,7 +123,7 @@ video {
     margin-left: 0.5rem;
   }
 }
-</style></div></div></div></div><div class="padding-global product slide-into-view"><script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
+</style></div></div></div></div><div class="padding-global product"><script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"><div id="w-node-_7048b639-be81-c25f-3e39-a62262971160-7385b6a8" class="product-header_product-details"><h1 li-object:text="product.title" class="heading-style-h2">
 {{ product.title }}
 </h1><div class="spacer-small product-grid"><p li-object="product.metafields.custom.subtitle" id="w-node-_9e4fc9b8-c377-bcc0-f2a6-0c05724f4458-7385b6a8">{{ product.metafields.custom.subtitle }}</p><div id="w-node-_1c5ad198-edb9-ed73-31e0-bebe6f2327cc-7385b6a8" class="variants-list"><div class="w-embed"><div class="selected-options-summary mt-4"><template x-for="(option, index) in product.options" :key="index"><div class="variant-grid"><span x-text="option"></span><span x-text="selected_or_first_available_variant?.options[index]"></span></div></template></div><style>.variant-grid {
@@ -185,4 +185,4 @@ video {
         <a href="#" class="button max-width-full is-secondary w-button">Not in Stock</a>        </div>
     </template>
 </div>{% endform %}
-<div class="out-of-stock-state w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="error-state w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div> {% schema %} {"tag":"div","name":"Product-Hero","class":"section_product-header","presets":[{"name":"Product-Hero","category":"Liquify","blocks":[]}]} {% endschema %}
+<div class="out-of-stock-state w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="error-state w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div> {% schema %} {"tag":"div","name":"Product-Hero","class":"section_product-header slide-into-view","presets":[{"name":"Product-Hero","category":"Liquify","blocks":[]}]} {% endschema %}
