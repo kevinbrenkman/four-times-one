@@ -740,36 +740,41 @@ navItems.forEach(item => {
       targetDiv.appendChild(element);
     }
   });
-</script><script>const selectSize = document.getElementById('selectSize');
-const optionsWrapper = document.querySelector('.size-selector-options-wrapper');
-selectSize.addEventListener('click', () => {
-  const isOpen = optionsWrapper.classList.contains('open');
-  if (!isOpen) {
-    optionsWrapper.style.display = 'block';
-    const height = optionsWrapper.scrollHeight + 'px';
-    optionsWrapper.style.height = '0px';
-    optionsWrapper.style.opacity = '0';
-    requestAnimationFrame(() => {
-      optionsWrapper.style.height = height;
-      optionsWrapper.style.opacity = '1';
-    });
-    optionsWrapper.classList.add('open');
-  } else {
-    // Set to current height to allow transition from fixed height to 0
-    optionsWrapper.style.height = optionsWrapper.scrollHeight + 'px';
-    optionsWrapper.style.opacity = '0';
-    requestAnimationFrame(() => {
-      optionsWrapper.style.height = '0px';
-    });
-    optionsWrapper.addEventListener('transitionend', function handler(e) {
-      if (e.propertyName === 'height') {
-        optionsWrapper.style.display = 'none';
-        optionsWrapper.classList.remove('open');
-        optionsWrapper.removeEventListener('transitionend', handler);
+</script><script>document.addEventListener('DOMContentLoaded', function () {
+    const selectSize = document.getElementById('selectSize');
+    const optionsWrapper = document.querySelector('.size-selector-options-wrapper');
+    if (!selectSize || !optionsWrapper) {
+      console.warn('&#10060; Toggle elements not found');
+      return;
+    }
+    selectSize.addEventListener('click', () => {
+      const isOpen = optionsWrapper.classList.contains('open');
+      if (!isOpen) {
+        optionsWrapper.style.display = 'block';
+        const height = optionsWrapper.scrollHeight + 'px';
+        optionsWrapper.style.height = '0px';
+        optionsWrapper.style.opacity = '0';
+        requestAnimationFrame(() => {
+          optionsWrapper.style.height = height;
+          optionsWrapper.style.opacity = '1';
+        });
+        optionsWrapper.classList.add('open');
+      } else {
+        optionsWrapper.style.height = optionsWrapper.scrollHeight + 'px';
+        optionsWrapper.style.opacity = '0';
+        requestAnimationFrame(() => {
+          optionsWrapper.style.height = '0px';
+        });
+        optionsWrapper.addEventListener('transitionend', function handler(e) {
+          if (e.propertyName === 'height') {
+            optionsWrapper.style.display = 'none';
+            optionsWrapper.classList.remove('open');
+            optionsWrapper.removeEventListener('transitionend', handler);
+          }
+        });
       }
     });
-  }
-});
+  });
 </script>
 </body>
 </html>
