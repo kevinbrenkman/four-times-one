@@ -116,7 +116,7 @@
       {% for optionValues in product.options_with_values %}
           {% if optionValues.name == 'Farbe' or optionValues.name == 'Color' or optionValues.name == 'Colorway' %}
           {% for option in optionValues.values %}
-       .colorway-{{ option | handleize }} { background-color: {{ option.swatch.color.rgba }};}
+       .colorway-{{ option | handleize }} { background-color: {{ option.swatch.color }};}
         {% endfor %}
             {% endif %}
         {% endfor %}
