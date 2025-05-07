@@ -11,6 +11,7 @@
   "sections": {
     "small_heading_GbrgzJ": {
       "type": "small_heading",
+      "name": "Announcement",
       "settings": {
         "url_link": "shopify://pages/the-underdog",
         "text_heading": "SPECIAL announcements",
@@ -22,6 +23,7 @@
     },
     "large_heading_MMinMh": {
       "type": "large_heading",
+      "name": "Title",
       "settings": {
         "url_link": "",
         "text_heading": "Toning chests not personalities",
@@ -130,6 +132,7 @@
       "blocks": {
         "slide_ReQ8Lp": {
           "type": "slide",
+          "name": "Slide",
           "settings": {
             "video": "shopify://files/videos/37fe2ce87e854eed9239550cea0af9a8__88pct_smaller.mp4",
             "url_link_to_product": "",
