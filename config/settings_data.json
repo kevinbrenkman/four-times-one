@@ -34,7 +34,8 @@
         "custom_css": [],
         "settings": {
           "collection_search_bestseller": "",
-          "collection_search_bestseller_limit": 6
+          "collection_search_bestseller_limit": 6,
+          "navigation_height": 66
         }
       },
       "signup": {
