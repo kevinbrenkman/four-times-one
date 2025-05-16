@@ -35,7 +35,7 @@
         "settings": {
           "collection_search_bestseller": "",
           "collection_search_bestseller_limit": 6,
-          "navigation_height": 66
+          "navigation_height": 30
         }
       },
       "signup": {
