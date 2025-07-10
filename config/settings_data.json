@@ -83,7 +83,8 @@
       "@media (max-width: 991px) {.shopify-policy__container {display: block; padding-left: 0.5rem; padding-right: 0.5rem; }}",
       ".shopify-policy__container h1,.shopify-policy__container h2,.shopify-policy__container h3,.shopify-policy__container h4 {font-size: 1em; color: black; text-align: left; margin-bottom: 1em;}",
       ".shopify-policy__container p {font-family: Ekmodenamonotest, sans-serif; margin-bottom: 1em; text-transform: none;}",
-      ".shopify-policy__container li {font-family: Ekmodenamonotest, sans-serif; margin-bottom: 1em; text-transform: none !important;}"
+      ".shopify-policy__container li {font-family: Ekmodenamonotest, sans-serif; margin-bottom: 1em; text-transform: none !important;}",
+      "@media only screen and (max-width: 1900px) {.shopify-pc__prefs__dialog {left: 0; width: 100%; }}"
     ]
   }
 }
