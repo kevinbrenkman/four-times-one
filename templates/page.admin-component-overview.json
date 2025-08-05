@@ -92,18 +92,6 @@
         "animation_speed": 60
       }
     },
-    "small_heading_WQpgwR": {
-      "type": "small_heading",
-      "name": "Small Heading",
-      "settings": {
-        "url_link": "",
-        "text_heading": "",
-        "color": "#afafaf",
-        "background": "#ffffff",
-        "headline": "static",
-        "animation_speed": 60
-      }
-    },
     "small_heading_CBeAEJ": {
       "type": "small_heading",
       "name": "Small Heading",
@@ -114,6 +102,18 @@
         "background": "#ffffff",
         "headline": "marquee",
         "animation_speed": 42
+      }
+    },
+    "small_heading_WQpgwR": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "",
+        "color": "#afafaf",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
       }
     },
     "small_heading_E8CGMq": {
@@ -149,6 +149,18 @@
         "text_artikel_3_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
       }
     },
+    "small_heading_HQbTUR": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "DROPDOWN SECTION",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
     "dropdown_blocks_AxTK7A": {
       "type": "dropdown_blocks",
       "blocks": {
@@ -174,13 +186,25 @@
       "name": "Dropdown Blocks",
       "settings": {}
     },
+    "small_heading_dKaHYw": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "FULL WIDTH IMAGES",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
     "small_heading_WARtGc": {
       "type": "small_heading",
       "name": "Small Heading",
       "settings": {
         "url_link": "",
-        "text_heading": "BELOW IS A FULL WIDTH IMAGE. The height is automatic to fit the image ratio",
-        "color": "#000000",
+        "text_heading": "BELOW IS A FULL WIDTH IMAGE. The height is automatically fitted to the image ratio",
+        "color": "#b3b3b3",
         "background": "#ffffff",
         "headline": "static",
         "animation_speed": 60
@@ -202,15 +226,28 @@
       "name": "Full width Images",
       "settings": {}
     },
+    "small_heading_UC8zLp": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "HERO SECTION",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
     "hero_kgVkrT": {
       "type": "hero",
       "name": "Hero",
       "settings": {
+        "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
         "checkbox_show_button": true,
         "url_button_link": "",
-        "text_button_text": "Shop this look",
-        "color": "#ffffff",
-        "background": "#000000"
+        "text_button_text": "CAN HAVE A BUTTON HERE. COLOR CUSTOMIZABLE",
+        "color": "#000000",
+        "background": "#00ff00"
       }
     },
     "image_and_text_HPKENx": {
@@ -335,9 +372,12 @@
     "small_heading_WQpgwR",
     "small_heading_E8CGMq",
     "content_QWDcaG",
+    "small_heading_HQbTUR",
     "dropdown_blocks_AxTK7A",
+    "small_heading_dKaHYw",
     "small_heading_WARtGc",
     "full_width_images_a7Kq93",
+    "small_heading_UC8zLp",
     "hero_kgVkrT",
     "image_and_text_HPKENx",
     "image_with_button_K8xXTg",
