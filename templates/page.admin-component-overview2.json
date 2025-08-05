@@ -53,9 +53,10 @@
         "checkbox_show_button": true,
         "url_button_link": "",
         "text_button_text": "Shop this look",
-        "text_heading": "DROP 01UNDER TO UPPERDOGS",
+        "text_heading": "DROP 01 UNDER TO UPPERDOGS",
         "checkbox_show_logo": true,
-        "richtext_body_text": "<p><br/>                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                  </p>",
+        "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
+        "richtext_body_text": "<p>We always need: 1 image, ideally with title + copy. <br/>Logo on the right-hand side is optional.</p><p>Colors can be customized</p><p>Columns can be switched. And we can add padding.</p>",
         "image_text_color": "#000000",
         "image_text_background": "#ffffff",
         "flex-direction": "row",
@@ -64,16 +65,93 @@
         "btn-background": "#000000"
       }
     },
+    "image_and_text_KpAryj": {
+      "type": "image_and_text",
+      "name": "Image and text",
+      "settings": {
+        "image_image": "shopify://shop_images/IMG_7401.png",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "text_heading": "TITLE GOES HERE",
+        "checkbox_show_logo": false,
+        "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
+        "richtext_body_text": "<p>HERE THE COLUMNS ARE SWITCHED, AND THE LOGO'S GONE.</p>",
+        "image_text_color": "#000000",
+        "image_text_background": "#ffffff",
+        "flex-direction": "row-reverse",
+        "padding": "on",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
+      }
+    },
+    "image_and_text_yaFHpp": {
+      "type": "image_and_text",
+      "name": "Image and text",
+      "settings": {
+        "image_image": "shopify://shop_images/IMG_7401.png",
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "text_heading": "Title goes here",
+        "checkbox_show_logo": false,
+        "image_transparent_logo": "shopify://shop_images/fourtimesone.svg",
+        "richtext_body_text": "<p>YOU CAN ALSO TURN OFF THE PADDING AROUND THE IMAGE.</p>",
+        "image_text_color": "#000000",
+        "image_text_background": "#ffffff",
+        "flex-direction": "row-reverse",
+        "padding": "off",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
+      }
+    },
+    "small_heading_wYzkRH": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "IMAGE with button section",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
     "image_with_button_K8xXTg": {
       "type": "image_with_button",
       "name": "Image with button",
       "settings": {
+        "image_image": "shopify://shop_images/edit-04-1800x-q80.jpg",
         "checkbox_show_button": true,
         "url_button_link": "",
-        "text_button_text": "Shop this look",
+        "text_button_text": "Similar to the hero section",
         "color": "#ffffff",
         "background": "#000000",
         "height": "80vh"
+      }
+    },
+    "small_heading_mBtnUc": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "IMAGES SECTION",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "small_heading_JdyCCb": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "You can add as many images as you want here, always even pairs please!",
+        "color": "#bfbfbf",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
       }
     },
     "images_BDibXh": {
@@ -81,26 +159,76 @@
       "blocks": {
         "block_t9znFw": {
           "type": "block",
-          "settings": {}
+          "settings": {
+            "image_image": "shopify://shop_images/e-20-1800x-q80.jpg"
+          }
+        },
+        "block_yaLBQC": {
+          "type": "block",
+          "settings": {
+            "image_image": "shopify://shop_images/2-03-1800x-q80_copy.jpg"
+          }
         }
       },
       "block_order": [
-        "block_t9znFw"
+        "block_t9znFw",
+        "block_yaLBQC"
       ],
       "name": "Images",
       "settings": {}
+    },
+    "small_heading_bKwBm4": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "IMAGES with heading SECTION",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
     },
     "images_with_heading_pgAeF6": {
       "type": "images_with_heading",
       "name": "Images with Heading",
       "settings": {
+        "image_image_1": "shopify://shop_images/6a13ce0cf8ef2002323353ef343c792e.jpg",
         "checkbox_show_heading_1": true,
-        "text_heading_1": "DROP 01UNDER TO UPPERDOGS",
+        "text_heading_1": "HERE GOES HEADING 1",
+        "image_image_2": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
         "checkbox_show_heading_2": true,
-        "text_heading_2": "DROP 01UNDER TO UPPERDOGS",
+        "text_heading_2": "PADDING AROUND THE IMAGES CAN BE TURNED ON OR OFF HERE",
         "color": "#000000",
         "background": "#ffffff",
         "padding": "on"
+      }
+    },
+    "images_with_heading_fPxPMk": {
+      "type": "images_with_heading",
+      "name": "Images with Heading",
+      "settings": {
+        "image_image_1": "shopify://shop_images/6a13ce0cf8ef2002323353ef343c792e.jpg",
+        "checkbox_show_heading_1": true,
+        "text_heading_1": "PADDING IS OFF HERE. Colors are customizable.",
+        "image_image_2": "shopify://shop_images/FTO_Website_16_2_comments-6.jpg",
+        "checkbox_show_heading_2": false,
+        "text_heading_2": "COLORS ARE CUSTOMIZABLE",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "off"
+      }
+    },
+    "small_heading_fTb7Yn": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "LARGE HEADING",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
       }
     },
     "large_heading_aHb8Yq": {
@@ -108,7 +236,31 @@
       "name": "Large Heading",
       "settings": {
         "url_link": "",
-        "text_heading": "CHEST-FLATTENING BASICS",
+        "text_heading": "THIS IS A LARGE HEADING.",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "large_heading_rG3CRR": {
+      "type": "large_heading",
+      "name": "Large Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "IT CAN ALSO BE A MARQUEE.",
+        "color": "#ffffff",
+        "background": "#ff0000",
+        "headline": "marquee",
+        "animation_speed": 60
+      }
+    },
+    "small_heading_K7rBd6": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "LINKS SECTION",
         "color": "#000000",
         "background": "#ffffff",
         "headline": "static",
@@ -121,17 +273,54 @@
         "block_jwRbDc": {
           "type": "block",
           "settings": {
-            "url_link": "",
-            "text_titel": "Bestselling"
+            "url_link": "shopify://products/cfb-01-hoodie-logo",
+            "text_titel": "title goes here.",
+            "image_bild": "shopify://shop_images/IMG_7401.png"
+          }
+        },
+        "block_NkGmMe": {
+          "type": "block",
+          "settings": {
+            "url_link": "shopify://products/cfb-01-hoodie-logo",
+            "text_titel": "You can add more",
+            "image_bild": "shopify://shop_images/IMG_7401.png"
+          }
+        },
+        "block_MMjqWf": {
+          "type": "block",
+          "settings": {
+            "url_link": "shopify://products/cfb-01-hoodie-logo",
+            "text_titel": "Another link",
+            "image_bild": "shopify://shop_images/IMG_7401.png"
+          }
+        },
+        "block_RrFAWi": {
+          "type": "block",
+          "settings": {
+            "url_link": "shopify://products/cfb-01-hoodie-logo",
+            "text_titel": "Would recommend no more than 3.",
+            "image_bild": "shopify://shop_images/IMG_7401.png"
+          }
+        },
+        "block_egLgVf": {
+          "type": "block",
+          "settings": {
+            "url_link": "shopify://products/cfb-01-hoodie-logo",
+            "text_titel": "The structure repeats",
+            "image_bild": "shopify://shop_images/IMG_7401.png"
           }
         }
       },
       "block_order": [
-        "block_jwRbDc"
+        "block_jwRbDc",
+        "block_NkGmMe",
+        "block_MMjqWf",
+        "block_RrFAWi",
+        "block_egLgVf"
       ],
       "name": "Links",
       "settings": {
-        "text_headline": "Short heading here"
+        "text_headline": "You can add a heading here"
       }
     },
     "small_heading_JHDe6n": {
@@ -139,7 +328,7 @@
       "name": "Small Heading",
       "settings": {
         "url_link": "",
-        "text_heading": "CHEST-FLATTENING BASICS",
+        "text_heading": "text cta section",
         "color": "#000000",
         "background": "#ffffff",
         "headline": "static",
@@ -150,8 +339,8 @@
       "type": "text_cta",
       "name": "Text-CTA",
       "settings": {
-        "text_headline": "Thanks for your Submission",
-        "text_text": "We will contact you soon."
+        "text_headline": "Here goes a title.",
+        "text_text": "This is the last section in the overview. lorem ipsum dolor sit amet. The link will be customizable as well."
       }
     }
   },
@@ -162,10 +351,20 @@
     "hero_kgVkrT",
     "small_heading_3Pan7w",
     "image_and_text_HPKENx",
+    "image_and_text_KpAryj",
+    "image_and_text_yaFHpp",
+    "small_heading_wYzkRH",
     "image_with_button_K8xXTg",
+    "small_heading_mBtnUc",
+    "small_heading_JdyCCb",
     "images_BDibXh",
+    "small_heading_bKwBm4",
     "images_with_heading_pgAeF6",
+    "images_with_heading_fPxPMk",
+    "small_heading_fTb7Yn",
     "large_heading_aHb8Yq",
+    "large_heading_rG3CRR",
+    "small_heading_K7rBd6",
     "links_CNRPEi",
     "small_heading_JHDe6n",
     "text_cta_knNAWj"
