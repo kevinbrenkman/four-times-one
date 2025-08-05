@@ -218,145 +218,20 @@
           "settings": {
             "image_image": "shopify://shop_images/2-01-1800x-q80_copy_2.jpg"
           }
-        }
-      },
-      "block_order": [
-        "block_VEYCNE"
-      ],
-      "name": "Full width Images",
-      "settings": {}
-    },
-    "small_heading_UC8zLp": {
-      "type": "small_heading",
-      "name": "Small Heading",
-      "settings": {
-        "url_link": "",
-        "text_heading": "HERO SECTION",
-        "color": "#000000",
-        "background": "#ffffff",
-        "headline": "static",
-        "animation_speed": 60
-      }
-    },
-    "hero_kgVkrT": {
-      "type": "hero",
-      "name": "Hero",
-      "settings": {
-        "image_image": "shopify://shop_images/Screenshot_2024-10-03_at_12.57.55.png",
-        "checkbox_show_button": true,
-        "url_button_link": "",
-        "text_button_text": "CAN HAVE A BUTTON HERE. COLOR CUSTOMIZABLE",
-        "color": "#000000",
-        "background": "#00ff00"
-      }
-    },
-    "image_and_text_HPKENx": {
-      "type": "image_and_text",
-      "name": "Image and text",
-      "settings": {
-        "checkbox_show_button": true,
-        "url_button_link": "",
-        "text_button_text": "Shop this look",
-        "text_heading": "DROP 01UNDER TO UPPERDOGS",
-        "checkbox_show_logo": true,
-        "richtext_body_text": "<p><br/>                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                  </p>",
-        "image_text_color": "#000000",
-        "image_text_background": "#ffffff",
-        "flex-direction": "row",
-        "padding": "on",
-        "btn-color": "#ffffff",
-        "btn-background": "#000000"
-      }
-    },
-    "image_with_button_K8xXTg": {
-      "type": "image_with_button",
-      "name": "Image with button",
-      "settings": {
-        "checkbox_show_button": true,
-        "url_button_link": "",
-        "text_button_text": "Shop this look",
-        "color": "#ffffff",
-        "background": "#000000",
-        "height": "80vh"
-      }
-    },
-    "images_BDibXh": {
-      "type": "images",
-      "blocks": {
-        "block_t9znFw": {
-          "type": "block",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "block_t9znFw"
-      ],
-      "name": "Images",
-      "settings": {}
-    },
-    "images_with_heading_pgAeF6": {
-      "type": "images_with_heading",
-      "name": "Images with Heading",
-      "settings": {
-        "checkbox_show_heading_1": true,
-        "text_heading_1": "DROP 01UNDER TO UPPERDOGS",
-        "checkbox_show_heading_2": true,
-        "text_heading_2": "DROP 01UNDER TO UPPERDOGS",
-        "color": "#000000",
-        "background": "#ffffff",
-        "padding": "on"
-      }
-    },
-    "large_heading_aHb8Yq": {
-      "type": "large_heading",
-      "name": "Large Heading",
-      "settings": {
-        "url_link": "",
-        "text_heading": "CHEST-FLATTENING BASICS",
-        "color": "#000000",
-        "background": "#ffffff",
-        "headline": "static",
-        "animation_speed": 60
-      }
-    },
-    "links_CNRPEi": {
-      "type": "links",
-      "blocks": {
-        "block_jwRbDc": {
+        },
+        "block_QftahN": {
           "type": "block",
           "settings": {
-            "url_link": "",
-            "text_titel": "Bestselling"
+            "image_image": "shopify://shop_images/FTO_Landingspagina_4_Clouds.jpg"
           }
         }
       },
       "block_order": [
-        "block_jwRbDc"
+        "block_VEYCNE",
+        "block_QftahN"
       ],
-      "name": "Links",
-      "settings": {
-        "text_headline": "Short heading here"
-      }
-    },
-    "small_heading_JHDe6n": {
-      "type": "small_heading",
-      "name": "Small Heading",
-      "settings": {
-        "url_link": "",
-        "text_heading": "CHEST-FLATTENING BASICS",
-        "color": "#000000",
-        "background": "#ffffff",
-        "headline": "static",
-        "animation_speed": 60
-      }
-    },
-    "text_cta_knNAWj": {
-      "type": "text_cta",
-      "name": "Text-CTA",
-      "settings": {
-        "text_headline": "Thanks for your Submission",
-        "text_text": "We will contact you soon."
-      }
+      "name": "Full width Images",
+      "settings": {}
     }
   },
   "layout": "page",
@@ -376,16 +251,6 @@
     "dropdown_blocks_AxTK7A",
     "small_heading_dKaHYw",
     "small_heading_WARtGc",
-    "full_width_images_a7Kq93",
-    "small_heading_UC8zLp",
-    "hero_kgVkrT",
-    "image_and_text_HPKENx",
-    "image_with_button_K8xXTg",
-    "images_BDibXh",
-    "images_with_heading_pgAeF6",
-    "large_heading_aHb8Yq",
-    "links_CNRPEi",
-    "small_heading_JHDe6n",
-    "text_cta_knNAWj"
+    "full_width_images_a7Kq93"
   ]
 }
