@@ -9,14 +9,343 @@
  */
 {
   "sections": {
-    "default": {
-      "type": "default",
+    "small_heading_Bnfi7P": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "ARCHIVED DROPS",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "archived_drops_gtGMWh": {
+      "type": "archived_drops",
+      "blocks": {
+        "block_tpinmf": {
+          "type": "block",
+          "settings": {
+            "text_top_heading": "THIS IS AN ARCHIVED DROP SECTION",
+            "image_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
+            "text_bottom_heading": "THIS TEXT IS ALSO CUSTOMIZABLE"
+          }
+        },
+        "block_mFQrdp": {
+          "type": "block",
+          "settings": {
+            "text_top_heading": "ALWAYS 2 next to each other on desktop",
+            "image_image": "shopify://shop_images/FTO_Website_16_2_comments-4.jpg",
+            "text_bottom_heading": "They go below each other on mobile"
+          }
+        }
+      },
+      "block_order": [
+        "block_tpinmf",
+        "block_mFQrdp"
+      ],
+      "name": "Archived Drops",
       "settings": {}
+    },
+    "small_heading_rYeayk": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "CONTACT SECTION",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "contact_QabFwj": {
+      "type": "contact",
+      "name": "Contact",
+      "settings": {
+        "text_headline": "Contact us",
+        "text_text": "This is a contact form. The form is always styled the same, but you can adjust the title on the left (\"CONTACT US\") and this copy below."
+      }
+    },
+    "small_heading_9dMt86": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "SMALL HEADING",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "small_heading_pxhHG6": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "THIS IS A SMALL HEADING. It can also wrap to a second line.",
+        "color": "#afafaf",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "small_heading_WQpgwR": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "",
+        "color": "#afafaf",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "small_heading_CBeAEJ": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "Or you can make it a marquee.",
+        "color": "#8c8c8c",
+        "background": "#ffffff",
+        "headline": "marquee",
+        "animation_speed": 42
+      }
+    },
+    "small_heading_E8CGMq": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "CONTENT SECTION",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "content_QWDcaG": {
+      "type": "content",
+      "name": "Content",
+      "settings": {
+        "text_headline": "THIS IS A CONTENT SECTION",
+        "text_button_text": "ENTER A LINK HERE",
+        "url_button_link": "shopify://pages/drop-01",
+        "url_artikel_1_link": "shopify://pages/drop-02",
+        "text_artikel_1_titel": "THIS IS A TITLE",
+        "text_artikel_1_excerpt": "Lorem ipsum dolor sit amet.",
+        "image_artikel_1_bild": "shopify://shop_images/IMG_7401.png",
+        "article_artikel_2": "",
+        "url_artikel_2_link": "",
+        "text_artikel_2_titel": "WE CAN LINK ARTICLES HERE",
+        "text_artikel_2_excerpt": "None are written yet though, so until then this section can not be used.",
+        "article_artikel_3": "",
+        "url_artikel_3_link": "",
+        "text_artikel_3_titel": "ANOTHER ARTICLE",
+        "text_artikel_3_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+      }
+    },
+    "dropdown_blocks_AxTK7A": {
+      "type": "dropdown_blocks",
+      "blocks": {
+        "dropdown_zjhtJ9": {
+          "type": "dropdown",
+          "settings": {
+            "text_dropdown_title": "THIS IS A DROPDOWN TAB",
+            "richtext_text": "<p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.<br/><br/>This content can be added and customized how you see fit.</p>"
+          }
+        },
+        "dropdown_Q46p77": {
+          "type": "dropdown",
+          "settings": {
+            "text_dropdown_title": "ANOTHER TAB",
+            "richtext_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_zjhtJ9",
+        "dropdown_Q46p77"
+      ],
+      "name": "Dropdown Blocks",
+      "settings": {}
+    },
+    "small_heading_WARtGc": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "BELOW IS A FULL WIDTH IMAGE. The height is automatic to fit the image ratio",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "full_width_images_a7Kq93": {
+      "type": "full_width_images",
+      "blocks": {
+        "block_VEYCNE": {
+          "type": "block",
+          "settings": {
+            "image_image": "shopify://shop_images/2-01-1800x-q80_copy_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "block_VEYCNE"
+      ],
+      "name": "Full width Images",
+      "settings": {}
+    },
+    "hero_kgVkrT": {
+      "type": "hero",
+      "name": "Hero",
+      "settings": {
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "color": "#ffffff",
+        "background": "#000000"
+      }
+    },
+    "image_and_text_HPKENx": {
+      "type": "image_and_text",
+      "name": "Image and text",
+      "settings": {
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "text_heading": "DROP 01UNDER TO UPPERDOGS",
+        "checkbox_show_logo": true,
+        "richtext_body_text": "<p><br/>                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                  </p>",
+        "image_text_color": "#000000",
+        "image_text_background": "#ffffff",
+        "flex-direction": "row",
+        "padding": "on",
+        "btn-color": "#ffffff",
+        "btn-background": "#000000"
+      }
+    },
+    "image_with_button_K8xXTg": {
+      "type": "image_with_button",
+      "name": "Image with button",
+      "settings": {
+        "checkbox_show_button": true,
+        "url_button_link": "",
+        "text_button_text": "Shop this look",
+        "color": "#ffffff",
+        "background": "#000000",
+        "height": "80vh"
+      }
+    },
+    "images_BDibXh": {
+      "type": "images",
+      "blocks": {
+        "block_t9znFw": {
+          "type": "block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "block_t9znFw"
+      ],
+      "name": "Images",
+      "settings": {}
+    },
+    "images_with_heading_pgAeF6": {
+      "type": "images_with_heading",
+      "name": "Images with Heading",
+      "settings": {
+        "checkbox_show_heading_1": true,
+        "text_heading_1": "DROP 01UNDER TO UPPERDOGS",
+        "checkbox_show_heading_2": true,
+        "text_heading_2": "DROP 01UNDER TO UPPERDOGS",
+        "color": "#000000",
+        "background": "#ffffff",
+        "padding": "on"
+      }
+    },
+    "large_heading_aHb8Yq": {
+      "type": "large_heading",
+      "name": "Large Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "CHEST-FLATTENING BASICS",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "links_CNRPEi": {
+      "type": "links",
+      "blocks": {
+        "block_jwRbDc": {
+          "type": "block",
+          "settings": {
+            "url_link": "",
+            "text_titel": "Bestselling"
+          }
+        }
+      },
+      "block_order": [
+        "block_jwRbDc"
+      ],
+      "name": "Links",
+      "settings": {
+        "text_headline": "Short heading here"
+      }
+    },
+    "small_heading_JHDe6n": {
+      "type": "small_heading",
+      "name": "Small Heading",
+      "settings": {
+        "url_link": "",
+        "text_heading": "CHEST-FLATTENING BASICS",
+        "color": "#000000",
+        "background": "#ffffff",
+        "headline": "static",
+        "animation_speed": 60
+      }
+    },
+    "text_cta_knNAWj": {
+      "type": "text_cta",
+      "name": "Text-CTA",
+      "settings": {
+        "text_headline": "Thanks for your Submission",
+        "text_text": "We will contact you soon."
+      }
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "default"
+    "small_heading_Bnfi7P",
+    "archived_drops_gtGMWh",
+    "small_heading_rYeayk",
+    "contact_QabFwj",
+    "small_heading_9dMt86",
+    "small_heading_pxhHG6",
+    "small_heading_CBeAEJ",
+    "small_heading_WQpgwR",
+    "small_heading_E8CGMq",
+    "content_QWDcaG",
+    "dropdown_blocks_AxTK7A",
+    "small_heading_WARtGc",
+    "full_width_images_a7Kq93",
+    "hero_kgVkrT",
+    "image_and_text_HPKENx",
+    "image_with_button_K8xXTg",
+    "images_BDibXh",
+    "images_with_heading_pgAeF6",
+    "large_heading_aHb8Yq",
+    "links_CNRPEi",
+    "small_heading_JHDe6n",
+    "text_cta_knNAWj"
   ]
 }
