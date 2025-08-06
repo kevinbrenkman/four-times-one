@@ -257,6 +257,7 @@
     },
     "small_heading_K7rBd6": {
       "type": "small_heading",
+      "disabled": true,
       "name": "Small Heading",
       "settings": {
         "url_link": "",
@@ -318,6 +319,7 @@
         "block_RrFAWi",
         "block_egLgVf"
       ],
+      "disabled": true,
       "name": "Links",
       "settings": {
         "text_headline": "You can add a heading here"
