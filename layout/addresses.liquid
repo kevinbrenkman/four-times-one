@@ -63,7 +63,7 @@
 </style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body>
 
-<p>{% if template == 'index' or (template == 'page.the-underdog' and page.handle == 'the-underdog') %}
+<p>{% if template == 'index' or template == 'page.the-underdog' and page.handle == 'the-underdog' %}
   <style>.section_navbar {
     background-color: black !important;
   }
@@ -260,4 +260,15 @@ $("[data-lenis-toggle]").on("click", function () {
 });
 </script>
 </body>
-</html>
+</html>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% if template == 'index' or (template == 'page.the-underdog' and page.handle
+    == 'the-underdog') %}"
+  to: "{% if template == 'index' or template == 'page.the-underdog' and page.handle
+    == 'the-underdog' %}"
+  position: 3613..3710
+{%- endcomment -%}
